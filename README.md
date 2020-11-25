@@ -1,4 +1,4 @@
-# Anne of Green Gables
+# Anne of Green Gables: Documentation
 Proof-read and compare editions of _Anne of Green Gables_, by L. M. Montgomery.
 
 This repo contains only the <a href='https://johanley.github.io/anne-of-green-gables/index.html'>documentation</a> for the project.
