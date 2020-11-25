@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="UTF-8"/>
+ <title>Proof-read and comparet editions of Anne of Green Gables</title>
+ <meta name="keywords" content="proof-read, Anne of Green Gables, L. M. Montgomery, variants, editions">
+ <meta name="description" content="Proof-read and compare editions of Anne of Green Gables, by L. M. Montgomery">
+ <meta name="viewport" content="width=device-width"> 
+ <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all"> 
+<body>
+
+<img style='float:right; margin-left:1.0em;' src='images/1884.gif' height='368' width='310' title="L. M. Montgomery, age 9, 1884">
+
+<h2>The <em>Anne of Green Gables</em> + <em>Git</em> Project</h2>
+ 
+<ul> 
+ <li>Goal: <b>proof-read and compare</b> editions of <em>Anne of Green Gables</em>, by L. M. Montgomery
+ <li>Project Status: just starting
+</ul>
+
+<h3>Why?</h3>
+<ul> 
+ <li>it's a good novel, worthy of detailed examination
+ <li>at least some of the widely available digitized texts don't seem to be of high quality
+ <li>it's interesting to see how the various editions differ from each other
+ <li>it's interesting to use the power of <em>git</em> to precisely track the variations of a literary text
+ <li>a text of acceptable quality can be used to print your own copy using <a href='https://www.lulu.com/'>lulu.com</a>
+ <li>it may help improve the quality of digitized versions of the novel
+</ul>
+
+
+<h3>Bibliography</h3>
+
+The following is based on the <a href='https://wwnorton.com/books/9780393926958'><em>Norton</em> critical edition</a>, by Rubio and Waterston, 
+which has an excellent summary of the main editions.
+
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 15%;">
+   <col style="width: 15%;">
+   <col style="width: 70%;">
+ </colgroup> 
+ <tr><th>Label<th>Publisher<th>Description
+ <tr><td>1908-LCP<td>L. C. Page<td>First edition, April. Boston, USA. Many subsequent impressions, with error corrections.
+ <tr><td>1908-PIT<td>Sir Isaac Pitnam<td>London, UK. Plates from Page. First British edition.
+ <tr><td>1914-G&amp;D<td>Grosset and Dunlap<td>New York, USA. Lower quality paper and printing, cheaper book. Plates from Page. 
+ <tr><td>1916-LCP<td>L. C. Page<td>40th impression, gifted from author to her son. Montgomery made no manual corrections to it. <b>Best version of LMM-approved text?</b>
+ <tr><td>1920-LCP<td>L. C. Page<td>Movie edition, re-issued to coincide with a film release. Uses 1908 plates.
+ <tr><td>1924-Cornstalk<td>Cornstalk<td>Sydney, Australia.
+ <tr><td>1925-LCP<td>L. C. Page<td><b>New plates</b>. Boston, USA. Fairly close to the 1908 edition.
+ <tr><td>1925-GGH<td>George G. Harrap<td><b>New plates</b>, distinct from Page's new plates. London, UK. Not as close to the 1908 edition.  Changes to a British style. Corrects some errors of Page. Many diffs with Page.
+ <tr><td>1942-RP<td>Ryerson<td>Toronto, Canada. First Canadian edition.
+ <tr><td>1965-RP<td>Ryerson<td>Toronto, Canada. Illustrated.
+ <tr><td><a href='https://global.oup.com/academic/product/the-annotated-anne-of-green-gables-9780195104288?cc=ca&lang=en&'>1997-OUP</a><td>Oxford University<td>New York, USA. Annotated edition. Not close to 1908. Draws from holograph (manuscript) and 1925 GGH. Bit unusual.
+ <tr><td><a href='https://broadviewpress.com/product/anne-of-green-gables/#tab-description'>2004-BP</a><td>Broadview Press<td>Peterborough, Canada. Close to 1908.
+ <tr><td><a href='https://wwnorton.com/books/9780393926958'>2007-NCE</a><td>W. W. Norton<td>New York, USA. Critical edition. Close to 1908.
+ <tr><td><a href='https://www.penguinrandomhouse.ca/books/557098/anne-of-green-gables-by-l-m-montgomery/9780143131854'>2017-PC</a><td>Penguin Classics<td>New York, USA. Close to 1908.
+ <tr><td><a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>2019-NM</a><td>Nimbus<td>Halifax, Canada. Transcription of the manuscript. Additions, deletions, and changes.
+</table>
+
+<h4>Artifacts in the Steps of Publishing the Novel</h4>
+
+<P>
+<table class='report' style='border:1px;'>
+ <tr><th>Step<th>Description<th>Lost?
+ <tr><td>Manuscript (holograph)<td>Hand-written by Montgomery. Preserved at the Confederation Centre of the Arts.<td>No
+ <tr><td>Typescript<td>Typed by Montgomery, and sent to the publisher. <td>Yes
+ <tr><td>Uncorrected proof(s)<td>Produced by the publisher from plates, for correction by the author. <td>Yes
+ <tr><td>Corrected proof(s)<td>With author's corrections. <td>Yes
+ <tr><td>Published book<td>As sold to the public. <td>No
+</table>
+
+<P>Interesting remarks from the critical edition of Rubio and Waterston:
+<ul>
+ <li>regarding Page's 40th impression, published in 1916: <em>"no other copy-text can claim to represent her final intentions as much as this 1908 edition."</em>
+ <li><em>"Montgomery gave no personal input into either of these completely new 1925 editions."</em>
+ <li>regarding the two new 1925 editions: <em>"However, a careful comparison of the newly set Harrap and L. C. Page texts (which are very different in themselves)
+ reveals a common line of descent—not from the manuscript but from the lost typescript."</em>
+</ul>
+
+<h3>Scanned Books</h3>
+Some editions have been imaged and made available on the web.
+
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 10%;">
+   <col style="width: 20%;">
+   <col style="width: 70%;">
+ </colgroup> 
+ <tr><th>Date<th>Publisher<th>Description
+ <tr><td><a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>1908-09</a><td>L. C. Page<td>4th impression.
+ <tr><td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n7/mode/2up'>1909-08</a><td>L. C. Page<td>11th impression.
+ <tr><td><a href='https://archive.org/details/annegreengables00montgoog/page/n11/mode/2up'>1915-02</a><td>Grosset and Dunlap<td>39th impression. Based on Page's plates.
+ <tr><td><a href='https://archive.org/details/anneofgreengable00mont_12/page/n7/mode/2up'>1930-10</a><td>George G. Harrap<td>From the 1925 plates. Low quality scan. Problems near the spine.
+ <tr><td><a href='https://archive.org/details/anne-of-green-gables_20201025/page/n7/mode/2up'>1933</a><td>Angus &amp; Robertson<td>Sydney, Australia. Based on Page's plates.
+ <tr><td><a href='https://archive.org/details/anneofgreengable00montiala/page/n5/mode/2up'>1946-11</a><td>Ryerson Press<td>Based on their 1942 edition.
+</table>
+
+<P>
+There are <a href='https://www.cbc.ca/news/canada/prince-edward-island/pei-books-montgomery-anne-of-green-gables-online-1.5673603'>plans</a> to make images of the manuscript available in 2022.
+Montgomery's handwriting is hard to read. Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>transcription</a> edited by C. S. Collins.
+
+<h3>Sources of Digitized Text</h3>
+
+<ul>
+ <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. (Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>.)
+ <li><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a>
+ <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. They usually get texts from Distributed Proofreaders, but not always.
+</ul>
+
+Issues:
+<ul>
+ <li>sometimes they aren't explicit about the copy-text used as source.
+ <li>basic facts are often unclear, or hard to find: How many versions have there been? What were the changes between versions? How 
+ many people have edited the text?
+ <li>in short, there's no way to evaluate the quality of the text.
+</ul>
+
+
+<h3>UTF-8 Encoding Everywhere</h3>
+All text files in this project use the <a href='http://utf8everywhere.org/'>UTF-8 encoding</a>. 
+If you see odd characters on your screen, check that your tools are using the UTF-8 encoding.
+
+
+<h3>Character Issues</h3>
+
+
+<P>Not all <a href='https://en.wikipedia.org/wiki/Dash'>dashes</a> are equal:
+<P><table class='report' style='border:1px;'>
+ <tr><th>Unicode<th>Name<th>Example<th>Keystrokes (Windows)<th>Description
+ <tr><td>U+2014<td>Em Dash<td>—<td>Alt+0151<td>Used to separate parts of a sentence—when needed. Common.
+ <tr><td>U+2013<td>En Dash<td>–<td>Alt+0150<td>Smaller than Em Dash. Rare.
+ <tr><td>U+2015<td>Horizontal bar<td>—<td><td>Used in French to introduce speech. Rare in English.
+ <tr><td>U+2010<td>Hyphen<td>‐<td><td>Hyphenated words.
+ <tr><td>U+002D<td>Hyphen-Minus<td>-<td><td>Minus sign on the numeric keypad.
+</table>
+
+
+<P>Quotes, apostrophes, and ellipsis:
+<P><table class='report' style='border:1px;'>
+ <tr><th>Unicode<th>Name<th>Example<th>Description
+ <tr><td>U+201C<td>Left Double Quotation Mark<td>“<td>Open quote. US style.
+ <tr><td>U+201D<td>Right Double Quotation Mark<td>”<td>Close quote. US style.
+ <tr><td>U+2018<td>Left Single Quotation Mark<td>‘<td>Open quote. UK style.
+ <tr><td>U+2019<td>Right Single Quotation Mark<td>’<td>Close quote. UK style.
+ <tr><td>U+0027<td>Vertical Apostrophe<td>'<td>Undesirable; use the Right Single Quotation Mark instead: Tom’s.
+ <tr><td>U+2026<td>Ellipsis<td>…<td>Single chararcter, not three!
+</table>
+
+
+<P>You can investigate specific characters <a href='https://www.babelstone.co.uk/Unicode/whatisit.html'>here</a>. 
+
+ 
+<h3>Standardized Line Breaks</h3>
+
+The <em>git</em> tool compares files line by line, and character by character.
+It has no knowledge of what a sentence is. 
+
+<P>It can easily compare text that has the same line breaks, say
+
+<P style="white-space: pre;">
+<em>I don't deny there's something in what you say, Rachel.
+I've had some qualms myself.</em>
+</P>
+
+<P>versus the slightly different text:
+
+<div style="white-space: pre;">
+<em>I do not deny there's something in what you say, Rachel.
+I've had some qualms myself.</em>
+</div>
+
+
+<P>But it <b>can't effectively compare text that has different line breaks</b>:
+
+<P><div style="white-space: pre;">
+<em>I don't deny there's something in 
+what you say, Rachel. I've had some qualms myself.</em>
+</div>
+
+<P>versus:
+
+<div style="white-space: pre;">
+<em>I do not deny there's something in what you say, Rachel.
+I've had some qualms myself.</em>
+</div>
+
+<P>With such text, <em>git</em> will find a huge number of trivial differences just because of the line breaks.
+
+<P>With two independent sources of a text, it's extremely likely that the line-breaks will different.
+The work-around is to enforce a policy: <b>each line is a complete sentence</b>. 
+ 
+<h3>Text Editor Recommendations</h3>
+In this project, it's recommended that your text editor software:
+<ul>
+ <li>should have menu actions for saving changes to the <em>git</em> repository (it should know about <em>git</em>)
+ <li>must use UTF-8 encoding (check the settings)
+ <li>must not have an auto-correction tool 
+ <li>can apply line-wrap to text, according to the width of the current window, without saving new line breaks to the underlying file
+</ul>
+
+<h3>Two <em>github</em> Repositories</h3>
+This project has two github repositories, not one:
+<ul>
+ <li><em>anne-of-green-gables</em>: a repo for documentation (what you're reading now), with one branch only.
+ <li><em>anne-of-green-gables-editions</em>: a repo for the various editions of <em>Anne of Green Gables</em>, with one branch for each edition.
+</ul>
+
+Branching can only be done at the top level, the level of the repository. 
+It's best to use a structure that reflects the underlying data.
+
+
+<h3>Uncorrected Versus Corrected</h3>
+Almost every text has items that could be corrected in some way. 
+<b>In this project, corrections to the text are handled by branches</b>:
+<ul>
+ <li>the core branch for an edition will have <b>zero</b> corrections applied to it.
+ <li>secondary branches, branched off of the core, are used to apply corrections to the core text.
+</ul>
+
+Some corrections are for egregious and obvious typos, but others are more subtle.
+The policy of what to apply as a correction, and what not to apply, is a decision that can be made in many different ways.
+That policy is thus best relegated to a secondary branch, and not to the core data.
+The core data remains the core data, without ambiguity, while different policies for applying corrections can be applied at will in a secondary branch off of the core.
+
+<h3>No Front Matter</h3>
+This project captures the contents of the 38 chapters of the book.
+Items outside the chapters, including the table of contents, aren't captured here.
+ 
+<h3>Status of Edits</h3>
+
+<P><table class='report' style='border:1px;'>
+ <tr><th><th><a href='https://archive.org/details/cu31924013243963/page/n9/mode/2uphttps://archive.org/details/cu31924013243963/page/n9/mode/2up'>1908-09 (4th imp)</a>
+ <tr><td>Ch. 01<td>none
+ <tr><td>Ch. 02<td>none
+ <tr><td>Ch. 03<td>none
+ <tr><td>Ch. 04<td>none
+ <tr><td>Ch. 05<td>none
+ <tr><td>Ch. 06<td>none
+ <tr><td>Ch. 07<td>none
+ <tr><td>Ch. 08<td>none
+ <tr><td>Ch. 09<td>none
+ <tr><td>Ch. 10<td>none
+ <tr><td>Ch. 11<td>none
+ <tr><td>Ch. 12<td>none
+ <tr><td>Ch. 13<td>none
+ <tr><td>Ch. 14<td>none
+ <tr><td>Ch. 15<td>none
+ <tr><td>Ch. 16<td>none
+ <tr><td>Ch. 17<td>none
+ <tr><td>Ch. 18<td>none
+ <tr><td>Ch. 19<td>none
+ <tr><td>Ch. 20<td>none
+ <tr><td>Ch. 21<td>none
+ <tr><td>Ch. 22<td>none
+ <tr><td>Ch. 23<td>none
+ <tr><td>Ch. 24<td>none
+ <tr><td>Ch. 25<td>none
+ <tr><td>Ch. 26<td>none
+ <tr><td>Ch. 27<td>none
+ <tr><td>Ch. 28<td>none
+ <tr><td>Ch. 29<td>none
+ <tr><td>Ch. 30<td>none
+ <tr><td>Ch. 31<td>none
+ <tr><td>Ch. 32<td>none
+ <tr><td>Ch. 33<td>none
+ <tr><td>Ch. 34<td>none
+ <tr><td>Ch. 35<td>none
+ <tr><td>Ch. 36<td>none
+ <tr><td>Ch. 37<td>none
+ <tr><td>Ch. 38<td>none
+</table>
+
+<P>The above table will be useful in evaluating the probable quality of a text. 
+It will:
+<ul>
+ <li>show how many edits have been completed, and by how many different people
+ <li>show the count of how many changes were made to the previous version
+ <li>link to the actual changes made to the previous version
+</ul>
+(The first edit performed will have no previous version.)
+
+<P>Editors:
+<P><table class='report' style='border:1px;'>
+ <tr><th>Code<th>Name
+ <tr><td>JO<td>John O'Hanley
+</table>
+
+
+
+</body>
+</html>
