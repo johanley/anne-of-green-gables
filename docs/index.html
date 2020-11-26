@@ -63,7 +63,7 @@ which has an excellent summary of the main editions.
 <P>
 <table class='report' style='border:1px;'>
  <tr><th>Step<th>Description<th>Lost?
- <tr><td>Manuscript (holograph)<td>Hand-written by Montgomery. Preserved at the Confederation Centre of the Arts.<td>No
+ <tr><td>Manuscript (holograph)<td>Hand-written by Montgomery. Preserved at the <a href='https://confederationcentre.com/news/major-digital-exhibition-of-anne-manuscript-announced/'>Confederation Centre of the Arts</a>.<td>No
  <tr><td>Typescript<td>Typed by Montgomery, and sent to the publisher. <td>Yes
  <tr><td>Uncorrected proof(s)<td>Produced by the publisher from plates, for correction by the author. <td>Yes
  <tr><td>Corrected proof(s)<td>With author's corrections. <td>Yes
@@ -97,10 +97,10 @@ Some editions have been imaged and made available on the web.
 </table>
 
 <P>
-There are <a href='https://www.cbc.ca/news/canada/prince-edward-island/pei-books-montgomery-anne-of-green-gables-online-1.5673603'>plans</a> to make images of the manuscript available in 2022.
+There are <a href='https://confederationcentre.com/news/major-digital-exhibition-of-anne-manuscript-announced/'>plans</a> to make images of the manuscript available in 2022.
 Montgomery's handwriting is hard to read. Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>transcription</a> edited by C. S. Collins.
 
-<h3>Sources of Digitized Text</h3>
+<h3>Other Sources of Digitized Versions</h3>
 
 <ul>
  <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. (Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>.)
@@ -112,7 +112,7 @@ Issues:
 <ul>
  <li>sometimes they aren't explicit about the copy-text used as source.
  <li>basic facts are often unclear, or hard to find: How many versions have there been? What were the changes between versions? How 
- many people have edited the text?
+ many people have proof-read the text?
  <li>in short, there's no way to evaluate the quality of the text.
 </ul>
 
@@ -158,40 +158,35 @@ It has no knowledge of what a sentence is.
 
 <P>It can easily compare text that has the same line breaks, say
 
-<P style="white-space: pre;">
-<em>I don't deny there's something in what you say, Rachel.
-I've had some qualms myself.</em>
-</P>
+<P style="white-space: pre;"><em>
+At first Matthew suggested getting a Barnardo boy. 
+But I said ‘no’ flat to that.</em></P>
 
 <P>versus the slightly different text:
-
-<div style="white-space: pre;">
-<em>I do not deny there's something in what you say, Rachel.
-I've had some qualms myself.</em>
-</div>
-
+<p style="white-space: pre;"><em>
+At first Matthew suggested getting a Barnado boy. 
+But I said ‘no’ flat to that.</em></p>
 
 <P>But it <b>can't effectively compare text that has different line breaks</b>:
-
-<P><div style="white-space: pre;">
-<em>I don't deny there's something in 
-what you say, Rachel. I've had some qualms myself.</em>
-</div>
+<P style="white-space: pre;"><em>
+At first Matthew suggested getting a Barnardo boy. 
+But I said ‘no’ flat to that.</em></p>
 
 <P>versus:
 
-<div style="white-space: pre;">
-<em>I do not deny there's something in what you say, Rachel.
-I've had some qualms myself.</em>
-</div>
+<p style="white-space: pre;"><em>
+At first Matthew suggested getting 
+a Barnardo boy. But I said ‘no’ flat
+to that.</em>
+</p>
 
 <P>With such text, <em>git</em> will find a huge number of trivial differences just because of the line breaks.
 
 <P>With two independent sources of a text, it's extremely likely that the line-breaks will different.
-The work-around is to enforce a policy: <b>each line is a complete sentence</b>. 
+The work-around is to enforce a simple policy: <b>each line is a complete sentence</b>. 
  
 <h3>Text Editor Recommendations</h3>
-In this project, it's recommended that your text editor software:
+If you're making changes directly to the files, it's recommended that your text editor software:
 <ul>
  <li>should have menu actions for saving changes to the <em>git</em> repository (it should know about <em>git</em>)
  <li>must use UTF-8 encoding (check the settings)
@@ -200,9 +195,10 @@ In this project, it's recommended that your text editor software:
  <li>should be able to indicate invisible characters (spaces and line breaks)
 </ul>
 
-Here's a <a href='images/eclipse.jpg'>screen shot</a> of the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> code editor being used to proofread text versus a scanned 
+Here's a <a href='images/eclipse.jpg'>screen shot</a> of the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> code editor being used to proof-read text versus a scanned 
 version of the book on archive.org. 
 Note how it is wrapping the long sentences in the window, and showing special symbols for spaces and line breaks.
+Note also that it helps to have a wide screen; larger text will reduce eye strain.
 
 <h3>Two <em>github</em> Repositories</h3>
 This project has two github repositories, not one:
@@ -217,16 +213,17 @@ It's best to use a structure that reflects the underlying data.
 
 <h3>Uncorrected Versus Corrected</h3>
 Almost every text has items that could be corrected in some way. 
-<b>In this project, corrections to the text are handled by branches</b>:
+<b>In this project, corrections to the text are handled by using multiple branches</b>:
 <ul>
  <li>the core branch for an edition will have <b>zero</b> corrections applied to it.
  <li>secondary branches, branched off of the core, are used to apply corrections to the core text.
 </ul>
 
-Some corrections are for egregious and obvious typos, but others are more subtle.
-The policy of what to apply as a correction, and what not to apply, is a decision that can be made in many different ways.
+Some corrections are for egregious and obvious typos, but other corrections are more subtle.
+(An example of a subtle correction is to change the spelling of <em>Macpherson</em> to <em>MacPherson</em>, with a capital P.)
+<b>The policy of what to apply as a correction, and what not to apply, is a decision that can be made in many different ways.</b>
 That policy is thus best relegated to a secondary branch, and not to the core data.
-The core data remains the core data, without ambiguity, while different policies for applying corrections can be applied at will in a secondary branch off of the core.
+The core data remains the core data, without ambiguity, exactly matching the copy-text (it is hoped), while different policies for applying corrections can be applied at will in a secondary branch off of the core.
 
 <h3>No Front Matter</h3>
 This project captures the contents of the 38 chapters of the book.
@@ -236,52 +233,52 @@ Items outside the chapters, including the table of contents, aren't captured her
 The chapter titles are to be placed on the first line of each chapter. 
 The chapter title appears in the file names, but that is for convenience only.
 The <em>official</em> chapter title is the first line of the text file.
-For example, if you wish to put a comma in the title of <em>Diana is Invited to Tea With Tragic Results</em>, then just alter the first line of the 
-file for that chapter; do <em>not</em> change the name of the file.
+For example, if you wish to put a comma in the title of <em>Diana is Invited to Tea with Tragic Results</em>, then just alter the first line of the 
+file for that chapter; don't change the name of the file.
 
  
-<h3>Status of Edits</h3>
+<h3>Proof-reading/editing History</h3>
 
 <P><table class='report' style='border:1px;'>
- <tr><th><th><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
+ <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
  <tr><td>Ch. 01<td><a href='https://github.com/johanley/anne-of-green-gables-editions/compare/df713b4df2365d72adc0c94dd89b7b07094e3d4b...e774e8b8b3a00962d731e0fe6c681c2ac74274e0'>JO</a>
- <tr><td>Ch. 02<td>none
- <tr><td>Ch. 03<td>none
- <tr><td>Ch. 04<td>none
- <tr><td>Ch. 05<td>none
- <tr><td>Ch. 06<td>none
- <tr><td>Ch. 07<td>none
- <tr><td>Ch. 08<td>none
- <tr><td>Ch. 09<td>none
- <tr><td>Ch. 10<td>none
- <tr><td>Ch. 11<td>none
- <tr><td>Ch. 12<td>none
- <tr><td>Ch. 13<td>none
- <tr><td>Ch. 14<td>none
- <tr><td>Ch. 15<td>none
- <tr><td>Ch. 16<td>none
- <tr><td>Ch. 17<td>none
- <tr><td>Ch. 18<td>none
- <tr><td>Ch. 19<td>none
- <tr><td>Ch. 20<td>none
- <tr><td>Ch. 21<td>none
- <tr><td>Ch. 22<td>none
- <tr><td>Ch. 23<td>none
- <tr><td>Ch. 24<td>none
- <tr><td>Ch. 25<td>none
- <tr><td>Ch. 26<td>none
- <tr><td>Ch. 27<td>none
- <tr><td>Ch. 28<td>none
- <tr><td>Ch. 29<td>none
- <tr><td>Ch. 30<td>none
- <tr><td>Ch. 31<td>none
- <tr><td>Ch. 32<td>none
- <tr><td>Ch. 33<td>none
- <tr><td>Ch. 34<td>none
- <tr><td>Ch. 35<td>none
- <tr><td>Ch. 36<td>none
- <tr><td>Ch. 37<td>none
- <tr><td>Ch. 38<td>none
+ <tr><td>Ch. 02<td>
+ <tr><td>Ch. 03<td>
+ <tr><td>Ch. 04<td>
+ <tr><td>Ch. 05<td>
+ <tr><td>Ch. 06<td>
+ <tr><td>Ch. 07<td>
+ <tr><td>Ch. 08<td>
+ <tr><td>Ch. 09<td>
+ <tr><td>Ch. 10<td>
+ <tr><td>Ch. 11<td>
+ <tr><td>Ch. 12<td>
+ <tr><td>Ch. 13<td>
+ <tr><td>Ch. 14<td>
+ <tr><td>Ch. 15<td>
+ <tr><td>Ch. 16<td>
+ <tr><td>Ch. 17<td>
+ <tr><td>Ch. 18<td>
+ <tr><td>Ch. 19<td>
+ <tr><td>Ch. 20<td>
+ <tr><td>Ch. 21<td>
+ <tr><td>Ch. 22<td>
+ <tr><td>Ch. 23<td>
+ <tr><td>Ch. 24<td>
+ <tr><td>Ch. 25<td>
+ <tr><td>Ch. 26<td>
+ <tr><td>Ch. 27<td>
+ <tr><td>Ch. 28<td>
+ <tr><td>Ch. 29<td>
+ <tr><td>Ch. 30<td>
+ <tr><td>Ch. 31<td>
+ <tr><td>Ch. 32<td>
+ <tr><td>Ch. 33<td>
+ <tr><td>Ch. 34<td>
+ <tr><td>Ch. 35<td>
+ <tr><td>Ch. 36<td>
+ <tr><td>Ch. 37<td>
+ <tr><td>Ch. 38<td>
 </table>
 
 <P>The above table will be useful in evaluating the probable quality of a text. 
@@ -289,13 +286,13 @@ It will:
 <ul>
  <li>show how many edits have been completed, and by how many different people
  <li>show the count of how many changes were made to the previous version
- <li>link to the actual changes made to the previous version
+ <li>link to the actual changes made to the previous version, so you can see who made each change
 </ul>
-(The first edit performed will have no previous version, and will usually will have many edits.)
+(The first edit for each edition will have no previous version, and will usually will have many edits.)
 
-<P>Editors:
+<P>Proof-readers/Editors:
 <P><table class='report' style='border:1px;'>
- <tr><th>Code<th>Name
+ <tr><th>Initials<th>Name
  <tr><td>JO<td>John O'Hanley
 </table>
 
