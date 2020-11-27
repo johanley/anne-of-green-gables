@@ -182,7 +182,7 @@ to that.</em>
 
 <P>With such text, <em>git</em> will find a huge number of trivial differences just because of the line breaks.
 
-<P>With two independent sources of a text, it's extremely likely that the line-breaks will different.
+<P>With two independent sources of a text, it's extremely likely that the line-breaks will differ.
 The work-around is to enforce a simple policy: <b>each line is a complete sentence</b>. 
  
 <h3>Text Editor Recommendations</h3>
@@ -241,8 +241,8 @@ file for that chapter; don't change the name of the file.
 
 <P><table class='report' style='border:1px;'>
  <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
- <tr><td>Ch. 01<td><a href='https://github.com/johanley/anne-of-green-gables-editions/compare/df713b4df2365d72adc0c94dd89b7b07094e3d4b...e774e8b8b3a00962d731e0fe6c681c2ac74274e0'>JO</a>
- <tr><td>Ch. 02<td>
+ <tr><td>Ch. 01<td>JO(3)
+ <tr><td>Ch. 02<td>JO(3)
  <tr><td>Ch. 03<td>
  <tr><td>Ch. 04<td>
  <tr><td>Ch. 05<td>
@@ -281,20 +281,76 @@ file for that chapter; don't change the name of the file.
  <tr><td>Ch. 38<td>
 </table>
 
-<P>The above table will be useful in evaluating the probable quality of a text. 
-It will:
+<P>The above table will be useful in evaluating the probable quality of a text. It:
 <ul>
- <li>show how many edits have been completed, and by how many different people
- <li>show the count of how many changes were made to the previous version
- <li>link to the actual changes made to the previous version, so you can see who made each change, and its exact nature
+ <li>shows how many proof-reads/edits have been completed, and by how many different people
+ <li>shows the count of the changes made with respect to the previous version
+ <li>links to the actual changes made to the previous version, so you can see who made each change, and its exact nature
 </ul>
-(The first edit for each edition will have no previous version, and will usually will have many edits.)
+<b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
+For the first edit, I compare to two other digitized versions (Project Gutenberg and Distributed Proofreaders Canada).
+For the first edit, I display here the number of errors made by the proof-reader, and found as a result of such comparisons.
+<em>Very</em> useful for finding errors!
+The lower the count, the better.
 
 <P>Proof-readers/Editors:
 <P><table class='report' style='border:1px;'>
  <tr><th>Initials<th>Name
  <tr><td>JO<td>John O'Hanley
 </table>
+
+
+<h2>1908-based versions: Known Issues</h2>
+There are different types of issues encountered in this text.
+Some are serious, but most are <em>weeny-teeny</em>.
+They are collected here to aid those who wish to edit the text, and produce their own version.
+See also the <em>Norton</em> critical edition and <em>The Annotated Anne of Green Gables</em> for more detailed information.
+
+
+<h3>Known Issues</h3>
+<b>I'm adding to these lists as I go along, after proof-reading each chapter.</b>
+
+<P><table class='report' style='border:1px;'>
+ <tr><th>Chapter<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>01<td>She was sitting<td>called “Rachel Lynde’s husband—<td>called “Rachel Lynde’s husband”—<td>correct A to B; the right-quote is missing
+ <tr><td>01<td>“Well, we’ve been thinking<td>Barnado boy<td>Barnardo boy<td>correct A to B; spelling
+ <tr><td>02<td>“Why, a bride<td>Hopeton<td>Hopetown<td>correct A to B; spelling; match the earlier reference, and the manuscript
+ <tr><td>02<td>She came out of<td>wondering afar<td>wandering afar<td>correct A to B; match MS
+ <tr><td>07*<td>“‘God is a spirit<td>infinite, eternal and unchangeable, in His being,<td>infinite, eternal, and unchangeable in His being, <td>correct A to B; wacky commas; <em>The Annotated Anne of Green Gables</em>  points to this <a href='https://archive.org/details/expositioninform00harp/page/32/mode/2up'>misquoted catechism</a> as the source of the quote (page 32)
+ <tr><td>34<td><td>yellowish brown wincey<td>yellowish gray wincey<td>correct A to B; chapter 2 refers to the same dress as 'yellowish gray wincey'; best to be consistent
+ <tr><td>37*<td>“We had a quarrel<td>after awhile<td>after a while<td>correct A to B; the noun phrase has two words; only the adverb form is a single word;  chapter 16 uses 'awhile' correctly
+</table>
+
+<P>* I haven't seen this issue mentioned anywhere. I may have found it first.
+
+
+<h3>Issues I've Seen In Specific Editions</h3>
+I happened to find these in my travels. This list is far from complete.
+I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
+<P><table class='report' style='border:1px;'>
+ <tr><th>Edition<th>Chapter<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>Distributed Proofreaders Canada<td>01<td>There are plenty<td>Gulf of St Lawrence<td>Gulf of St. Lawrence<td>correct A to B; the period for the abbreviation 'St.'
+ <tr><td>2007 Norton<td>02<td>They had driven<td>tiptoe-ing<td>tiptoeing<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; 'tiptoe' occurs multiple times in the text
+</table>
+
+
+<h3>John's Speed Bumps</h3>
+In the list below, I list some issues that I personally would like to examine when creating my own version of the text.
+<b>Don't take them seriously.</b>
+I'm just noting them here for my own benefit.
+These <em>speed bumps</em> are places where, while reading, my attention moves from the make-believe world of the story to 
+the real world of thinking about the text's style.
+
+<P><table class='report' style='border:1px;'>
+ <tr><th>Chapter<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>01<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia?"<td>I prefer B. Why is she yelling? <em>The Annotated Anne of Green Gables</em> makes this change. Seems like a question, not an exclamation.
+ <tr><td>01<td>"I don't deny<td>risk..risks..risks<td>risk...risk...risk<td>Should all three instances of 'risk' be the same?
+ <tr><td>02<td>“Well now, you must<td>It is a kind of pretty place<td>It is kind of a pretty place<td>correct A to B; restore the manuscript; reads better
+ <tr><td>02<td>“That’s Barry’s pond<td>Barry’s Pond<td>Barry’s pond<td>correct A to B; this occurs in other places too; might change Shore Road in the same way
+</table>
+
+
+
 
 
 
