@@ -15,19 +15,32 @@
  
 <ul> 
  <li>Goal: <b>proof-read and compare</b> editions of <em>Anne of Green Gables</em>, by L. M. Montgomery
- <li>2020-11-25: started the first full proof-read; 1-2 chapters a day.
+ <li>2020-11-25: started the first full proof-read (<a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>1908, 4th impression</a>)
 </ul>
 
 <h3>Why?</h3>
 <ul> 
- <li>it's a good novel, worthy of detailed examination
- <li>at least some of the widely available digitized texts don't seem to be of high quality
- <li>it's interesting to see how the various editions differ from each other
- <li>it's interesting to use the power of <em>git</em> to precisely track the variations of a literary text
- <li>a text of acceptable quality can be used to print your own copy using <a href='https://www.lulu.com/'>lulu.com</a>
- <li>it may help improve the quality of digitized versions of the novel
+ <li>to improve the quality of digitized versions of the novel
+ <li>to explore how its various editions differ from each other
+</ul>
+With a high-quality digitized text, you can print your own copy, by generating a PDF file and sending it to services such as <a href='https://www.lulu.com/'>lulu.com</a>, for example.
+<P>You can also create your own e-book, in epub or mobi format.
+
+<h3>Why use <em>git</em>?</h3>
+<ul> 
+ <li>it can reflect different editions naturally using different <em>branches</em>
+ <li>it lets you clearly see the variants (the <em>diff</em>) between editions
+ <li>it lets you post the improvements you find after each proof-reading cycle
+ <li>it's a widely used, robust tool
+ <li>it's well-suited to the job
 </ul>
 
+<h3>Two <em>github</em> Repositories</h3>
+This project has two github repositories, not one:
+<ul>
+ <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (what you're reading now), with one branch only.
+ <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for the various editions of <em>Anne of Green Gables</em>, with one branch for each edition.
+</ul>
 
 <h3>Bibliography</h3>
 
@@ -55,7 +68,7 @@ which has an excellent summary of the main editions.
  <tr><td><a href='https://broadviewpress.com/product/anne-of-green-gables/#tab-description'>2004-BP</a><td>Broadview Press<td>Peterborough, Canada. Close to 1908.
  <tr><td><a href='https://wwnorton.com/books/9780393926958'>2007-NCE</a><td>W. W. Norton<td>New York, USA. Critical edition. Close to 1908.
  <tr><td><a href='https://www.penguinrandomhouse.ca/books/557098/anne-of-green-gables-by-l-m-montgomery/9780143131854'>2017-PC</a><td>Penguin Classics<td>New York, USA. Close to 1908.
- <tr><td><a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>2019-NM</a><td>Nimbus<td>Halifax, Canada. Transcription of the manuscript. Additions, deletions, and changes.
+ <tr><td><a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>2019-NM</a><td>Nimbus<td>Halifax, Canada. <b>Transcription of the manuscript.</b> Additions, deletions, and changes.
 </table>
 
 <h4>Artifacts in the Steps of Publishing the Novel</h4>
@@ -79,7 +92,7 @@ which has an excellent summary of the main editions.
 </ul>
 
 <h3>Scanned Books</h3>
-Some editions have been imaged and made available on the web.
+Some editions have been imaged and made available on the web, mostly by archive.org.
 
 <P><table class='report' style='border:1px;'>
  <colgroup>
@@ -103,10 +116,11 @@ Montgomery's handwriting is hard to read. Most would prefer the <a href='https:/
 <h3>Other Sources of Digitized Versions</h3>
 
 <ul>
- <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. (Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>.)
+ <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>. 
+ Their copy-text is the 1946-11 Ryerson edition (see link above). Seems to be of good quality, but see some corrections listed below.
+ <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. They usually get texts from Distributed Proofreaders, but not always. They don't even indicate the copy-text. <b>The quality of this text seems low.</b> 
+ <li><a href='https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables'>Standard Ebooks</a> - apparently uses Project Gutenberg as source of their text. (I don't know if they have proof-read/edited the text themselves. I suspect not.)
  <li><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a>
- <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. They usually get texts from Distributed Proofreaders, but not always.
- <li><a href='https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables'>Standard Ebooks</a> - apparently uses Project Gutenberg as source of their text. Any alteration?
 </ul>
 
 Issues:
@@ -116,6 +130,185 @@ Issues:
  many people have proof-read the text?
  <li>in short, there's no way to evaluate the quality of the text.
 </ul>
+
+
+<h3>Policy For Typos</h3>
+Almost every text has items that could be corrected in some way (typos and so on). 
+<b>In this project, absolutely all corrections to the core text are handled by using multiple <em>branches</em> in <em>git</em></b>:
+<ul>
+ <li><b>the core branch for an edition will have zero corrections for typos</b> applied to it.
+ <li>secondary branches, branched off of the core, are used to apply all corrections to the core text, including basic corrections for egregious typos.
+</ul>
+
+Some corrections are for egregious and obvious typos, but other corrections are more subtle.
+(An example of a subtle correction is to change the spelling of <em>Macpherson</em> to <em>MacPherson</em>.)
+<b>The policy of what to apply as a correction, and what not to apply, is a decision that can be made in many different ways.</b>
+That policy is best relegated to a secondary branch, and not to the core data.
+The core data remains the core data, without ambiguity, exactly matching the copy-text (we hope), while different policies for applying corrections can be applied at will in a secondary branch off of the core.
+
+<h3>No Front Matter</h3>
+This project captures the contents of the 38 chapters of the book.
+Items outside the chapters, including the table of contents and dedication, aren't captured here.
+
+<h3>Chapter Title Conventions</h3>
+The chapter titles are to be placed on the first line of each chapter. 
+The chapter title appears in the file names, but that is for convenience only.
+The <em>official</em> chapter title is the first line of the text file.
+For example, if you wish to put a comma in the title of <em>Diana is Invited to Tea with Tragic Results</em>, then just alter the first line of the 
+file for that chapter. <b>Don't change the name of the file</b>. That would mess things up.
+
+ 
+<h3>Current Proof-reading/Editing Status</h3>
+
+<P><table class='report' style='border:1px;'>
+ <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
+ <tr><td>Ch. 01<td>JO(3)
+ <tr><td>Ch. 02<td>JO(3)
+ <tr><td>Ch. 03<td>JO(5)
+ <tr><td>Ch. 04<td>JO(4)
+ <tr><td>Ch. 05<td>JO(2)
+ <tr><td>Ch. 06<td>JO(4)
+ <tr><td>Ch. 07<td>JO(0)
+ <tr><td>Ch. 08<td>JO(0)
+ <tr><td>Ch. 09<td>JO(3)
+ <tr><td>Ch. 10<td>JO(10)
+ <tr><td>Ch. 11<td><span title='she had reached s/b she reached, extra space in Sunday -school'>JO(2)</span>
+ <tr><td>Ch. 12<td>
+ <tr><td>Ch. 13<td>
+ <tr><td>Ch. 14<td>
+ <tr><td>Ch. 15<td>
+ <tr><td>Ch. 16<td>
+ <tr><td>Ch. 17<td>
+ <tr><td>Ch. 18<td>
+ <tr><td>Ch. 19<td>
+ <tr><td>Ch. 20<td>
+ <tr><td>Ch. 21<td>
+ <tr><td>Ch. 22<td>
+ <tr><td>Ch. 23<td>
+ <tr><td>Ch. 24<td>
+ <tr><td>Ch. 25<td>
+ <tr><td>Ch. 26<td>
+ <tr><td>Ch. 27<td>
+ <tr><td>Ch. 28<td>
+ <tr><td>Ch. 29<td>
+ <tr><td>Ch. 30<td>
+ <tr><td>Ch. 31<td>
+ <tr><td>Ch. 32<td>
+ <tr><td>Ch. 33<td>
+ <tr><td>Ch. 34<td>
+ <tr><td>Ch. 35<td>
+ <tr><td>Ch. 36<td>
+ <tr><td>Ch. 37<td>
+ <tr><td>Ch. 38<td>
+</table>
+
+<P>The above table will be useful in evaluating the probable quality of a text. The table:
+<ul>
+ <li>shows how many proof-reads/edits have been completed, and by how many different people
+ <li>shows the count of the changes made with respect to the previous version
+ <li>links to the actual changes made to the previous version, so you can see who made each change, and its exact nature
+</ul>
+<b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
+
+<P>However, for the first proof-read only, I compare the result to two other digitized versions (<em>Project Gutenberg</em> and <em>Distributed Proofreaders Canada</em>).
+Then, I display here the number of errors in 'my' text found as a result of such comparisons.
+This has been <em>very</em> useful for finding errors!
+The lower the count, the better the proof-reader.
+
+<P>Proof-readers/Editors:
+<P><table class='report' style='border:1px;'>
+ <tr><th>Initials<th>Name
+ <tr><td>JO<td>John O'Hanley
+</table>
+
+
+<h2>Known Issues: 1908, 4th impression</h2>
+There are different types of issues encountered in this text.
+A small number are serious, some are <em>medjum</em>, but most are <em>weeny-teeny</em>.
+They are collected here to aid those who wish to edit the text, and produce their own version.
+See also the <em>Norton</em> critical edition and <em>The Annotated Anne of Green Gables</em> for more detailed information.
+
+
+<h3>Known Issues</h3>
+<b>I'm adding to these lists as I go along, after proof-reading each chapter.</b>
+
+<P><table class='report' style='border:1px;'>
+ <tr><th>Ch<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>01<td>She was sitting<td>called “Rachel Lynde’s husband—<td>called “Rachel Lynde’s husband”—<td>correct A to B; the right-quote is missing
+ <tr><td>01<td>“Well, we’ve been thinking<td>Barnado boy<td>Barnardo boy<td>correct A to B; spelling
+ <tr><td>02<td>“Why, a bride<td>Hopeton<td>Hopetown<td>correct A to B; spelling; match the earlier occurrence, and the manuscript
+ <tr><td>02<td>She came out of<td>wondering afar<td>wandering afar<td>correct A to B; match MS
+ <tr><td>03<td>“You’re not eating anything<td>Anne sighed.<td>Anne sighed.(in its own paragraph)<td>correct A to B; L.C. Page added the paragraph between the 4th. impr and 39th impr.
+ <tr><td>05<td>“I lived up river<td>Hopeton<td>Hopetown<td>correct A to B; see previous note for chapter 02.
+ <tr><td>05<td>“Not a great deal.<td>James Thompson<td>James Thomson<td>correct A to B; the spelling of a real author's name is erroneous
+ <tr><td>07*<td>“‘God is a spirit<td>infinite, eternal and unchangeable, in His being,<td>infinite, eternal, and unchangeable in His being, <td>correct A to B; wacky commas; <em>The Annotated Anne of Green Gables</em>  points to this <a href='https://archive.org/details/expositioninform00harp/page/32/mode/2up'>misquoted catechism</a> as the source of the quote (page 32)
+ <tr><td>08<td>“Oh, I’m so glad<td>echo lived there<td>echo lived there.<td>correct A to B; the period is missing; doesn't seem to be an artifact of the image; period <a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>present but weak</a> in the 11th impr.; period <a href='https://archive.org/details/annegreengables00montgoog/page/n99/mode/2up'>present</a> in 39th impr.
+ <tr><td>08<td>“I did feel a little<td><a href='https://archive.org/details/cu31924013243963/page/n103/mode/2up'>them— I wouldn’t</a><td>them—I wouldn’t<td>correct A to B; extra space after the em dash; still <a href='https://archive.org/details/annegreengables00montgoog/page/n101/mode/2up'>present</a> in the 39th impr. Is it an artifact of justification?
+ <tr><td>34<td><td>yellowish brown wincey<td>yellowish gray wincey<td>correct A to B; chapter 2 refers to the same dress as 'yellowish gray wincey'; best to be consistent
+ <tr><td>37*<td>“We had a quarrel<td>after awhile<td>after a while<td>correct A to B; the noun phrase 'a while' has two words; the adverb form 'awhile' is a single word; chapter 16 uses 'awhile' correctly
+</table>
+
+<P>* I haven't seen this issue mentioned anywhere. I may have found it first, but I'm not sure.
+
+
+<h3>Issues I've Seen In Specific Editions</h3>
+I stumbled upon these at various times.
+I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
+<P><table class='report' style='border:1px;'>
+ <tr><th>Edition<th>Ch<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>DPC<td>01<td>There are plenty<td>Gulf of St Lawrence<td>Gulf of St. Lawrence<td>correct A to B; the period for the abbreviation 'St.'
+ <tr><td>2007 Norton<td>02<td>They had driven<td>tiptoe-ing<td>tiptoeing<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; 'tiptoe' occurs multiple times in the text
+ <tr><td>DPC<td>03<td>“Oh, it makes<td>an e I shall<td>an _e_ I shall<td>correct A to B; missing the italics
+ <tr><td>2007 Norton<td>04<td>Anne washed the dishes<td>dinner-time<td>dinnertime<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS has 'dinnertime'
+ <tr><td>DPC<td>04<td>“I never in all<td>_looks_?<td>_looks?_<td>correct A to B
+ <tr><td>DPC<td>05<td>“Do you know,” said<td>Redheaded<td>Red-headed<td>correct A to B; the line break is misleading
+ <tr><td>DPC<td>07<td>“Gracious heavenly Father<td>Yours respectfully, Anne Shirly.<td>Yours respectfully, Anne Shirley.<td>correct A to B; spelling
+ <tr><td>2007 Norton<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS and Chapter 20 have 'dinner table'
+ <tr><td>2007 Norton<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; ambiguity because of a line break; MS has hyphen
+ <tr><td>DPC<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the line break is misleading; the MS has no line break; the word occurs elsewhere in the text
+ <tr><td>DPC<td>08<td>“There—I know this prayer<td>sound so luxurious<td>sound _so_ luxurious<td>correct A to B; the emphasis is missing
+ <tr><td>DPC<td>08<td>“There—I know this prayer<td>make _that_, seem<td>make _that_ seem<td>correct A to B; extra comma
+ <tr><td>DPC<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; the line break is misleading; the MS has a hyphen
+ <tr><td>DPC<td>10<td>"Oh, Mrs. Lynde!"<td><a href='https://archive.org/details/anneofgreengable00montiala/page/96/mode/2up'>to her feet "You</a><td>to her feet. "You<td>correct A to B; missing period; OCR confused
+ <tr><td>DPC<td>10<td>“How can I be vain<td><a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>took</a><td>look<td>correct A to B; OCR is confused by a printing defect
+ <tr><td>DPC<td>11<td>Anne was standing<td><a href='https://archive.org/details/anneofgreengable00montiala/page/100/mode/2up'>preceeding</a>preceding<td>look<td>correct A to B; not spelled correctly in the copy-text (they like to correct such errors directly)
+ 
+ 
+</table>
+
+
+<h3>John's Speed Bumps</h3>
+In the list below, I list some issues that I personally would like to examine when creating my own version of the text.
+<b>Don't take them too seriously.</b>
+I'm just noting them here for my own benefit. 
+You can take them as an example of the kind of edits someone might make to the core text, according to their taste.
+These <em>speed bumps</em> are places in the text where, while reading, my attention moves from the make-believe world of the story to 
+the real world of thinking about the text's style.
+
+<P><table class='report' style='border:1px;'>
+ <tr><th>Ch<th>Paragraph<th>A<th>B<th>Description
+ <tr><td>01<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia?"<td>I prefer B. Why is she yelling? <em>The Annotated Anne of Green Gables</em> makes this change. Seems like a question, not an exclamation.
+ <tr><td>01<td>"I don't deny<td>risk..risks..risks<td>risk...risk...risk<td>Should all three instances of 'risk' be the same?
+ <tr><td>02<td>“Well now, you must<td>It is a kind of pretty place<td>It is kind of a pretty place<td>correct A to B; restore the manuscript; reads better
+ <tr><td>02<td>“That’s Barry’s pond<td>Barry’s pond<td>Barry’s Pond<td>correct A to B; this occurs in other places too; might change Shore Road in the same way
+ <tr><td>03<td>“You’re not eating<td>eying<td>eyeing<td>correct A to B; the UK spelling 'eying' just looks odd
+ <tr><td>03<td>When Marilla had gone<td>four dark, low-turned posts<td>four dark, low, turned posts<td>match the MS
+ <tr><td>04<td>Anne dropped on<td>Suppose she wasn’t really going to stay here! She would imagine she was.<td>Suppose she wasn't really going to stay here. She would imagine she was!<td>correct A to B; it makes no sense, seems backwards from the intended sense; why express enthusiasm for the undesired alternative? Move the exclamation point to the next sentence? Italicize 'was'?
+ <tr><td>04<td>Thereupon Anne held<td>tongue,—but this at least was natural,—so<td>tongue—but this at least was natural—so<td>correct A to B; the commas are superfluous, since the em dashes already do the work
+ <tr><td>04<td>“I never in all<td>retreat down cellar<td>retreat down to the cellar<td>correct A to B; strange wording, similar to 'downstairs', but with two words
+ <tr><td>04<td>Marilla made no reply<td>saw that aggravating Matthew<td>?<td>ambiguous, poorly worded; what 'that' means is clear only after re-reading the sentence.
+ <tr><td>06<td>“I suppose so,”<td>Mrs. Peter has a<td>Mrs. Blewett has a<td>correct A to B; the woman is named in 3 ways, in this order: 'Mrs. Peter Blewett', 'Mrs. Peter', and 'Mrs. Blewett'.    Could her first name really have been Peter? Or is that her husband's first name? It seems entirely intentional on Montgomery's part. 'Mrs. Peter' reminds me of 'Mrs. Rachel' for Mrs. Rachel Lynde.
+ <tr><td>11<td>She had made them<td><a href='https://archive.org/details/cu31924013243963/page/n127/mode/2up'>waist and skirt and tight</a><td>waist and skirt, and tight<td>add a comma?
+ <tr><td>11<td><td><a href='https://archive.org/details/cu31924013243963/page/n131/mode/2up'>Nothing daunted Anne</a><td>Nothing daunted, Anne<td>add a comma? <a href='https://dictionary.cambridge.org/dictionary/english/nothing-daunted'>link</a>
+ <tr><td>11<td><a href='https://archive.org/details/cu31924013243963/page/n135/mode/2up'>“I don’t know what</a><td>nor ‘ Midian,’ either,<td>nor ‘ Midian’ either,<td>remove the comma after Midian? not in MS
+ 
+</table>
+
+<P>General speed bump issue:<br>
+There are many times when the speech of the characters seems slightly too formal for rural Islanders. 
+For example, contractions such as <em>it is</em> versus <em>it's</em>, and (in chapter 5) <em>if I hadn't had an imagination</em> versus <em>if I hadn't an imagination</em> (as in the manuscript).
+For Anne in particular, Montgomery is trying to walk a delicate tight-rope: when young, her diction is part rural, part polished.
+It's hard to know where to draw the line.
 
 
 <h3>UTF-8 Encoding Everywhere</h3>
@@ -194,198 +387,23 @@ If you're making changes directly to the files, it's recommended that your text 
  <li>must not have an auto-correction tool 
  <li>can apply line-wrap to text, according to the width of the current window, without saving new line breaks to the underlying file
  <li>should be able to indicate invisible characters (spaces and line breaks)
+ <li>should be able to show the <em>diff</em> between versions of a file
 </ul>
+
+<h3>Screen Shots</h3>
 
 Here's a <a href='images/eclipse.jpg'>screen shot</a> of the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> code editor being used to proof-read text versus a scanned 
 version of the book on archive.org. 
 Note how it is wrapping the long sentences in the window, and showing special symbols for spaces and line breaks.
 Note also that it helps to have a wide screen; larger text will reduce eye strain.
 
-<h3>Two <em>github</em> Repositories</h3>
-This project has two github repositories, not one:
-<ul>
- <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (what you're reading now), with one branch only.
- <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for the various editions of <em>Anne of Green Gables</em>, with one branch for each edition.
-</ul>
-
-Branching can only be done at the top level, the level of the repository. 
-It's best to use a structure that reflects the underlying data.
-
-
-<h3>Uncorrected Versus Corrected</h3>
-Almost every text has items that could be corrected in some way. 
-<b>In this project, corrections to the text are handled by using multiple branches</b>:
-<ul>
- <li>the core branch for an edition will have <b>zero</b> corrections applied to it.
- <li>secondary branches, branched off of the core, are used to apply corrections to the core text.
-</ul>
-
-Some corrections are for egregious and obvious typos, but other corrections are more subtle.
-(An example of a subtle correction is to change the spelling of <em>Macpherson</em> to <em>MacPherson</em>, with a capital P.)
-<b>The policy of what to apply as a correction, and what not to apply, is a decision that can be made in many different ways.</b>
-That policy is thus best relegated to a secondary branch, and not to the core data.
-The core data remains the core data, without ambiguity, exactly matching the copy-text (it is hoped), while different policies for applying corrections can be applied at will in a secondary branch off of the core.
-
-<h3>No Front Matter</h3>
-This project captures the contents of the 38 chapters of the book.
-Items outside the chapters, including the table of contents, aren't captured here.
-
-<h3>Chapter Title Conventions</h3>
-The chapter titles are to be placed on the first line of each chapter. 
-The chapter title appears in the file names, but that is for convenience only.
-The <em>official</em> chapter title is the first line of the text file.
-For example, if you wish to put a comma in the title of <em>Diana is Invited to Tea with Tragic Results</em>, then just alter the first line of the 
-file for that chapter; don't change the name of the file.
-
- 
-<h3>Proof-reading/Editing Status</h3>
-
-<P><table class='report' style='border:1px;'>
- <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
- <tr><td>Ch. 01<td>JO(3)
- <tr><td>Ch. 02<td>JO(3)
- <tr><td>Ch. 03<td>JO(5)
- <tr><td>Ch. 04<td>JO(4)
- <tr><td>Ch. 05<td>JO(2)
- <tr><td>Ch. 06<td>JO(4)
- <tr><td>Ch. 07<td>JO(0)
- <tr><td>Ch. 08<td>JO(0)
- <tr><td>Ch. 09<td>JO(3)
- <tr><td>Ch. 10<td>JO(9)
- <tr><td>Ch. 11<td>
- <tr><td>Ch. 12<td>
- <tr><td>Ch. 13<td>
- <tr><td>Ch. 14<td>
- <tr><td>Ch. 15<td>
- <tr><td>Ch. 16<td>
- <tr><td>Ch. 17<td>
- <tr><td>Ch. 18<td>
- <tr><td>Ch. 19<td>
- <tr><td>Ch. 20<td>
- <tr><td>Ch. 21<td>
- <tr><td>Ch. 22<td>
- <tr><td>Ch. 23<td>
- <tr><td>Ch. 24<td>
- <tr><td>Ch. 25<td>
- <tr><td>Ch. 26<td>
- <tr><td>Ch. 27<td>
- <tr><td>Ch. 28<td>
- <tr><td>Ch. 29<td>
- <tr><td>Ch. 30<td>
- <tr><td>Ch. 31<td>
- <tr><td>Ch. 32<td>
- <tr><td>Ch. 33<td>
- <tr><td>Ch. 34<td>
- <tr><td>Ch. 35<td>
- <tr><td>Ch. 36<td>
- <tr><td>Ch. 37<td>
- <tr><td>Ch. 38<td>
-</table>
-
-<P>The above table will be useful in evaluating the probable quality of a text. The table:
-<ul>
- <li>shows how many proof-reads/edits have been completed, and by how many different people
- <li>shows the count of the changes made with respect to the previous version
- <li>links to the actual changes made to the previous version, so you can see who made each change, and its exact nature
-</ul>
-<b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
-For the first edit, I compare to two other digitized versions (Project Gutenberg and Distributed Proofreaders Canada).
-For the first edit, I display here the number of errors made by the proof-reader, and found as a result of such comparisons.
-<em>Very</em> useful for finding errors!
-The lower the count, the better the proof-reader.
-
-<P>Proof-readers/Editors:
-<P><table class='report' style='border:1px;'>
- <tr><th>Initials<th>Name
- <tr><td>JO<td>John O'Hanley
-</table>
-
-
-<h2>Known Issues: 1908, 4th impression</h2>
-There are different types of issues encountered in this text.
-Some are serious, but most are <em>weeny-teeny</em>.
-They are collected here to aid those who wish to edit the text, and produce their own version.
-See also the <em>Norton</em> critical edition and <em>The Annotated Anne of Green Gables</em> for more detailed information.
-
-
-<h3>Known Issues</h3>
-<b>I'm adding to these lists as I go along, after proof-reading each chapter.</b>
-
-<P><table class='report' style='border:1px;'>
- <tr><th>Ch<th>Paragraph<th>A<th>B<th>Description
- <tr><td>01<td>She was sitting<td>called “Rachel Lynde’s husband—<td>called “Rachel Lynde’s husband”—<td>correct A to B; the right-quote is missing
- <tr><td>01<td>“Well, we’ve been thinking<td>Barnado boy<td>Barnardo boy<td>correct A to B; spelling
- <tr><td>02<td>“Why, a bride<td>Hopeton<td>Hopetown<td>correct A to B; spelling; match the earlier occurrence, and the manuscript
- <tr><td>02<td>She came out of<td>wondering afar<td>wandering afar<td>correct A to B; match MS
- <tr><td>03<td>“You’re not eating anything<td>Anne sighed.<td>Anne sighed.(in its own paragraph)<td>correct A to B; L.C. Page added the paragraph between the 4th. impr and 39th impr.
- <tr><td>05<td>“I lived up river<td>Hopeton<td>Hopetown<td>correct A to B; see previous note for chapter 02.
- <tr><td>05<td>“Not a great deal.<td>James Thompson<td>James Thomson<td>correct A to B; the spelling of a real author's name is erroneous
- <tr><td>07*<td>“‘God is a spirit<td>infinite, eternal and unchangeable, in His being,<td>infinite, eternal, and unchangeable in His being, <td>correct A to B; wacky commas; <em>The Annotated Anne of Green Gables</em>  points to this <a href='https://archive.org/details/expositioninform00harp/page/32/mode/2up'>misquoted catechism</a> as the source of the quote (page 32)
- <tr><td>08<td>“Oh, I’m so glad<td>echo lived there<td>echo lived there.<td>correct A to B; the period is missing; doesn't seem to be an artifact of the image; period <a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>present but weak</a> in the 11th impr.; period <a href='https://archive.org/details/annegreengables00montgoog/page/n99/mode/2up'>present</a> in 39th impr.
- <tr><td>08<td>“I did feel a little<td><a href='https://archive.org/details/cu31924013243963/page/n103/mode/2up'>them— I wouldn’t</a><td>them—I wouldn’t<td>correct A to B; extra space after the em dash; still <a href='https://archive.org/details/annegreengables00montgoog/page/n101/mode/2up'>present</a> in the 39th impr. Is it an artifact of justification?
- <tr><td>34<td><td>yellowish brown wincey<td>yellowish gray wincey<td>correct A to B; chapter 2 refers to the same dress as 'yellowish gray wincey'; best to be consistent
- <tr><td>37*<td>“We had a quarrel<td>after awhile<td>after a while<td>correct A to B; the noun phrase 'a while' has two words; the adverb form 'awhile' is a single word; chapter 16 uses 'awhile' correctly
-</table>
-
-<P>* I haven't seen this issue mentioned anywhere. I may have found it first, but I'm not sure.
-
-
-<h3>Issues I've Seen In Specific Editions</h3>
-I stumbled upon these at various times.
-I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
-<P><table class='report' style='border:1px;'>
- <tr><th>Edition<th>Ch<th>Paragraph<th>A<th>B<th>Description
- <tr><td>DPC<td>01<td>There are plenty<td>Gulf of St Lawrence<td>Gulf of St. Lawrence<td>correct A to B; the period for the abbreviation 'St.'
- <tr><td>2007 Norton<td>02<td>They had driven<td>tiptoe-ing<td>tiptoeing<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; 'tiptoe' occurs multiple times in the text
- <tr><td>DPC<td>03<td>“Oh, it makes<td>an e I shall<td>an _e_ I shall<td>correct A to B; missing the italics
- <tr><td>2007 Norton<td>04<td>Anne washed the dishes<td>dinner-time<td>dinnertime<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS has 'dinnertime'
- <tr><td>DPC<td>04<td>“I never in all<td>_looks_?<td>_looks?_<td>correct A to B
- <tr><td>DPC<td>05<td>“Do you know,” said<td>Redheaded<td>Red-headed<td>correct A to B; the line break is misleading
- <tr><td>DPC<td>07<td>“Gracious heavenly Father<td>Yours respectfully, Anne Shirly.<td>Yours respectfully, Anne Shirley.<td>correct A to B; spelling
- <tr><td>2007 Norton<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS and Chapter 20 have 'dinner table'
- <tr><td>2007 Norton<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; ambiguity because of a line break; MS has hyphen
- <tr><td>DPC<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the line break is misleading; the MS has no line break; the word occurs elsewhere in the text
- <tr><td>DPC<td>08<td>“There—I know this prayer<td>sound so luxurious<td>sound _so_ luxurious<td>correct A to B; the emphasis is missing
- <tr><td>DPC<td>08<td>“There—I know this prayer<td>make _that_, seem<td>make _that_ seem<td>correct A to B; extra comma
- <tr><td>DPC<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; the line break is misleading; the MS has a hyphen
- <tr><td>DPC<td>10<td>"Oh, Mrs. Lynde!"<td><a href='https://archive.org/details/anneofgreengable00montiala/page/96/mode/2up'>to her feet "You</a><td>to her feet. "You<td>correct A to B; missing period; OCR confused
- <tr><td>DPC<td>10<td>“How can I be vain<td><a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>took</a><td>look<td>correct A to B; OCR is confused by a printing defect
-
- 
- 
-</table>
-
-
-<h3>John's Speed Bumps</h3>
-In the list below, I list some issues that I personally would like to examine when creating my own version of the text.
-<b>Don't take them too seriously.</b>
-I'm just noting them here for my own benefit. 
-You can take them as an example of the kind of edits someone might make to the core text, according to their taste.
-These <em>speed bumps</em> are places in the text where, while reading, my attention moves from the make-believe world of the story to 
-the real world of thinking about the text's style.
-
-<P><table class='report' style='border:1px;'>
- <tr><th>Ch<th>Paragraph<th>A<th>B<th>Description
- <tr><td>01<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia!"<td>"<em>Call</em> you Cordelia?"<td>I prefer B. Why is she yelling? <em>The Annotated Anne of Green Gables</em> makes this change. Seems like a question, not an exclamation.
- <tr><td>01<td>"I don't deny<td>risk..risks..risks<td>risk...risk...risk<td>Should all three instances of 'risk' be the same?
- <tr><td>02<td>“Well now, you must<td>It is a kind of pretty place<td>It is kind of a pretty place<td>correct A to B; restore the manuscript; reads better
- <tr><td>02<td>“That’s Barry’s pond<td>Barry’s pond<td>Barry’s Pond<td>correct A to B; this occurs in other places too; might change Shore Road in the same way
- <tr><td>03<td>“You’re not eating<td>eying<td>eyeing<td>correct A to B; the UK spelling 'eying' just looks odd
- <tr><td>03<td>When Marilla had gone<td>four dark, low-turned posts<td>four dark, low, turned posts<td>match the MS
- <tr><td>04<td>Anne dropped on<td>Suppose she wasn’t really going to stay here! She would imagine she was.<td>Suppose she wasn't really going to stay here. She would imagine she was!<td>correct A to B; it makes no sense, seems backwards from the intended sense; why express enthusiasm for the undesired alternative? Move the exclamation point to the next sentence? Italicize 'was'?
- <tr><td>04<td>Thereupon Anne held<td>tongue,—but this at least was natural,—so<td>tongue—but this at least was natural—so<td>correct A to B; the commas are superfluous, since the em dashes already do the work
- <tr><td>04<td>“I never in all<td>retreat down cellar<td>retreat down to the cellar<td>correct A to B; strange wording, similar to 'downstairs', but with two words
- <tr><td>04<td>Marilla made no reply<td>saw that aggravating Matthew<td>?<td>ambiguous, poorly worded; what 'that' means is clear only after re-reading the sentence.
- <tr><td>06<td>“I suppose so,”<td>Mrs. Peter has a<td>Mrs. Blewett has a<td>correct A to B; the woman is named in 3 ways, in this order: 'Mrs. Peter Blewett', 'Mrs. Peter', and 'Mrs. Blewett'.    Could her first name really have been Peter? Or is that her husband's first name? It seems entirely intentional on Montgomery's part. 'Mrs. Peter' reminds me of 'Mrs. Rachel' for Mrs. Rachel Lynde.
-</table>
-
-<P>General speed bump issue:<br>
-There are many times when the speech of the characters seems slightly too formal for rural Islanders. 
-For example, contractions such as <em>it is</em> versus <em>it's</em>, and (in chapter 5) <em>if I hadn't had an imagination</em> versus <em>if I hadn't an imagination</em> (as in the manuscript).
-For Anne in particular, Montgomery is trying to walk a tight-rope: when young, her diction is part rural, part polished.
-It's hard to know where to draw the line.
-
-
+<P>
+Here's a <a href='images/diff.png'>screen shot</a> of <em>Eclipse</em> showing the <em>diff</em> for Chapter 10 of the novel.
+The <em>diff</em> shows the differences between <em>this</em> project's text (left) and that of Distributed Proofreaders Canada (right). 
+It shows the same file, but from two different <em>branches</em> in <em>git</em>.
+You can see that the word <em>look</em> is mistakenly transcribed by DPC as <em>took</em>.
+If you look at the <a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>image of the page</a>, it seems likely that this error occurred during the original OCR scan of the book. 
+This is a good demonstration of how effective it is to compare one digitized version to another: it lets us find each others errors (but not all of them!).
 
 </body>
 </html>
