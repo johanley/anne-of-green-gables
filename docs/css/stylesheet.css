@@ -101,6 +101,19 @@ form.user-input textarea {
  width: 100%;
 }
 
+span.err {
+  background-color: yellow;
+}
+
+.text {
+  font: 2.0em courier;
+  font-size:150%; 
+}
+
+td.issue {
+  vertical-align:middle;
+}
+
 span.list-label {
   /* font-style: bold; */
   font-weight:bolder; 
