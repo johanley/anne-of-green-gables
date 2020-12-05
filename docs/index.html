@@ -9,12 +9,11 @@
  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all"> 
 <body>
 
-<img style='float:right; margin-left:1.0em;' src='images/1884.gif' height='368' width='310' title="L. M. Montgomery, age 9, 1884">
+<img style='float: right; margin:1.0em;' src='images/1884.gif' height='184' width='159' title="L. M. Montgomery, age 9, 1884">
 
 <h2>The <em>Anne of Green Gables</em> + <em>Git</em> Project</h2>
  
 <ul> 
- <li>Goal: <b>proof-read and compare</b> editions of <em>Anne of Green Gables</em>, by L. M. Montgomery
  <li>2020-11-25: started the first full proof-read (<a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>1908, 4th impression</a>)
 </ul>
 
@@ -30,33 +29,33 @@
 
 <h3>Why use <em><a href='https://git-scm.com/'>git</a></em>?</h3>
 <ul> 
- <li>it can reflect different editions naturally using different <em>branches</em>
+ <li>it can reflect different transcriptions naturally using different <em>branches</em>
  <li>it lets you clearly see the variants (the <em>diff</em>) between editions
  <li>it lets you post the improvements you find after each proof-reading cycle
- <li>it's a widely used, robust tool
- <li>it's well-suited to the job
+ <li>it's a widely used, robust tool, well-suited to the job
 </ul>
 
 <h3>Two <em>github</em> Repositories</h3>
 This project has two github repositories, not one:
 <ul>
- <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (what you're reading now), with one branch only.
- <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for the various editions of <em>Anne of Green Gables</em>, with one branch for each edition.
+ <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (which you're reading now), with one branch only.
+ <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for various transcriptions of <em>Anne of Green Gables</em>, with one branch for each transcription.
  Merging between branches is not a typical operation in this project. The main requirement is simply to do <em>diffs</em> between branches.
 </ul>
 
 <h3>Lingo</h3>
 
 <ul>
- <li><b>copy text</b> - the book which is being transcribed.
+ <li><b>copy text</b> - the exact book which is being transcribed (identified by publisher, year, impression, and so on).
  <li><b>transcription</b> - the content of the <em>copy text</em>, in a text file. The text file is usually proof-read by one or more humans.
  <li><b>transcription error</b> - a mismatch between the <em>copy text</em> and its <em>transcription</em>. 
  <li><b>branch</b> - in a version control system (such as <em><a href='https://git-scm.com/'>git</a></em>), a <em>branch</em> is a separate, parallel stream, containing a 
  sequence of revisions of files.
- In this project, different <em>copy texts</em> get different <em>branches</em>. 
+ In this project, different <em>copy texts</em> get different <em>branches</em> for their <em>transcriptions</em>.
  Each <em>branch</em> can have multiple revisions of its <em>transcription</em>.
  <li><b>diff</b> - the result of comparing two revisions of a file (often across different <em>branches</em>). Shows the textual 
- variations, the places where the two versions differ in any way. 
+ variations, the places where the two revisions differ in any way. Here's an <a href='images/diff.png'>example</a> of 
+ a tool showing a diff.
 </ul>
 
 <h3>Simple Scheme for Error Detection</h3>
@@ -64,23 +63,22 @@ This project has two github repositories, not one:
 <P>From what I can see, the groups on the web that provide transcriptions don't talk to each other. 
 They don't compare their transcriptions to the output of other similar groups. 
 
-<P>The simple idea of this project is that <span class='err'><b>doing diffs on independent transcriptions will find a large number of errors, and 
-significantly increase accuracy.</b></span>
+<P>The idea of this project is simply that <span class='err'><b>doing diffs on independent transcriptions is an easy way to 
+find a large number of errors, and significantly increase accuracy.</b></span>
 
 <P>Some lingo:
 <ul>
  <li><b>TE(A)</b> - the transcription errors in a single transcription A. 
  <li><b>UTE(A, B, C)</b> - the <em>universal</em> transcription errors <em>common</em> to a <em>set</em> of transcriptions A, B, C.   
- That is, the transcriptions errors repeated in <b>exactly</b> the same way 
- across all members of a set of transcriptions A, B, and C.
+ That is, the transcription errors <b>repeated in exactly the same way</b> across all members of a set of transcriptions A, B, and C.
 </ul>
 
 <img src='images/work-flow-diagram.png' title='Work flow'>
-<P>For each of the other transcriptions A, B, C, do a diff with 'me':
+<P>For each of the other transcriptions A, B, C, do a diff with '<em>me</em>':
 <ul>
  <li>do a diff between <em>me</em> and some other transcription A.
  <li>for each difference you see, find out if it's a real textual difference in the copy text, or a transcription error. 
- Do this by comparing directly with the copy text itself (for example on archive.org).
+ Do this by visually comparing directly with the copy text itself (for example on archive.org).
  <li>if it's a transcription error, then fix one of the transcriptions (in rare cases, both). 
  In this case, you are removing one member of TE(me) or TE(A).
  Note that only the <em>non-universal</em> transcription errors are found using this technique.
@@ -97,16 +95,14 @@ reversed, in whole or in part, by writing a simple find-replace script to change
 But those are special cases (marked as 'known', in the above diagram).
 
 
-<h4>Rule 1</h4>
-<b>All non-universal errors can be eliminated by doing diffs.</b>
+<h4>Rule 1: All non-universal errors can be eliminated by doing diffs.</h4>
 
-<P><b>TE(me) = UTE(A, B, C, me)</b>
+<b>TE(me) = UTE(A, B, C, me)</b>
 
 <P>At the end of the process described above, the transcription errors in my output equal the <em>universal</em> transcription errors
 across all of the inputs. This expresses the benefit of doing diffs. 
 
-<h4>Rule 2</h4>
-<b>Independent transcriptions having no common ancestor are best.</b><br>
+<h4>Rule 2: Independent transcriptions having no common ancestor are best.</h4>
 It's best that each transcription be as <em>independent</em> from the others as possible:
 <ul>
  <li>different copy text
@@ -119,16 +115,15 @@ Such independence prods the system in the direction of avoiding universal transc
 
 <P>Somewhat surprisingly, it's beneficial to even use different editions of the source text.
 For example, this project uses a transcription of a 1946 edition of <em>Anne of Green Gables</em> to 
-produce a transcription of 1908 edition (4th impression).
+produce a transcription of the 1908 edition (4th impression).
 This is beneficial because it <em>ensures more independence</em> of transcriptions. 
-It's not a problem because the real textual diffs between 1908 and 1946 are small, and are detected and accounted for by the 
+It's not a problem, because the real textual diffs between 1908 and 1946 are small, and are detected and accounted for by the 
 work flow described above.
 
-<h4>Rule 3</h4>
-<b>In the end, for a large text, you'll never be sure that you have reduced TE(me) to zero.</b>  
-<br>A computer can compute an exact result only when all of the data is present. 
+<h4>Rule 3: In the end, for a large text, you'll never be sure that you have reduced TE(A) to zero.</h4>
+A computer can compute an exact result only when all of the data is present. 
 But in this case, one half of the data is in a physical book, outside the computer. That's the problem.
-That being said, you can still increase your level of confidence in a transcription by using the above technique.
+Still, you can increase your level of confidence in a transcription by using the above technique.
 
 
 
@@ -220,12 +215,12 @@ Issues:
  <li>basic facts are sometimes unclear, or hard to find: how many versions of this digitized text have there been? 
  what were the changes between versions? 
  how many people have proof-read the text, over its lifetime?
- <li>in short, there's no way to evaluate the probable quality of the text.
+ <li>in short, there's no way to evaluate the probable quality of the transcription.
 </ul>
 
 
 <h3>Policy For Typos</h3>
-Almost every text has items that could be corrected in some way (typos and so on). 
+Almost every transcription has items that could be corrected in some way (typos and so on). 
 <b>In this project, absolutely all corrections to the core text are handled by using multiple <em>branches</em> in <em>git</em></b>:
 <ul>
  <li><b>the core branch for an edition will have zero corrections for typos</b> applied to it.
@@ -251,6 +246,15 @@ file for that chapter. <b>Don't change the name of the file</b>. That would mess
 
  
 <h3>Current Proof-reading/Editing Status</h3>
+This project is currently transcribing the L. C. Page 1908 4th impression.
+In addition to proof-reading the text, the project is finding diffs with respect to other transcriptions, using the technique described above.
+
+<P>The other transcriptions come from:
+<ul>
+ <li>Distributed Proofreaders of Canada
+ <li>Wikisource
+ <li>Project Gutenberg
+</ul>
 
 <P><table class='report' style='border:1px;'>
  <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
@@ -302,7 +306,8 @@ file for that chapter. <b>Don't change the name of the file</b>. That would mess
 </ul>
 <b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
 
-<P>However, for the first proof-read only, I compare the result to two other digitized versions (<em>Project Gutenberg</em> and <em>Distributed Proofreaders Canada</em>).
+<P>However, for the first proof-read only, I compare the result to 3 other digitized versions 
+(<em>Project Gutenberg</em>, <em>Distributed Proofreaders Canada</em>, and <em>Wikisource</em>).
 Then, I display here the number of errors in 'my' text found as a result of such comparisons.
 This has been <em>very</em> useful for finding errors!
 The lower the count, the better the proof-reader.
@@ -387,7 +392,7 @@ In the list below, I list some issues that I personally would like to examine wh
 Don't take them too seriously.</b>
 I'm just noting them here for my own benefit. 
 You can take them as an example of the kind of edits someone might make to the core text, according to their taste.
-These <em>speed bumps</em> are places in the text where, while reading, my attention moves from the make-believe world of the story to 
+These <em>speed bumps</em> are places in the text where, while reading, my attention is distracted from the make-believe world of the story to 
 the real world of thinking about the text's style.
 
 <P>

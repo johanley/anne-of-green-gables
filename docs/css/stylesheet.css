@@ -193,19 +193,12 @@ table.report form {
   font-weight: bold;
 }
 
-@media all and (max-width: 450px) {
-  /** Remove margin for small screens. */
-	body {
-    margin: 0.25em; 
-	}
-	div.menu {
-	  /** still needed? */
-	  margin-top:0;
-	}
-	form.user-input input[type="text"] {
-	 margin: 0;
-	 width: 100%;
-	}
+@media all and (max-width: 850px) {
+ /** Remove margin for small screens. */
+ body {
+   margin: 0.5em; 
+   padding: 0.25em;
+ }
 }
 
 
