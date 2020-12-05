@@ -45,6 +45,93 @@ This project has two github repositories, not one:
  Merging between branches is not a typical operation in this project. The main requirement is simply to do <em>diffs</em> between branches.
 </ul>
 
+<h3>Lingo</h3>
+
+<ul>
+ <li><b>copy text</b> - the book which is being transcribed.
+ <li><b>transcription</b> - the content of the <em>copy text</em>, in a text file. The text file is usually proof-read by one or more humans.
+ <li><b>transcription error</b> - a mismatch between the <em>copy text</em> and its <em>transcription</em>. 
+ <li><b>branch</b> - in a version control system (such as <em><a href='https://git-scm.com/'>git</a></em>), a <em>branch</em> is a separate, parallel stream, containing a 
+ sequence of revisions of files.
+ In this project, different <em>copy texts</em> get different <em>branches</em>. 
+ Each <em>branch</em> can have multiple revisions of its <em>transcription</em>.
+ <li><b>diff</b> - the result of comparing two revisions of a file (often across different <em>branches</em>). Shows the textual 
+ variations, the places where the two versions differ in any way. 
+</ul>
+
+<h3>Simple Scheme for Error Detection</h3>
+
+<P>From what I can see, the groups on the web that provide transcriptions don't talk to each other. 
+They don't compare their transcriptions to the output of other similar groups. 
+
+<P>The simple idea of this project is that <span class='err'><b>doing diffs on independent transcriptions will find a large number of errors, and 
+significantly increase accuracy.</b></span>
+
+<P>Some lingo:
+<ul>
+ <li><b>TE(A)</b> - the transcription errors in a single transcription A. 
+ <li><b>UTE(A, B, C)</b> - the <em>universal</em> transcription errors <em>common</em> to a <em>set</em> of transcriptions A, B, C.   
+ That is, the transcriptions errors repeated in <b>exactly</b> the same way 
+ across all members of a set of transcriptions A, B, and C.
+</ul>
+
+<img src='images/work-flow-diagram.png' title='Work flow'>
+<P>For each of the other transcriptions A, B, C, do a diff with 'me':
+<ul>
+ <li>do a diff between <em>me</em> and some other transcription A.
+ <li>for each difference you see, find out if it's a real textual difference in the copy text, or a transcription error. 
+ Do this by comparing directly with the copy text itself (for example on archive.org).
+ <li>if it's a transcription error, then fix one of the transcriptions (in rare cases, both). 
+ In this case, you are removing one member of TE(me) or TE(A).
+ Note that only the <em>non-universal</em> transcription errors are found using this technique.
+</ul> 
+
+At the end of the process, what's left over is UTE(A, B, C, me), the universal transcription errors, the ones that are <b>exactly the same</b> in all of the transcriptions.
+
+<P>The UTE(A, B, C, me) errors are more difficult to deal with.
+They can't be found by doing diffs, since they are present in all of the input transcriptions.
+Can they be detected using other means?
+In a few isolated cases, yes. 
+If a policy of Americanization or modernization has been applied to all transcriptions, then that policy can be 
+reversed, in whole or in part, by writing a simple find-replace script to change the transcription.
+But those are special cases (marked as 'known', in the above diagram).
+
+
+<h4>Rule 1</h4>
+<b>All non-universal errors can be eliminated by doing diffs.</b>
+
+<P><b>TE(me) = UTE(A, B, C, me)</b>
+
+<P>At the end of the process described above, the transcription errors in my output equal the <em>universal</em> transcription errors
+across all of the inputs. This expresses the benefit of doing diffs. 
+
+<h4>Rule 2</h4>
+<b>Independent transcriptions having no common ancestor are best.</b><br>
+It's best that each transcription be as <em>independent</em> from the others as possible:
+<ul>
+ <li>different copy text
+ <li>different OCR (optical character recognition) machine/software
+ <li>different proof-readers 
+ <li>different organizations
+</ul> 
+
+Such independence prods the system in the direction of avoiding universal transcription errors.
+
+<P>Somewhat surprisingly, it's beneficial to even use different editions of the source text.
+For example, this project uses a transcription of a 1946 edition of <em>Anne of Green Gables</em> to 
+produce a transcription of 1908 edition (4th impression).
+This is beneficial because it <em>ensures more independence</em> of transcriptions. 
+It's not a problem because the real textual diffs between 1908 and 1946 are small, and are detected and accounted for by the 
+work flow described above.
+
+<h4>Rule 3</h4>
+<b>In the end, for a large text, you'll never be sure that you have reduced TE(me) to zero.</b>  
+<br>A computer can compute an exact result only when all of the data is present. 
+But in this case, one half of the data is in a physical book, outside the computer. That's the problem.
+That being said, you can still increase your level of confidence in a transcription by using the above technique.
+
+
+
 <h3>Bibliography</h3>
 
 The following is based on the <a href='https://wwnorton.com/books/9780393926958'><em>Norton</em> critical edition</a>, by Rubio and Waterston, 
