@@ -20,14 +20,15 @@
 
 <h3>Why?</h3>
 <ul> 
- <li>to improve the quality of digitized versions of the novel
- <li>to explore how its various editions differ from each other
- <li>so I can <a href='https://www.lulu.com/'>print</a> a copy of the novel using text I have confidence in
+ <li>to <b>significantly improve</b> the quality of digitized versions of the novel
+ <li>to <b>detect errors</b> by doing <em>diffs</em> between different transcriptions
+ <li>to explore how various editions differ from each other
+ <li>to <a href='https://www.lulu.com/'>print</a> a copy of the novel, using text I have confidence in
 </ul>
 
 <P>You can also use the text to create your own e-book, in epub or mobi format.
 
-<h3>Why use <em>git</em>?</h3>
+<h3>Why use <em><a href='https://git-scm.com/'>git</a></em>?</h3>
 <ul> 
  <li>it can reflect different editions naturally using different <em>branches</em>
  <li>it lets you clearly see the variants (the <em>diff</em>) between editions
@@ -41,6 +42,7 @@ This project has two github repositories, not one:
 <ul>
  <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (what you're reading now), with one branch only.
  <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for the various editions of <em>Anne of Green Gables</em>, with one branch for each edition.
+ Merging between branches is not a typical operation in this project. The main requirement is simply to do <em>diffs</em> between branches.
 </ul>
 
 <h3>Bibliography</h3>
@@ -55,7 +57,7 @@ which has an excellent summary of the main editions.
    <col style="width: 70%;">
  </colgroup> 
  <tr><th>Label<th>Publisher<th>Description
- <tr><td>1908-LCP<td>L. C. Page<td>First edition, April. Boston, USA. Many subsequent impressions, with error corrections.
+ <tr><td>1908-LCP<td>L. C. Page<td><b>First edition</b>, April. Boston, USA. Many subsequent impressions, with error corrections.
  <tr><td>1908-PIT<td>Sir Isaac Pitnam<td>London, UK. Plates from Page. First British edition.
  <tr><td>1914-G&amp;D<td>Grosset and Dunlap<td>New York, USA. Lower quality paper and printing, cheaper book. Plates from Page. 
  <tr><td>1916-LCP<td>L. C. Page<td>40th impression, gifted from author to her son. Montgomery made no manual corrections to it. <b>Best version of LMM-approved text?</b>
@@ -118,7 +120,7 @@ Montgomery's handwriting is hard to read. Most would prefer the <a href='https:/
 
 <ul>
  <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>. 
- Their copy-text is the 1946-11 Ryerson edition (see link above). <b>Seems to be of good quality, but see some corrections listed below.</b>
+ Their copy-text is the 1946-11 Ryerson edition (see link above). <b>Seems to be of good quality, but see corrections listed below.</b>
  <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. They usually get texts from Distributed Proofreaders, but not always. They don't even indicate the copy-text. <b>The quality of this text seems low.</b> 
  The copy-text seems to be some arbitrary edition having substantial differences with 1908.
  <li><a href='https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables'>Standard Ebooks</a> - apparently uses Project Gutenberg as source of their text. (I don't know if they have proof-read/edited the text themselves. I suspect not.)
@@ -128,9 +130,10 @@ Montgomery's handwriting is hard to read. Most would prefer the <a href='https:/
 Issues:
 <ul>
  <li>sometimes they aren't explicit about the copy-text used as source.
- <li>basic facts are often unclear, or hard to find: How many versions have there been? What were the changes between versions? How 
- many people have proof-read the text?
- <li>in short, there's no way to evaluate the quality of the text.
+ <li>basic facts are sometimes unclear, or hard to find: how many versions of this digitized text have there been? 
+ what were the changes between versions? 
+ how many people have proof-read the text, over its lifetime?
+ <li>in short, there's no way to evaluate the probable quality of the text.
 </ul>
 
 
@@ -291,66 +294,10 @@ See also the <em>Norton</em> critical edition and <em>The Annotated Anne of Gree
 
 <P>* I haven't seen this issue mentioned elsewhere. I may have found it first, but I'm not sure.
 
-
-<h3>Issues I've Seen In Specific Editions/Transcriptions</h3>
-I stumbled upon these at various times.
-I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
-<P><table class='report' style='border:1px;'>
- <tr><th>Edition<th>Ch<th>Paragraph<th>A<th>B<th>Description
- <tr><td>2007 Norton<td>02<td>They had driven<td>tiptoe-ing<td>tiptoeing<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; 'tiptoe' occurs multiple times in the text
- <tr><td>2007 Norton<td>04<td>Anne washed the dishes<td>dinner-time<td>dinnertime<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS: 'dinnertime' (twice), which agrees w/ Cdn Oxford Dict.; chapt. 15: 'dinner time'
- <tr><td>2007 Norton<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the hyphen is present in 1908, but only because of a line-break; MS and Chapter 20 have 'dinner table'
- <tr><td>2007 Norton<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; ambiguity because of a line break; MS has hyphen
- 
- <tr><td>DPC<td>01<td>There are plenty<td>Gulf of St Lawrence<td>Gulf of St. Lawrence<td>correct A to B; the period for the abbreviation 'St.'
- <tr><td>DPC<td>03<td>“Oh, it makes<td>an e I shall<td>an _e_ I shall<td>correct A to B; missing the italics
- <tr><td>DPC<td>04<td>“I never in all<td>_looks_?<td>_looks?_<td>correct A to B
- <tr><td>DPC<td>05<td>“Do you know,” said<td>Redheaded<td>Red-headed<td>correct A to B; the line break is misleading
- <tr><td>DPC<td>07<td>“Gracious heavenly Father<td>Yours respectfully, Anne Shirly.<td>Yours respectfully, Anne Shirley.<td>correct A to B; spelling
- <tr><td>DPC<td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>correct A to B; the line break is misleading; the MS has no line break; the word occurs elsewhere in the text
- <tr><td>DPC<td>08<td>“There—I know this prayer<td>sound so luxurious<td>sound _so_ luxurious<td>correct A to B; the emphasis is missing
- <tr><td>DPC<td>08<td>“There—I know this prayer<td>make _that_, seem<td>make _that_ seem<td>correct A to B; extra comma
- <tr><td>DPC<td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>correct A to B; the line break is misleading; the MS has a hyphen
- <tr><td>DPC<td>10<td>"Oh, Mrs. Lynde!"<td><a href='https://archive.org/details/anneofgreengable00montiala/page/96/mode/2up'>to her feet "You</a><td>to her feet. "You<td>correct A to B; missing period; OCR confused
- <tr><td>DPC<td>10<td>“How can I be vain<td><a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>took</a><td>look<td>correct A to B; OCR is confused by a printing defect
- <tr><td>DPC<td>11<td>Anne was standing<td><a href='https://archive.org/details/anneofgreengable00montiala/page/100/mode/2up'>preceeding</a><td>preceding<td>correct A to B; not spelled correctly in the copy-text (they like to correct such errors directly)
- <tr><td>DPC<td>13<td><td><a href='https://archive.org/details/anneofgreengable00montiala/page/114/mode/2up'>ice cream</a><td>ice-cream<td>correct A to B; the hyphenation is inconsistent in the copy-text; it's usually ice-cream
-
- <tr><td>WIK<td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>I’d never dream</a><td>“I’d never dream<td>correct A to B; missing opening quotation mark
- <tr><td>WIK<td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>It does really</a><td>“It does really<td>correct A to B; missing opening quotation mark
- <tr><td>WIK<td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>so he’s he ever</a><td>so be’s he ever<td>correct A to B
- <tr><td>WIK<td>02<td>He walked jauntily<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/14/mode/2up'>gently own the </a><td>gently down the <td>correct A to B
- <tr><td>WIK<td>02<td>The “Avenue,”<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/24/mode/2up'>the air as full</a><td>the air was full<td>correct A to B
- <tr><td>WIK<td>03<td>“Oh, I’m not ashamed<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/34/mode/2up'>Anne spelled with an _e_</a><td>Anne spelled with an _e_.<td>correct A to B; missing period
- <tr><td>WIK<td>03<td>“I could hire<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/42/mode/2up'>and she'd be company</a><td>“and she’d be company<td>correct A to B; missing first quotation mark
- <tr><td>WIK<td>04<td>Anne washed the<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/48/mode/2up'>dinner-time</a><td>dinnertime<td>correct A to B; the hyphen is present only because of a line-break; MS: 'dinnertime' (twice), which agrees w/ Cdn Oxford Dict.; chapt. 15: 'dinner time'
- <tr><td>WIK <td>06 <td>“I’m dreadful sorry,”  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/62/mode/2up'>Nancy is terrible</a>  <td>Nancy is a terrible  <td>correct A to B
- <tr><td>WIK <td>06 <td>“And if there  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/64/mode/2up'>Take the armchair. Miss Cuthbert.</a>  <td>Take the armchair, Miss Cuthbert.  <td>correct A to B; period should be a comma
- <tr><td>WIK <td>06 <td>“I think you’d better  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/66/mode/2up'>said Marilla crossly, </a>  <td>said Marilla crossly.  <td>correct A to B; comma should be a period
- <tr><td>WIK <td>07 <td>“Why, Anne, what  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/70/mode/2up'>God is, Anne?</a>God is, Anne?”  <td> <td>correct A to B; missing close quote
- <tr><td>WIK <td>07 <td>“Oh, at the asylum  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/70/mode/2up'>eternal and unchangeable,</a>  <td>eternal and unchangeable.  <td>correct A to B; comma should be a period
- <tr><td>WIK <td>08 <td>Can I take the  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>Can I take the</a>  <td>“Can I take the  <td>correct A to B; missing opening quote
- <tr><td>WIK <td>09 <td>Anne had been a  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/88/mode/2up'>Mrs, Lynde</a>  <td>Mrs. Lynde  <td>correct A to B; comma should be a period
- <tr><td>WIK <td>10 <td>“You shouldn’t think  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/106/mode/2up'>vain little girl,</a>  <td>vain little girl.  <td>correct A to B; comma should be a period
- <tr><td>WIK <td>11 <td>But he wasn’t  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/114/mode/2up'>But he wasn’t</a>  <td>“But he wasn’t  <td>correct A to B; missing opening quote
- <tr><td>WIK <td>12 <td>Mrs. Barry,  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/120/mode/2up'>Mrs, Barry,</a>  <td>Mrs. Barry,  <td>correct A to B; comma should be a period
- <tr><td>WIK <td>12 <td>“Well, I don’t mind  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/122/mode/2up'>How do you do it</a>  <td>“How do you do it   <td>correct A to B; missing opening quote
- <tr><td>WIK <td>13 <td>“I do _not_ like  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/128/mode/2up'>diamonds with a sigh,</a>  <td>diamonds with a sigh.   <td>correct A to B; comma should be a period
- <tr><td>WIK <td>13 <td>“Anne, you have talked  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/130/mode/2up'>Now, just for</a>  <td>“Now, just for   <td>correct A to B; missing opening quote
- 
- 
- 
- 
- 
- 
- 
- 
-</table>
-
-
 <h3>John's Speed Bumps</h3>
 In the list below, I list some issues that I personally would like to examine when creating my own version of the text.
-<b>Don't take them too seriously.</b>
+<b>They are a matter of opinion.
+Don't take them too seriously.</b>
 I'm just noting them here for my own benefit. 
 You can take them as an example of the kind of edits someone might make to the core text, according to their taste.
 These <em>speed bumps</em> are places in the text where, while reading, my attention moves from the make-believe world of the story to 
@@ -446,6 +393,94 @@ For Anne in particular, Montgomery is trying to walk a delicate tight-rope: when
 It's hard to know where to draw the line.
 
 
+
+<h3>Issues I've Seen In Specific Editions/Transcriptions</h3>
+I stumbled upon these at various times.
+I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
+I found most of these issues from doing a <em>diff</em> between two branches in git.
+(I'm not proof-reading these other sources.)
+<b>As you can see, a significant number of transcription errors are detected by doing a simple <em>diff</em>.</b>
+
+<P>
+I haven't included Project Gutenberg here, because the number of issues for them is too large!
+
+<P><b><a href='https://wwnorton.com/books/9780393926958'>2007 Norton</a></b>
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 5%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 35%;">
+ </colgroup> 
+ <tr><th>Ch<th>Paragraph<th>Is<th>Should Be<th>Description
+ <tr><td>02<td>They had driven<td>tiptoe-ing<td>tiptoeing<td>  the hyphen is present in 1908, but only because of a line-break; 'tiptoe' occurs multiple times in the text
+ <tr><td>04<td>Anne washed the dishes<td>dinner-time<td>dinnertime<td>  the hyphen is present in 1908, but only because of a line-break; MS: 'dinnertime' (twice), which agrees w/ Cdn Oxford Dict.; chapt. 15: 'dinner time'
+ <tr><td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>  the hyphen is present in 1908, but only because of a line-break; MS and Chapter 20 have 'dinner table'
+ <tr><td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>  ambiguity because of a line break; MS has hyphen
+</table> 
+ 
+<P><b><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Digital Proofreaders Canada</a></b>
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 5%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 35%;">
+ </colgroup> 
+ <tr><th>Ch<th>Paragraph<th>Is<th>Should Be<th>Description
+ <tr> <td>01<td>There are plenty<td>Gulf of St Lawrence<td>Gulf of St. Lawrence<td>  the period for the abbreviation 'St.'
+ <tr> <td>03<td>“Oh, it makes<td>an e I shall<td>an _e_ I shall<td>  missing the italics
+ <tr> <td>04<td>“I never in all<td>_looks_?<td>_looks?_<td>include the question mark
+ <tr> <td>05<td>“Do you know,” said<td>Redheaded<td>Red-headed<td>  the line break is misleading
+ <tr> <td>07<td>“Gracious heavenly Father<td>Yours respectfully, Anne Shirly.<td>Yours respectfully, Anne Shirley.<td>  spelling
+ <tr> <td>08<td>Anne set the card<td>dinner-table<td>dinner table<td>  the line break is misleading; the MS has no line break; the word occurs elsewhere in the text
+ <tr> <td>08<td>“There—I know this prayer<td>sound so luxurious<td>sound _so_ luxurious<td>  the emphasis is missing
+ <tr> <td>08<td>“There—I know this prayer<td>make _that_, seem<td>make _that_ seem<td>  extra comma
+ <tr> <td>08<td>Anne blew a couple<td>fingertips<td>finger-tips<td>  the line break is misleading; the MS has a hyphen
+ <tr> <td>10<td>"Oh, Mrs. Lynde!"<td><a href='https://archive.org/details/anneofgreengable00montiala/page/96/mode/2up'>to her feet "You</a><td>to her feet. "You<td>  missing period; OCR confused
+ <tr> <td>10<td>“How can I be vain<td><a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>took</a><td>look<td>  OCR is confused by a printing defect
+ <tr> <td>11<td>Anne was standing<td><a href='https://archive.org/details/anneofgreengable00montiala/page/100/mode/2up'>preceeding</a><td>preceding<td>  not spelled correctly in the copy-text (they like to correct such errors directly)
+ <tr> <td>13<td><td><a href='https://archive.org/details/anneofgreengable00montiala/page/114/mode/2up'>ice cream</a><td>ice-cream<td>  the hyphenation is inconsistent in the copy-text; it's usually ice-cream
+</table> 
+
+<P><b><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a></b>
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 5%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 20%;">
+   <col style="width: 35%;">
+ </colgroup> 
+ <tr><th>Ch<th>Paragraph<th>Is<th>Should Be<th>Description
+ <tr> <td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>I’d never dream</a><td>“I’d never dream<td>  missing opening quotation mark
+ <tr> <td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>It does really</a><td>“It does really<td>  missing opening quotation mark
+ <tr> <td>01<td>“Well, we’re not<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/10/mode/2up'>so he’s he ever</a><td>so be’s he ever<td> possible OCR error
+ <tr> <td>02<td>He walked jauntily<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/14/mode/2up'>gently own the </a><td>gently down the <td>missing the letter 'd'
+ <tr> <td>02<td>The “Avenue,”<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/24/mode/2up'>the air as full</a><td>the air was full<td>missing the letter 'w'
+ <tr> <td>03<td>“Oh, I’m not ashamed<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/34/mode/2up'>Anne spelled with an _e_</a><td>Anne spelled with an _e_.<td>  missing period
+ <tr> <td>03<td>“I could hire<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/42/mode/2up'>and she'd be company</a><td>“and she’d be company<td>  missing first quotation mark
+ <tr> <td>04<td>Anne washed the<td><a href='https://archive.org/details/anneofgreengable00mont_11/page/48/mode/2up'>dinner-time</a><td>dinnertime<td>  the hyphen is present only because of a line-break; MS: 'dinnertime' (twice), which agrees w/ Cdn Oxford Dict.; chapt. 15: 'dinner time'
+ <tr>  <td>06 <td>“I’m dreadful sorry,”  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/62/mode/2up'>Nancy is terrible</a>  <td>Nancy is a terrible  <td>missing the word 'a'
+ <tr>  <td>06 <td>“And if there  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/64/mode/2up'>Take the armchair. Miss Cuthbert.</a>  <td>Take the armchair, Miss Cuthbert.  <td>  period should be a comma
+ <tr>  <td>06 <td>“I think you’d better  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/66/mode/2up'>said Marilla crossly, </a>  <td>said Marilla crossly.  <td>  comma should be a period
+ <tr>  <td>07 <td>“Why, Anne, what  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/70/mode/2up'>God is, Anne?</a>God is, Anne?”  <td> <td>  missing close quote
+ <tr>  <td>07 <td>“Oh, at the asylum  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/70/mode/2up'>eternal and unchangeable,</a>  <td>eternal and unchangeable.  <td>  comma should be a period
+ <tr>  <td>08 <td>Can I take the  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>Can I take the</a>  <td>“Can I take the  <td>  missing opening quote
+ <tr>  <td>09 <td>Anne had been a  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/88/mode/2up'>Mrs, Lynde</a>  <td>Mrs. Lynde  <td>  comma should be a period
+ <tr>  <td>10 <td>“You shouldn’t think  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/106/mode/2up'>vain little girl,</a>  <td>vain little girl.  <td>  comma should be a period
+ <tr>  <td>11 <td>But he wasn’t  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/114/mode/2up'>But he wasn’t</a>  <td>“But he wasn’t  <td>  missing opening quote
+ <tr>  <td>12 <td>Mrs. Barry,  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/120/mode/2up'>Mrs, Barry,</a>  <td>Mrs. Barry,  <td>  comma should be a period
+ <tr>  <td>12 <td>“Well, I don’t mind  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/122/mode/2up'>How do you do it</a>  <td>“How do you do it   <td>  missing opening quote
+ <tr>  <td>13 <td>“I do _not_ like  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/128/mode/2up'>diamonds with a sigh,</a>  <td>diamonds with a sigh.   <td>  comma should be a period
+ <tr>  <td>13 <td>“Anne, you have talked  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/130/mode/2up'>Now, just for</a>  <td>“Now, just for   <td>  missing opening quote
+ 
+</table>
+
+
+
 <h3>UTF-8 Encoding Everywhere</h3>
 All text files in this project use the <a href='http://utf8everywhere.org/'>UTF-8 encoding</a>. 
 If you see odd characters on your screen, check that your tools are using the UTF-8 encoding.
@@ -531,7 +566,7 @@ If you're making changes directly to the files, it's recommended that your text 
 Here's a <a href='images/eclipse.jpg'>screen shot</a> of the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> code editor being used to proof-read text versus a scanned 
 version of the book on archive.org. 
 Note how it is wrapping the long sentences in the window, and showing special symbols for spaces and line breaks.
-Note also that it helps to have a wide screen; larger text will reduce eye strain.
+It helps to have a wide screen; larger text reduces eye strain.
 
 <P>
 Here's a <a href='images/diff.png'>screen shot</a> of <em>Eclipse</em> showing the <em>diff</em> for Chapter 10 of the novel.
