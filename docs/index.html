@@ -12,26 +12,22 @@
 <img style='float: right; margin:1.0em;' src='images/1884.gif' height='184' width='159' title="L. M. Montgomery, age 9, 1884">
 
 <h2>The <em>Anne of Green Gables</em> + <em>Git</em> Project</h2>
- 
-<ul> 
- <li>2020-11-25: started the first full proof-read (<a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>1908, 4th impression</a>)
-</ul>
 
 <h3>Why?</h3>
 <ul> 
  <li>to <b>significantly improve</b> the quality of digitized versions of the novel
  <li>to <b>detect errors</b> by doing <em>diffs</em> between different transcriptions
- <li>to explore how various editions differ from each other
- <li>to <a href='https://www.lulu.com/'>print</a> a copy of the novel, using text I have confidence in
+ <li>to explore the variations between editions
+ <li>to <a href='https://www.lulu.com/'>print</a> a copy of the novel, using a robust text
 </ul>
 
 <P>You can also use the text to create your own e-book, in epub or mobi format.
 
 <h3>Why use <em><a href='https://git-scm.com/'>git</a></em>?</h3>
 <ul> 
- <li>it can reflect different transcriptions naturally using different <em>branches</em>
+ <li>it can reflect different transcriptions/editions naturally using different <em>branches</em>
  <li>it lets you clearly see the variants (the <em>diff</em>) between editions
- <li>it lets you post the improvements you find after each proof-reading cycle
+ <li>it lets you post improvements after each proof-reading cycle
  <li>it's a widely used, robust tool, well-suited to the job
 </ul>
 
@@ -73,18 +69,22 @@ find a large number of errors, and significantly increase accuracy.</b></span>
  That is, the transcription errors <b>repeated in exactly the same way</b> across all members of a set of transcriptions A, B, and C.
 </ul>
 
+<h4>Work Flow For Transcriptions</h4>
+
 <img src='images/work-flow-diagram.png' title='Work flow'>
-<P>For each of the other transcriptions A, B, C, do a diff with '<em>me</em>':
+<P>First I do a full proof-read of my transcription.
+
+<P>Then, for each of the other transcriptions A, B, C:
 <ul>
- <li>do a diff between <em>me</em> and some other transcription A.
- <li>for each difference you see, find out if it's a real textual difference in the copy text, or a transcription error. 
- Do this by visually comparing directly with the copy text itself (for example on archive.org).
- <li>if it's a transcription error, then fix one of the transcriptions (in rare cases, both). 
- In this case, you are removing one member of TE(me) or TE(A).
+ <li>I do a diff between <em>me</em> and the other transcription
+ <li>for each difference, I find out if it's a real textual difference in the copy text, or a transcription error. 
+ I do this by visually comparing directly with the copy text itself (for example on archive.org).
+ <li>if it's a transcription error, then I fix one of the transcriptions (in rare cases, both). 
+ In this case, I'm removing one item from TE(me) or TE(A).
  Note that only the <em>non-universal</em> transcription errors are found using this technique.
 </ul> 
 
-At the end of the process, what's left over is UTE(A, B, C, me), the universal transcription errors, the ones that are <b>exactly the same</b> in all of the transcriptions.
+At the end of the process, what's left over is UTE(A, B, C, me), the universal transcription errors, the ones that are <b>exactly the same in <em>all</em> of the transcriptions</b>.
 
 <P>The UTE(A, B, C, me) errors are more difficult to deal with.
 They can't be found by doing diffs, since they are present in all of the input transcriptions.
@@ -111,7 +111,7 @@ It's best that each transcription be as <em>independent</em> from the others as 
  <li>different organizations
 </ul> 
 
-Such independence prods the system in the direction of avoiding universal transcription errors.
+Such independence pushes the system in the direction of avoiding universal transcription errors.
 
 <P>Somewhat surprisingly, it's beneficial to even use different editions of the source text.
 For example, this project uses a transcription of a 1946 edition of <em>Anne of Green Gables</em> to 
@@ -120,7 +120,7 @@ This is beneficial because it <em>ensures more independence</em> of transcriptio
 It's not a problem, because the real textual diffs between 1908 and 1946 are small, and are detected and accounted for by the 
 work flow described above.
 
-<h4>Rule 3: In the end, for a large text, you'll never be sure that you have reduced TE(A) to zero.</h4>
+<h4>Rule 3: In the end, for a large text, you'll never be sure that you have reduced TE(me) to zero.</h4>
 A computer can compute an exact result only when all of the data is present. 
 But in this case, one half of the data is in a physical book, outside the computer. That's the problem.
 Still, you can increase your level of confidence in a transcription by using the above technique.
