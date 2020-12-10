@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8"/>
  <title>Proof-read and compare editions of Anne of Green Gables</title>
- <meta name="keywords" content="proof-read, Anne of Green Gables, L. M. Montgomery, variants, editions">
+ <meta name="keywords" content="proof-read, Anne of Green Gables, L. M. Montgomery, variants, editions, transcription, copy text">
  <meta name="description" content="Proof-read and compare editions of Anne of Green Gables, by L. M. Montgomery">
  <meta name="viewport" content="width=device-width"> 
  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all"> 
@@ -15,8 +15,8 @@
 
 <h3>Why?</h3>
 <ul> 
- <li>to <b>significantly improve</b> the quality of digitized versions of the novel
- <li>to <b>detect errors</b> by doing <em>diffs</em> between different transcriptions
+ <li>to <b>significantly improve</b> the quality of transcriptions of the novel
+ <li>to <b>detect errors</b> by doing <em><a href='images/diff.png'>diffs</a></em> between different transcriptions
  <li>to explore the variations between editions
  <li>to <a href='https://www.lulu.com/'>print</a> a copy of the novel, using a robust text
 </ul>
@@ -26,7 +26,7 @@
 <h3>Why use <em><a href='https://git-scm.com/'>git</a></em>?</h3>
 <ul> 
  <li>it can reflect different transcriptions/editions naturally using different <em>branches</em>
- <li>it lets you clearly see the variants (the <em>diff</em>) between editions
+ <li>it lets you clearly see the variants (the <em><a href='images/diff.png'>diff</a></em>) between editions
  <li>it lets you post improvements after each proof-reading cycle
  <li>it's a widely used, robust tool, well-suited to the job
 </ul>
@@ -198,7 +198,7 @@ Some editions have been imaged and made available on the web, mostly by archive.
 There are <a href='https://confederationcentre.com/news/major-digital-exhibition-of-anne-manuscript-announced/'>plans</a> to make images of the manuscript available in 2022.
 Montgomery's handwriting is hard to read. Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>transcription</a> edited by C. S. Collins.
 
-<h3>Other Sources of Digitized Versions</h3>
+<h3>Other Sources of Transcriptions</h3>
 
 <ul>
  <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>. 
@@ -212,7 +212,7 @@ Montgomery's handwriting is hard to read. Most would prefer the <a href='https:/
 Issues:
 <ul>
  <li>sometimes they aren't explicit about the copy-text used as source.
- <li>basic facts are sometimes unclear, or hard to find: how many versions of this digitized text have there been? 
+ <li>basic facts are sometimes unclear, or hard to find: how many versions of this transcription have there been? 
  what were the changes between versions? 
  how many people have proof-read the text, over its lifetime?
  <li>in short, there's no way to evaluate the probable quality of the transcription.
@@ -306,7 +306,7 @@ In addition to proof-reading the text, the project is finding diffs with respect
 </ul>
 <b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
 
-<P>However, for the first proof-read only, I compare the result to 3 other digitized versions 
+<P>However, for the first proof-read only, I compare the result to 3 other transcriptions
 (<em>Project Gutenberg</em>, <em>Distributed Proofreaders Canada</em>, and <em>Wikisource</em>).
 Then, I display here the number of errors in 'my' text found as a result of such comparisons.
 This has been <em>very</em> useful for finding errors!
@@ -803,7 +803,7 @@ The <em>diff</em> shows the differences between <em>this</em> project's text (le
 It shows the same file, but from two different <em>branches</em> in <em>git</em>.
 You can see that the word <em>look</em> is mistakenly transcribed by DPC as <em>took</em>.
 If you look at the <a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/2up'>image of the page</a>, it seems likely that this error occurred during the original OCR scan of the book. 
-This is a good demonstration of how effective it is to compare one digitized version to another: it lets us find each others errors (but not all of them!).
+This is a good demonstration of how effective it is to compare one transcription to another: it lets us find each others errors (but not all of them!).
 
 </body>
 </html>
