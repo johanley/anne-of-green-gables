@@ -24,6 +24,22 @@
 
 <P>You can also use the text to create your own e-book, in epub or mobi format.
 
+<h3>Main Results So Far</h3>
+So far, the main output of this project is a <a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th/chapters'>robust transcription</a>
+of an early edition: 1908 L. C. Page (4th impression).
+This edition was chosen simply because it is the earliest available on archive.org.
+It was produced by proof-reading versus this <a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>copy text on archive.org</a>, by one person (John O'Hanley), over a 24 day period.
+<b>Absolutely no corrections have been applied</b> to the text in this case. 
+(Such corrections will be applied on different <em>branches</em> in github - see below.)
+
+<P>As a side effect, I have detected issues in other transcriptions (to be communicated to those other projects):
+<ul>
+ <li>Distributed Proofreaders of Canada - 30 issues
+ <li>Wikisource - 111 issues
+</ul>
+
+
+
 <h3>Why use <em><a href='https://git-scm.com/'>git</a></em>?</h3>
 <ul> 
  <li>it can reflect different transcriptions/editions naturally using different <em>branches</em>
@@ -37,7 +53,9 @@ This project has two github repositories, not one:
 <ul>
  <li><em><a href='https://github.com/johanley/anne-of-green-gables'>anne-of-green-gables</a></em>: a repo for documentation (which you're reading now), with one branch only.
  <li><em><a href='https://github.com/johanley/anne-of-green-gables-editions'>anne-of-green-gables-editions</a></em>: a repo for various transcriptions of <em>Anne of Green Gables</em>, with one branch for each transcription.
- Merging between branches is not a typical operation in this project. The main requirement is simply to do <em>diffs</em> between branches.
+ Branches can also be created for applying corrections/edits to a transcription.
+ Merging between branches is <em>not</em> a typical operation in this project. 
+ The main requirement is simply to do <em>diffs</em> between branches.
 </ul>
 
 <h3>Lingo</h3>
@@ -158,7 +176,7 @@ Archive.org requires login for this book, but the cost is free.
  <tr><td><a href='https://broadviewpress.com/product/anne-of-green-gables/#tab-description'>2004-BP</a><td>Broadview Press<td>Peterborough, Canada. Close to 1908.
  <tr><td><a href='https://wwnorton.com/books/9780393926958'>2007-NCE</a><td>W. W. Norton<td>New York, USA. Critical edition. Close to 1908.
  <tr><td><a href='https://www.penguinrandomhouse.ca/books/557098/anne-of-green-gables-by-l-m-montgomery/9780143131854'>2017-PC</a><td>Penguin Classics<td>New York, USA. Close to 1908.
- <tr><td><a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>2019-NM</a><td>Nimbus<td>Halifax, Canada. <b>Transcription of the manuscript.</b> Additions, deletions, and changes.
+ <tr><td><a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>2019-NM</a><td>Nimbus<td><b>Transcription of the manuscript.</b> Halifax, Canada.  Additions, deletions, and changes.
 </table>
 
 <h4>Artifacts in the Steps of Publishing the Novel</h4>
@@ -251,17 +269,19 @@ For example, if you wish to put a comma in the title of <em>Diana is Invited to 
 file for that chapter. <b>Don't change the name of the file</b>. That would mess things up.
 
  
-<h3>Current Proof-reading/Editing Status</h3>
-This project is currently transcribing the L. C. Page 1908 4th impression.
+<h3>Proof-reading of 1908-LCP</h3>
+This project has proof-read the <a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>L. C. Page 1908 4th impression</a>, 
+using scans on archive.org.
 In addition to proof-reading the text, the project is finding diffs with respect to other transcriptions, using the technique described above.
-
-<P>The other transcriptions come from:
+The other transcriptions are:
 <ul>
- <li>Distributed Proofreaders of Canada
- <li>Wikisource
- <li>Project Gutenberg
+ <li>Distributed Proofreaders of Canada (<a href='https://archive.org/details/anneofgreengable00montiala/page/n7/mode/2up'>1946-RP</a>)
+ <li>Wikisource (<a href='https://archive.org/details/anneofgreengable00mont_11/page/n7/mode/2up'>1908-LCP, 11th impression</a>)
+ <li>Project Gutenberg (possibly derived from 1925-LCP)
 </ul>
 
+After proof-reading each chapter, a number of proof-reading errors were corrected by doing diffs with these other transcriptions.
+Here are the number of such corrections for each chapter:
 <P><table class='report' style='border:1px;'>
  <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
  <tr><td>Ch. 01<td>JO(4)
@@ -302,21 +322,8 @@ In addition to proof-reading the text, the project is finding diffs with respect
  <tr><td>Ch. 36<td><span title='no, Medallist, got, that'>JO(4)</span>
  <tr><td>Ch. 37<td><span title='paragraph, but, that, can, green/Green, young'>JO(7)</span>
  <tr><td>Ch. 38<td><span title='light/lights, period, signaling/signalling'>JO(3)</span>
+ <tr><th>Total   <td> 147
 </table>
-
-<P>The above table will be useful in evaluating the probable quality of a text. The table:
-<ul>
- <li>shows how many proof-reads/edits have been completed, and by how many different people
- <li>shows the count of the changes made with respect to the previous version
- <li>links to the actual changes made to the previous version, so you can see who made each change, and its exact nature
-</ul>
-<b>The first proof-read/edit has less information</b>, since there's no previous version to compare it to.
-
-<P>However, for the first proof-read only, I compare the result to 3 other transcriptions
-(<em>Project Gutenberg</em>, <em>Distributed Proofreaders Canada</em>, and <em>Wikisource</em>).
-Then, I display here the number of errors in 'my' text found as a result of such comparisons.
-This has been <em>very</em> useful for finding errors!
-The lower the count, the better the proof-reader.
 
 <P>Proof-readers/Editors:
 <P><table class='report' style='border:1px;'>
@@ -784,13 +791,13 @@ Using the above, it seems like it may be derived from 1925-LCP (modernized, Amer
 I stumbled upon these at various times.
 I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
 I found most of these issues from doing a <em>diff</em> between two branches in git.
-(I'm not proof-reading these other sources.)
-<b>As you can see, a significant number of transcription errors are detected by doing a simple <em>diff</em>.</b>
+(I have <em>not</em> proof-read these other sources. I have only proof-read my own 1908-LCP-4th text.)
+<b>As you can see, many transcription errors are detected by doing a simple <em>diff</em>.</b>
 
 <P>
 I haven't included Project Gutenberg here, because the number of issues for them is too large!
 
-<P><b><a href='https://wwnorton.com/books/9780393926958'>2007 Norton</a></b>
+<P><b><a href='https://wwnorton.com/books/9780393926958'>2007 Norton</a> (9)</b> - found in passing
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
@@ -809,11 +816,10 @@ I haven't included Project Gutenberg here, because the number of issues for them
  <tr><td>21 <td>“I don’t think I was <td>black-board <td>blackboard <td> the hyphen is present in 1908, but only because of a line-break; <a href='https://archive.org/details/cu31924013243963/page/n179/mode/2up?q=blackboard'>occurrences</a>
  <tr><td>30 <td>Studies palled just <td>by-ways <td>byways <td> in 1908 the hyphen coincides with a line-break; the word also occurs in chapters 9 and 35. The MS is inconsistent.
  <tr><td>35 <td>Ruby Gillis was the handsomest <td>preeminence <td>pre-eminence <td> in 1908 the hyphen coincides with a line-break; match the MS, and the Oxford Canadian Dict.
-
 </table> 
 
 
-<P><b><a href='https://wwnorton.com/books/9780393926958'>1946 Ryerson</a></b>
+<P><b><a href='https://wwnorton.com/books/9780393926958'>1946 Ryerson</a> (6+3)</b> - found using diffs + DPC notes
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
@@ -823,18 +829,19 @@ I haven't included Project Gutenberg here, because the number of issues for them
    <col style="width: 35%;">
  </colgroup> 
  <tr><th>Ch<th>Paragraph<th>Is<th>Should Be<th>Description
+ <tr><td>1<td>Marilla was a tall   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/6/mode/2up'>hairpins stuck agressively</a>    <td>hairpins stuck aggressively  <td> misspelled
  <tr><td>14<td>That night a thoroughly<td><a href='https://archive.org/details/anneofgreengable00montiala/page/132/mode/2up'>beautification</a> <td>beatification  <td>wrong word, error by the Ryerson editor; compare <a href='https://archive.org/details/cu31924013243963/page/n165/mode/2up'>LCP 1908, 4th impr</a>.
  <tr><td>17<td>The girls were not <td><a href='https://archive.org/details/anneofgreengable00montiala/page/172/mode/2up'>already</a> to take a bite <td>all ready to take a bite  <td>should be 'all ready'; see <a href='https://archive.org/details/cu31924013243963/page/n211/mode/2up'>LCP 1908, 4th impr</a>, and the MS.
  <tr><td>17<td>The girls were not <td><a href='https://archive.org/details/anneofgreengable00montiala/page/172/mode/2up'>red hot</a> coal <td>red-hot coal  <td>should be 'red-hot'; see <a href='https://archive.org/details/cu31924013243963/page/n211/mode/2up'>LCP 1908, 4th impr</a>, and the Cdn Oxford Dictionary.
- 
+ <tr><td>17<td>The girls were not   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/172/mode/2up'>big lucious “strawberry apple.”</a>    <td>big luscious “strawberry apple.”  <td> misspelled
  <tr><td>19<td>For Anne the real <td><a href='https://archive.org/details/anneofgreengable00montiala/page/194/mode/2up'>positive ecstacy</a>  <td>positive ecstasy  <td>misspelled; should be 'ecstasy'; see <a href='https://archive.org/details/cu31924013243963/page/n235/mode/2up'>LCP 1908, 4th impr</a>, and the Cdn Oxford Dictionary
  <tr><td>19<td>“I knew it!”   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/198/mode/2up'>The Barry’s must feel</a>    <td>The Barrys must feel  <td> see <a href='https://archive.org/details/cu31924013243963/page/n241/mode/2up'>LCP 1908, 4th impr</a>
  <tr><td>19<td>“Yes,” answered Diana   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/198/mode/2up'>dancing with rage. Anne.</a>    <td>dancing with rage, Anne.  <td> misprint; period should be a comma. see <a href='https://archive.org/details/cu31924013243963/page/n241/mode/2up'>LCP 1908, 4th impr</a>
- 
+ <tr><td>32<td>“I just guess she   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/336/mode/2up'>we’ll all proud of you.</a>    <td>we’re all proud of you.  <td> misspelled
 </table> 
 
  
-<P><b><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Digital Proofreaders Canada</a></b>
+<P><b><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Digital Proofreaders Canada</a> (30)</b> - found using diffs
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
@@ -873,14 +880,10 @@ I haven't included Project Gutenberg here, because the number of issues for them
  <tr> <td>31<td>“I don’t know—I don’t want <td><a href='https://archive.org/details/cu31924013243963/page/n381/mode/2up'>fore-finger</a>  <td>forefinger    <td> the hyphen is from the line break; the MS has no hyphen, and neither has the Oxford Cdn Dict.
  <tr> <td>33<td>“She looks neat <td><a href='https://archive.org/details/anneofgreengable00montiala/page/342/mode/2up'>to Matthew, nowadays.</a>  <td>to Matthew nowadays.    <td> remove the comma
  <tr> <td>36<td>For a moment Anne <td><a href='https://archive.org/details/anneofgreengable00montiala/page/370/mode/2up'>Matthew would be sorry,—he</a>  <td>Matthew would be sorry—he  <td> remove the comma; seems to be a defect in the printing
- 
  <tr> <td>37<td>“We’ve got each other <td><a href='https://archive.org/details/anneofgreengable00montiala/page/380/mode/2up'>“We’ve got each other. Anne.</a>  <td>“We’ve got each other, Anne.  <td> period should be a comma
-
-
- 
 </table> 
 
-<P><b><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a></b>
+<P><b><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a> (111)</b> - found using diffs
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
@@ -911,66 +914,49 @@ I haven't included Project Gutenberg here, because the number of issues for them
  <tr>  <td>12 <td>“Well, I don’t mind  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/122/mode/2up'>How do you do it</a>  <td>“How do you do it   <td>  missing opening quote
  <tr>  <td>13 <td>“I do _not_ like  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/128/mode/2up'>diamonds with a sigh,</a>  <td>diamonds with a sigh.   <td>  comma should be a period
  <tr>  <td>13 <td>“Anne, you have talked  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/130/mode/2up'>Now, just for</a>  <td>“Now, just for   <td>  missing opening quote
- 
  <tr>  <td>14 <td>“I took the amethyst  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/138/mode/2up'>before you came home,</a>  <td>before you came home.   <td>  comma should be period
  <tr>  <td>14 <td>That was a dismal  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/140/mode/2up'>raked the yard.</a>  <td>raked the yard. (with new paragraph)   <td>  'raked the yard.' ends the paragraph
  <tr>  <td>14 <td>“Anne Shirley,” said   <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/142/mode/2up'>I’ve just  found</a>  <td>I’ve just found   <td>  there's an extra space betwixt 'just' and 'found'
  <tr>  <td>14 <td>“Anne, you do beat <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/144/mode/2up'>start square again..</a>  <td>start square again.   <td>  there's an extra period that should be removed. Possible OCR error.
-
  <tr>  <td>15 <td>Lover’s Lane opened out <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/148/mode/2up'>hauled home in winter,</a>  <td>hauled home in winter.   <td>  comma should be a period
  <tr>  <td>15 <td>When Mr. Phillips was <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/154/mode/2up'>whispered to Anne.</a>  <td>whispered to Anne,   <td>  period should be a comma
  <tr>  <td>15 <td>Mr. Phillips stalked down <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n173/mode/2up'>Mr. Phillips stalked down</a>  <td>Mr. Phillips stalked down   <td>  should be in a new paragraph
  <tr>  <td>15 <td>“She’ll have to <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/162/mode/2up'>I’ll never go to school</a>  <td>“I’ll never go to school   <td> missing opening quote
-
  <tr>  <td>16 <td>The next day was <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/176/mode/2up'>flung herself face down- ward</a>  <td>flung herself face downward   <td> has extra space; the hyphen is from a line break, not a hyphenated word
  <tr>  <td>16 <td>“Messy things,” <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/168/mode/2up'>You clutter up</a>  <td>“You clutter up   <td> missing opening quote
- 
  <tr>  <td>17 <td>“No.” <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/184/mode/2up'>Anne drew a long breath,</a>  <td>Anne drew a long breath.   <td> comma should be a period
  <tr>  <td>17 <td>“And I will always <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/184/mode/2up'>we read together says,</a>  <td>we read together says.   <td> comma should be a period
  <tr>  <td>17 <td> <td><a href='https://archive.org/details/anneofgreengable00montiala/page/176/mode/2up'>And Gil— I</a>  <td>And Gil—I   <td> remove extra space
- 
  <tr>  <td>18 <td>All thing great <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/192/mode/2up'>All thing’s great</a>  <td>All thing great   <td> remove apostrophe
  <tr>  <td>18 <td>“I was awfully near <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/200/mode/2up'>explained Anne, </a>  <td>explained Anne.   <td> comma should be a period
-
  <tr>  <td>19 <td>For Anne the real <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/212/mode/2up'>room up-stairs,</a>  <td>room up-stairs.   <td> comma should be a period; may be caused by poor image quality
  <tr>  <td>19 <td>“Well now, Marilla <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/210/mode/2up'>let Anne go.</a>  <td>let Anne go.”  <td> missing quote
  <tr>  <td>19 <td>“Hasn’t it been a <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/214/mode/2up'>It must be splendid</a>  <td>“It must be splendid  <td> missing quote
  <tr>  <td>19 <td>“I’m afraid my imagination <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/222/mode/2up'>I dare say your </a>  <td>“I dare say your   <td> missing quote
- 
- 
  <tr>  <td>20 <td>“Somehow,” she told Diana <td><a href='https://archive.org/details/anneofgreengable00montiala/page/204/mode/2up'>whether Gil— whether</a>  <td>whether Gil—whether   <td> extra space beside em dash
  <tr>  <td>20 <td>“I’ll have to go <td><a href='https://archive.org/details/anneofgreengable00montiala/page/208/mode/2up'>“I’lll have to go</a>  <td>“I’ll have to go   <td> misspelled, should be 'I’ll'
-
  <tr>  <td>21 <td>“I don’t think I was <td><a href='https://archive.org/details/anneofgreengable00montiala/page/212/mode/2up'>one after the other,</a>  <td>one after the other.   <td> comma should be a period
- 
  <tr>  <td>21 <td>Nobody else asked <td>Nobody else asked  <td>“Nobody else asked   <td> missing quote
  <tr>  <td>21 <td> <td>and the minister paid  <td>“and the minister paid   <td> missing quote
  <tr>  <td>21 <td> <td>as well as the palate.  <td>as well as the palate.”   <td> missing quote
  <tr>  <td>21 <td> <td>Only mind you leave  <td>“Only mind you leave   <td> missing quote
  <tr>  <td>21 <td> <td>“Suppose you jump up  <td>Suppose you jump up   <td> missing quote
  <tr>  <td>21 <td> <td>“My dear little girl  <td>My dear little girl   <td> missing quote
- 
  <tr>  <td>23 <td>If Anne had tumbled <td><a href='https://archive.org/details/anneofgreengable00montiala/page/236/mode/2up'>If Anne had tumbled</a>   <td>If Anne had tumbled    <td> missing new paragraph
- 
  <tr>  <td>25 <td>“I don’t see how I’m <td><a href='https://archive.org/details/anneofgreengable00montiala/page/256/mode/2up'>on that dress, I’m</a>   <td>on that dress. I’m    <td> comma should be a period
  <tr>  <td>25 <td>“Everything went off very well  <td><a href='https://archive.org/details/anneofgreengable00montiala/page/258/mode/2up'>“ I guess we</a>   <td>“I guess we    <td> remove extra space before 'I'.
- 
  <tr>  <td>25 <td> <td>hands and replied: Well now   <td>hands and replied: “Well now   <td> missing quotation mark
  <tr>  <td>25 <td> <td>We only keep hayseed    <td>“We only keep hayseed    <td> missing quotation mark
  <tr>  <td>25 <td> <td>We’ve none on hand   <td>“We’ve none on hand   <td> missing quotation mark
  <tr>  <td>25 <td> <td>Merry Christmas, Marilla!   <td>“Merry Christmas, Marilla!   <td> missing quotation mark
  <tr>  <td>25 <td> <td>Why—why—Anne, don’t you   <td>“Why—why—Anne, don’t you   <td> missing quotation mark
-
  <tr>  <td>26 <td>“In four more years <td><a href='https://archive.org/details/anneofgreengable00montiala/page/264/mode/2up'>that’s ridiculous, I shall</a>   <td>that’s ridiculous. I shall  <td> comma should be a period
  <tr>  <td>26 <td>“They grew in beauty <td><a href='https://archive.org/details/anneofgreengable00montiala/page/266/mode/2up'>I wall save thee</a>   <td>I will save thee  <td> 'wall' should be 'will'
  <tr>  <td>26 <td>But we’re so careful <td>But we’re so careful   <td>“But we’re so careful  <td> missing quotation mark
  <tr>  <td>26 <td>“If I had Alice <td>If I had Alice   <td>“If I had Alice  <td> missing quotation mark
- 
- 
  <tr>  <td>27 <td>“She’s not here when <td><a href='https://archive.org/details/anneofgreengable00montiala/page/272/mode/2up'>“ I reckon she’ll</a>   <td>“I reckon she’ll  <td> remove extra space after comma
  <tr>  <td>27 <td>“Well, I hope you’ll repent <td><a href='https://archive.org/details/anneofgreengable00montiala/page/276/mode/2up'>led you, Anne, Goodness knows</a>   <td>led you, Anne. Goodness knows  <td> comma should be a period
  <tr>  <td>27 <td>“I didn’t say anything <td><a href='https://archive.org/details/anneofgreengable00montiala/page/278/mode/2up'>“ because I thought it</a>   <td>“because I thought it  <td> remove extra space after comma
-
  <tr>  <td>28 <td> <td>“ I’ve sometimes thought   <td>“I’ve sometimes thought  <td> remove extra space 
  <tr>  <td>28 <td> <td>“ It spoils the effect   <td>“It spoils the effect  <td> remove extra space
  <tr>  <td>28 <td> <td>crepe   <td>crêpe  <td> missing accent
@@ -985,51 +971,39 @@ I haven't included Project Gutenberg here, because the number of issues for them
  <tr>  <td>28 <td> <td>But Matthew, who had been sitting   <td>But Matthew, who had been sitting  <td> needs a new paragraph
  <tr>  <td>28 <td> <td>Oh, Anne—we thought—you were   <td>“Oh, Anne—we thought—you were  <td> missing quote
  <tr>  <td>28 <td> <td>and I had to drift   <td>“and I had to drift  <td> missing quote
-
  <tr>  <td>29 <td> <td>in the firtrees at evening   <td>in the fir-trees at evening  <td> missing hyphen
  <tr>  <td>29 <td> <td>you think there is. Miss Barry   <td>you think there is, Miss Barry  <td> period should be a comma
  <tr>  <td>29 <td> <td>as Anne told Marilia afterwards   <td>as Anne told Marilla afterwards  <td> misspelled name
  <tr>  <td>29 <td> <td>“ _and_ silk curtains!   <td>“_and_ silk curtains!  <td> remove extra space
  <tr>  <td>29 <td> <td>I hope you’e enjoyed   <td>I hope you’ve enjoyed  <td> misspelled
- 
  <tr>  <td>29 <td> <td>It’s a very fine evening  <td>“It’s a very fine evening  <td> missing opening quote
  <tr>  <td>29 <td> <td>Mercy, child, how you  <td>“Mercy, child, how you  <td> missing opening quote
  <tr>  <td>29 <td> <td>I never was in Aunt  <td>“I never was in Aunt  <td> missing opening quote
- 
  <tr>  <td>30 <td> <td>Well, seeing you’re so  <td>“Well, seeing you’re so <td> missing opening quote
  <tr>  <td>30 <td> <td>“She must be a great  <td>“She must be a great  <td> missing opening quote
  <tr>  <td>30 <td>“Oh, Marilla, thank <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/338/mode/2up'>“Oh, Marilla, thank you,” Anne</a>  <td>“Oh, Marilla, thank you.” Anne  <td> comma should be a period
  <tr>  <td>30 <td> <td>college for education’s sake, because, she  <td>college for education’s sake, because she <td> remove comma after 'because'
  <tr>  <td>30 <td> <td>short of wonderful how, she’s improved  <td>short of wonderful how she’s improved <td> remove comma after 'how'
  <tr>  <td>32 <td> <td>Yours devotedly,  <td>Yours devotedly, <td> replace the unusual unicode character for the comma with a standard comma
- 
  <tr>  <td>33 <td> <td>decorated dining-room: Diana  <td>decorated dining-room; Diana <td> change colon to a semi-colon
  <tr>  <td>33 <td> <td>It's a perfect night, and   <td>"It's a perfect night, and  Diana <td> missing quote
- 
  <tr>  <td>33 <td> <td>The lady who keeps it  <td>"The lady who keeps it <td> missing quote
  <tr>  <td>33 <td> <td>I won’t cry  <td>"I won’t cry <td> missing quote
  <tr>  <td>33 <td> <td>for your rose and eyes get red  <td>for your nose and eyes get red <td>  change 'rose' to nose' (the printing is defective here)
  <tr>  <td>33 <td> <td>if got to be a B.A.? <td>if I got to be a B.A.?  <td> add 'I'
  <tr>  <td>35 <td> <td>improves all the time," she said   <td>improves all the time," she said.    <td> add period after 'said'
- 
  <tr>  <td>35 <td> <td>trouble making myself love them.   <td>trouble in making myself love them.    <td> add 'in'
  <tr>  <td>35 <td> <td>heads up, in Lovers’ Lane   <td>heads up in Lovers’ Lane    <td> remove the comma
-
  <tr>  <td>36 <td> <td>the faded “June lilies_”   <td>the faded “June lilies”    <td> remove the extra space
  <tr>  <td>36 <td> <td> at the head of the institution”   <td> at the head of the institution.”    <td> add missing period
  <tr>  <td>36 <td> <td>“It’s only that I’m getting old   <td>“It’s only that I’m getting old    <td> doesn't start a new paragraph
-
  <tr>  <td>37 <td> <td>graveyard to plant a rosebush   <td>graveyard to plant a rose-bush    <td> spell with a hyphen, as spelled a few lines down
  <tr>  <td>37 <td> <td>the cake with liniment”   <td>the cake with liniment.”   <td> add missing period
-
  <tr>  <td>38 <td> <td>“What am I to live for   <td>“What am I to live for   <td> remove new line beforehand; does not start a new paragraph
  <tr>  <td>38 <td> <td>lifted her hands in holy horror,   <td>lifted her hands in holy horror.   <td> comma should be a period
  <tr>  <td>38 <td> <td>for me to go over”   <td>for me to go over,”   <td> comma needed after 'over'
  <tr>  <td>38 <td> <td>firs in the__hollow   <td>firs in the_hollow   <td> remove extra space after 'the'
  <tr>  <td>38 <td> <td>Anne’s horizons had closed   <td>Anne’s horizons had closed   <td> needs to start a new paragraph
- 
- 
-
 </table>
 
 
