@@ -16,7 +16,8 @@
 <h3>Why?</h3>
 <ul> 
  <li>to <b>significantly improve</b> the quality of transcriptions of the novel
- <li>to <b>detect transcription errors</b> by doing <em><a href='images/diff.png'>diffs</a></em> between different transcriptions
+ <li>to <b>detect transcription errors</b> by doing <em><a href='images/diff.png'>diffs</a></em> between different transcriptions, 
+ which lets me <span class='err'><b>stand on the shoulders of others</b></span>
  <li>to document errors and issues in the first editions
  <li>to document the variations between editions
  <li>to <a href='https://www.lulu.com/'>print</a> a copy of the novel, using a robust text
@@ -29,7 +30,7 @@ So far, the main output of this project is a <a href='https://github.com/johanle
 of an early edition: 1908 L. C. Page (4th impression).
 This edition was chosen simply because it is the earliest available on archive.org.
 It was produced by proof-reading versus this <a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>copy text on archive.org</a>, by one person (John O'Hanley), over a 24 day period.
-<b>Absolutely no corrections have been applied</b> to the text in this case. 
+<b>Absolutely no corrections to obvious errors have been applied</b> to the text in this case. 
 (Such corrections will be applied on different <em>branches</em> in github - see below.)
 
 <P>As a side effect, I have detected issues in other transcriptions (to be communicated to those other projects):
@@ -221,15 +222,22 @@ Some editions have been imaged and made available on the web, mostly by archive.
 There are <a href='https://confederationcentre.com/news/major-digital-exhibition-of-anne-manuscript-announced/'>plans</a> to make images of the manuscript available in 2022.
 Montgomery's handwriting is hard to read. Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>transcription</a> edited by C. S. Collins.
 
-<h3>Other Sources of Transcriptions</h3>
+<h3>Transcriptions From Other Folks</h3>
 
 <ul>
- <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>. 
- Their copy-text is the 1946-11 Ryerson edition (see link above). <b>Seems to be of good quality, but see corrections listed below.</b>
- <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. They usually get texts from Distributed Proofreaders, but not always. They don't even indicate the copy-text. <b>The quality of this text seems low.</b> 
- The copy-text seems to be some arbitrary edition having substantial differences with 1908.
+ <li><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>Faded Page</a> - current version as of 2008-05-09. 
+ Companion site to <a href='https://www.pgdpcanada.net/c/default.php'>Distributed Proofreaders Canada</a>. 
+ Their copy-text is the 1946-11 Ryerson edition (see link above). 
+ High quality, but see corrections listed below.
+ <li><a href='http://www.gutenberg.org/ebooks/45'>Project Gutenberg</a> - current version as of 2016-10-06. 
+ They usually get texts from Distributed Proofreaders, but not in this case.
+ They don't even indicate the copy text. 
+ See below for clues that indicate the copy text is derived from 1925-LCP.
+ This transcription has many differences with 1908-LCP.
  <li><a href='https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables'>Standard Ebooks</a> - apparently uses Project Gutenberg as source of their text. (I don't know if they have proof-read/edited the text themselves. I suspect not.)
- <li><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a>
+ <li><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a> - current version as of 2020-12-03.
+ The quality is pretty good, but see corrections listed below.
+ They seem to have systematic errors regarding comma/period, and quotation marks.
 </ul>
 
 Issues:
@@ -338,11 +346,22 @@ A small number are serious, some are <em>medjum</em>, but most are <em>weeny-tee
 They are collected here to aid those who wish to edit the text, and produce their own version.
 For more information, see the modern critical editions: 1997-OUP, 2004-BP, 2007-NCE, 2017-PC, and 2019-NM.
 
+<P>I have divided these issues into two kinds:
+<ul>
+ <li>errors: the text is either certainly or very likely in error in some way. 
+  The idea is to stop the errors from propagating.
+ <li>matters of taste: in my own opinion, changes that I would consider. 
+</ul>
+Any such division is arbitrary, and opinions will assuredly differ.
+Nevertheless, I think it's helpful to others to make this kind of separation.
 
-<h3>Known Issues</h3>
-<b>I'm adding to these lists as I go along, after proof-reading each chapter.</b>
 
+<h3>Issues: Errors (certain or likely)</h3>
 
+<P>
+  <span class='text'><a href='https://archive.org/details/cu31924013243963/page/n11/mode/2up'><span class='err'>Rachael</span></a> Lynde</span><br>
+  <em>[Table of Contents, Ch. 1 and Ch. 9].</em>
+  Change to match how the name is spelled throughout the body of the text: 'Rachel'.
 <P>
   <span class='text'>people called “Rachel Lynde’s <a href='https://archive.org/details/cu31924013243963/page/n17/mode/2up'>husban<span class='err'>d—</span></a>was sowing</span><br>
   <em>[Ch. 01, p2-3].</em>
@@ -383,10 +402,6 @@ For more information, see the modern critical editions: 1997-OUP, 2004-BP, 2007-
    The period is missing after 'there'. Seems to be a defect in the printing, not in the image.
    The period is <a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>present but weak</a> in the 11th impression, and 
    definitely <a href='https://archive.org/details/annegreengables00montgoog/page/n99/mode/2up'>present</a> in 39th impression.
-<P>
-  <span class='text'>yellowish <a href='https://archive.org/details/cu31924013243963/page/n411/mode/2up'><span class='err'>brown</span></a> wincey</span><br>
-  <em>[Ch. 34 , p384]</em>
-  Change to agree with chapter 2, which describes the same dress as 'yellowish gray wincey'.
 <P>
   <span class='text'>cooky to eat <a href='https://archive.org/details/cu31924013243963/page/n193/mode/2up'><span class='err'>with it along</span></a> in the afternoon</span><br>
   <em>[Ch. 16, p170]</em>
@@ -440,6 +455,10 @@ For more information, see the modern critical editions: 1997-OUP, 2004-BP, 2007-
   <em>[Ch. 26, p293]</em>
   Change to 'Let’s'. 
 <P>
+  <span class='text'><span class='err'><a href='https://archive.org/details/cu31924013243963/page/n315/mode/2up'>in</a></span> Death Not Divided</a></span><br>
+  <em>[Ch. 26, p290].</em>
+  Capitalize to 'In'. Match the MS. <em>Annotated</em> makes this change.
+<P>
   <span class='text'><a href='https://archive.org/details/cu31924013243963/page/n335/mode/2up'><span class='err'>pail</span></a> the barge</span><br>
   <em>[Ch. 28, p293]</em>
   Change to 'pall'. Match the MS. 
@@ -455,6 +474,10 @@ For more information, see the modern critical editions: 1997-OUP, 2004-BP, 2007-
   <em>[Ch. 32, p365]</em>
   Missing period after 'away'.
 <P>
+  <span class='text'>yellowish <a href='https://archive.org/details/cu31924013243963/page/n411/mode/2up'><span class='err'>brown</span></a> wincey</span><br>
+  <em>[Ch. 34 , p384]</em>
+  Change to agree with chapter 2, which describes the same dress as 'yellowish gray wincey'.
+<P>
   <span class='text'>* I meant to, after <a href='https://archive.org/details/cu31924013243963/page/n443/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 37, p416]</em>
   Change to 'a while'.
@@ -464,11 +487,10 @@ For more information, see the modern critical editions: 1997-OUP, 2004-BP, 2007-
   <em>[Ch. 38, p426]</em>
   Period should be a colon, 'night:'.
   
-  
-  
 <P>* I haven't seen this issue mentioned elsewhere.
 
-<h3>John's Speed Bumps</h3>
+
+<h3>Issues: personal taste</h3>
 In the list below, I list some issues that I personally would like to examine when creating my own version of the text.
 <b>They are a matter of opinion.
 Don't take them too seriously.</b>
@@ -613,10 +635,6 @@ the real world of thinking about the text's style.
   <em>[Ch. 25, p276].</em>
   Change to 'There remained only'.
 <P>
-  <span class='text'><span class='err'><a href='https://archive.org/details/cu31924013243963/page/n315/mode/2up'>in</a></span> Death Not Divided</a></span><br>
-  <em>[Ch. 26, p290].</em>
-  Capitalize to 'In'. Match the MS.
-<P>
   <span class='text'>Moody Spurgeon was <span class='err'><a href='https://archive.org/details/cu31924013243963/page/n311/mode/2up'>“licked;”</a></span></a></span><br>
   <em>[Ch. 26, p287].</em>
   The semi-colon should be outside the quotation marks. Match the MS.
@@ -695,8 +713,7 @@ the real world of thinking about the text's style.
   <em>[Ch. 38, p423]</em>
   Add a comma after 'teach'. Without a comma, 'there' erroneously refers to Avonlea, on first reading.
 
-<P>General speed bump issue:<br>
-There are many times when the speech of the characters seems slightly too formal for rural Islanders. 
+<P>General speed bump issue: there are many times when the speech of the characters seems slightly too formal for rural Islanders. 
 For example, contractions such as <em>it is</em> versus <em>it's</em>. 
 
 <P>In chapter 5:
@@ -1030,10 +1047,10 @@ If you see odd characters on your screen, check that your tools are using the UT
 <P>Quotes, apostrophes, and ellipsis:
 <P><table class='report' style='border:1px;'>
  <tr><th>Unicode<th>Name<th>Example<th>Description
- <tr><td>U+201C<td>Left Double Quotation Mark<td>“<td>Open quote. US style.
- <tr><td>U+201D<td>Right Double Quotation Mark<td>”<td>Close quote. US style.
- <tr><td>U+2018<td>Left Single Quotation Mark<td>‘<td>Open quote. UK style.
- <tr><td>U+2019<td>Right Single Quotation Mark<td>’<td>Close quote. UK style.
+ <tr><td>U+201C<td>Left Double Quotation Mark<td>“<td>Open quote. 
+ <tr><td>U+201D<td>Right Double Quotation Mark<td>”<td>Close quote. 
+ <tr><td>U+2018<td>Left Single Quotation Mark<td>‘<td>Open quote. 
+ <tr><td>U+2019<td>Right Single Quotation Mark<td>’<td>Close quote. 
  <tr><td>U+0027<td>Vertical Apostrophe<td>'<td>Undesirable; use the Right Single Quotation Mark instead: Tom’s.
  <tr><td>U+2026<td>Ellipsis<td>…<td>Single chararcter, not three!
 </table>
