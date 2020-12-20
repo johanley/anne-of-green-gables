@@ -15,7 +15,7 @@
 
 <h3>Why?</h3>
 <ul> 
- <li>to <b>significantly improve</b> the quality of transcriptions of the novel
+ <li>to <b>significantly improve</b> the quality of (open-source) transcriptions of the novel
  <li>to <b>detect transcription errors</b> by doing <em><a href='images/diff.png'>diffs</a></em> between different transcriptions
  <li>to document errors and issues in the first editions
  <li>to document the variations between editions
@@ -24,7 +24,8 @@
 
 <P>You can also use the text to create your own e-book, in epub or mobi format.
 
-<P><span class='err'>Doing <em><a href='images/diff.png'>diffs</a></em> with other transcriptions lets a proof-reader <b>stand on the shoulders of others.</b></span>
+<P><span class='err'>Doing <em><a href='images/diff.png'>diffs</a></em> with other transcriptions lets a proof-reader <b>stand on the shoulders of others</b></span>, 
+which is the main point of this project.
 
 
 <h3>Main Results So Far</h3>
@@ -84,7 +85,7 @@ They don't compare their transcriptions to the output of other similar groups.
 <P>The idea of this project is simply that <span class='err'><b>doing diffs on independent transcriptions is an easy way to 
 find a large number of errors, and significantly increase accuracy.</b></span>
 
-<P>Some lingo:
+<P>Some <em>ad hoc</em> lingo, for the nonce:
 <ul>
  <li><b>TE(A)</b> - the transcription errors in a single transcription A. 
  <li><b>UTE(A, B, C)</b> - the <em>universal</em> transcription errors <em>common</em> to a <em>set</em> of transcriptions A, B, C.   
@@ -222,7 +223,8 @@ Some editions have been imaged and made available on the web, mostly by archive.
 
 <P>
 There are <a href='https://confederationcentre.com/news/major-digital-exhibition-of-anne-manuscript-announced/'>plans</a> to make images of the manuscript available in 2022.
-Montgomery's handwriting is hard to read. Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>transcription</a> edited by C. S. Collins.
+Montgomery's handwriting is hard to read. 
+Most would prefer the <a href='https://nimbus.ca/store/anne-of-green-gables-the-original-manuscript.html'>book</a> edited by C. S. Collins.
 
 <h3>Transcriptions From Other Folks</h3>
 
@@ -269,8 +271,9 @@ That policy is best relegated to a secondary branch, and not to the core data.
 The core data remains the core data, without ambiguity, exactly matching the copy-text (we hope), while different policies for applying corrections can be applied at will in a secondary branch off of the core.
 
 <h3>No Front Matter</h3>
-This project captures the contents of the 38 chapters of the book.
+The transcription produced by this project captures the contents of the 38 chapters of the book.
 Items outside the chapters, including the table of contents and dedication, aren't captured here.
+(That being said, errors in the table of contents of 1908-LCP are noted below.)
 
 <h3>Chapter Title Conventions</h3>
 The chapter titles are to be placed on the first line of each chapter. 
@@ -283,15 +286,17 @@ file for that chapter. <b>Don't change the name of the file</b>. That would mess
 <h3>Proof-reading of 1908-LCP</h3>
 This project has proof-read the <a href='https://archive.org/details/cu31924013243963/page/n9/mode/2up'>L. C. Page 1908 4th impression</a>, 
 using scans on archive.org.
-In addition to proof-reading the text, the project has used <em>diffs</em> with respect to other transcriptions, using the technique described above.
-The other transcriptions are:
+The proof-reading was done <a href='images/eclipse.jpg'>on screen</a> (not on paper, unfortunately), using the Eclipse code editor. 
+
+In addition to proof-reading the text, the project has used <a href='images/diff.png'><em>diffs</em></a> (in the Eclipse code editor) with respect to other transcriptions, using the technique described above.
+The other transcriptions used are:
 <ul>
  <li>Distributed Proofreaders of Canada (<a href='https://archive.org/details/anneofgreengable00montiala/page/n7/mode/2up'>1946-RP</a>)
  <li>Wikisource (<a href='https://archive.org/details/anneofgreengable00mont_11/page/n7/mode/2up'>1908-LCP, 11th impression</a>)
  <li>Project Gutenberg (possibly derived from 1925-LCP)
 </ul>
 
-After proof-reading each chapter, a number of proof-reading errors were corrected by doing diffs with these other transcriptions.
+After proof-reading each chapter, a number of proof-reading errors were corrected by doing <em>diffs</em> with these other transcriptions.
 Here are the number of such corrections for each chapter:
 <P><table class='report' style='border:1px;'>
  <tr><th><th title='L.C. Page, 4th impression, 1908-09'><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a>
@@ -738,8 +743,8 @@ It's hard to know where to draw the line.
 <h3>Ways To Distinguish Provenance</h3>
 It's fun to try and guess the provenance of a given text, to see where it might come from.
 Modern editions of the book often don't state the source text explicitly.
-You may want to be a detective and guess at the possible origin of the text. 
-This game is clouded because editions can make use of:
+You may want to play detective and guess at the possible origin of the text. 
+This game is uncertain because editions can make use of:
 <ul>
  <li>Americanization (<em>parlor</em>, not <em>parlour</em>)
  <li>modernization (<em>today</em>, not <em>to-day</em>)
@@ -808,16 +813,14 @@ Using the above, it seems like it may be derived from 1925-LCP (modernized, Amer
 </ul>
 
 <h3>Issues In Specific Editions/Transcriptions</h3>
-I stumbled upon these at various times.
-I'm noting them here in order to let the publishers know later, in case they are unaware of the issue.
-I found most of these issues from doing a <em>diff</em> between two branches in git.
+I found most, but not all, of these issues from doing a <em>diff</em> between two branches in git.
 (I have <em>not</em> proof-read these other sources. I have only proof-read my own 1908-LCP-4th text.)
 <b>As you can see, many transcription errors are detected by doing a simple <em>diff</em>.</b>
 
 <P>
 I haven't included Project Gutenberg here, because the number of issues for them is too large!
 
-<P><b><a href='https://wwnorton.com/books/9780393926958'>2007 Norton</a> (9)</b> - found in passing
+<P><b><a href='https://wwnorton.com/books/9780393926958'>2007 Norton</a> (9)</b> - found in passing; all involve hyphens
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
@@ -839,7 +842,7 @@ I haven't included Project Gutenberg here, because the number of issues for them
 </table> 
 
 
-<P><b><a href='https://wwnorton.com/books/9780393926958'>1946 Ryerson</a> (6+3)</b> - found using diffs + DPC notes
+<P><b><a href='https://wwnorton.com/books/9780393926958'>1946 Ryerson</a> (6+3)</b> - found using diffs + DPC notes about misspellings
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 5%;">
