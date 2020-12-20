@@ -97,6 +97,8 @@ find a large number of errors, and significantly increase accuracy.</b></span>
 <img src='images/work-flow-diagram.png' title='Work flow'>
 <P>First I do a full proof-read of my transcription.
 
+<img src='images/boxes.png' title='diff eliminates most errors' style='float: right; margin:1.0em;'  height='550' width='220' >
+
 <P>Then, for each of the other transcriptions A, B, C:
 <ul>
  <li>I do a diff between <em>me</em> and the other transcription
@@ -109,6 +111,7 @@ find a large number of errors, and significantly increase accuracy.</b></span>
 
 At the end of the process, what's left over is UTE(A, B, C, me), the universal transcription errors, the ones that are <b>exactly the same in <em>all</em> of the transcriptions</b>.
 
+
 <P>The UTE(A, B, C, me) errors are more difficult to deal with.
 They can't be found by doing diffs, since they are present in all of the input transcriptions.
 Can they be detected using other means?
@@ -120,7 +123,7 @@ But those are special cases (marked as 'known', in the above diagram).
 
 <h4>Rule 1: All non-universal errors can be eliminated by doing diffs.</h4>
 
-<b>TE(me) = UTE(A, B, C, me)</b>
+<b>TE(me) ⇒ UTE(A, B, C, me)</b>
 
 <P>At the end of the process described above, the transcription errors in my output equal the <em>universal</em> transcription errors
 across all of the inputs. This expresses the benefit of doing diffs. 
@@ -742,7 +745,7 @@ It's hard to know where to draw the line.
 
 <h3>Ways To Distinguish Provenance</h3>
 It's fun to try and guess the provenance of a given text, to see where it might come from.
-Modern editions of the book often don't state the source text explicitly.
+Modern non-critical editions of the book often don't state the source text explicitly.
 You may want to play detective and guess at the possible origin of the text. 
 This game is uncertain because editions can make use of:
 <ul>
