@@ -54,6 +54,7 @@ which is the main point of this project.
      <li><a href='#issues-dpc'>Digital Proofreaders Canada</a><br>
      <li><a href='#issues-wikisource'>Wikisource</a><br>
    </ul>
+ <li><a href='#propagating-errors'>Example of Long Term Error Propagation</a><br>
  <li><a href='#utf8-encoding-everywhere'>UTF-8 Encoding Everywhere</a><br>
  <li><a href='#character-issues'>Character Issues</a><br>
  <li><a href='#standardized-line-breaks'>Standardized Line Breaks</a><br>
@@ -1068,7 +1069,40 @@ I haven't included Project Gutenberg here, because the number of issues for them
 </table>
 
 
+<h3 id='propagating-errors'>Example of Long Term Error Propagation</h3>
+Errors can persist for a long time. They can also reappear.
+As an example, take the error in the last chapter (listed above):
 
+<P>
+  <span class='text'>told her Thomas that <a href='https://archive.org/details/cu31924013243963/page/n453/mode/2up'><span class='err'>night.</span></a></span><br>
+  <em>[Ch. 38, p426]</em>
+  Period should be a comma or a colon, 'night,' or 'night:'. 
+  MS has a comma. 
+  In chapter 15, some paragraphs end in a comma (unusual), just before a character begins speaking.
+
+<P><table class='report' style='border:1px;'>
+ <colgroup>
+   <col style="width: 10%;">
+   <col style="width: 50%;">
+   <col style="width: 15%;">
+   <col style="width: 5%;">
+ </colgroup> 
+ <tr><th>Date<th>Publisher<th>Appears As <th>
+ <tr><td>1908     <td>MS, the original manuscript   <td> comma <td> ✓
+ <tr><td>1908-09  <td>L. C. Page, 4th impression       <td> <a href='https://archive.org/details/cu31924013243963/page/n453/mode/2up'>period</a> <td> 🗴
+ <tr><td>1909-08  <td>L. C. Page, 11th impression      <td> <a href='https://archive.org/details/anneofgreengable00mont_11/page/426/mode/2up'>period</a>  <td> 🗴
+ <tr><td>1915-02  <td>Grosset and Dunlap, 39th impression <td> <a href='https://archive.org/details/annegreengables00montgoog/page/n443/mode/2up'>period</a> <td> 🗴
+ <tr><td>1930-10  <td>George G. Harrap   <td> <a href='https://archive.org/details/anneofgreengable00mont_12/page/348/mode/2up'>period</a> <td> 🗴
+ <tr><td>1933     <td>Angus &amp; Robertson  <td> <a href='https://archive.org/details/anne-of-green-gables_20201025/page/320/mode/2up'>period</a> <td> 🗴
+ <tr><td>1946-11  <td>Ryerson Press        <td> <a href='https://archive.org/details/anneofgreengable00montiala/page/394/mode/2up'>comma</a> <td> ✓
+ <tr><td>1997     <td>Oxford University Press        <td> comma <td> ✓
+ <tr><td>1999     <td>HarperCollins (mass market paperback)   <td> period  <td> 🗴
+ <tr><td>2007     <td>Norton Critical Edition        <td> period <td> 🗴
+ <tr><td>2017     <td>Penguin Classics               <td> colon <td> ✓
+</table>
+
+
+  
 <h3 id='utf8-encoding-everywhere'>UTF-8 Encoding Everywhere</h3>
 All text files in this project use the <a href='http://utf8everywhere.org/'>UTF-8 encoding</a>. 
 If you see odd characters on your screen, check that your tools are using the UTF-8 encoding.
