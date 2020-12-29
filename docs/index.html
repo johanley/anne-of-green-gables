@@ -74,7 +74,7 @@ It was produced by proof-reading versus this <a href='https://archive.org/detail
 from critical editions and my own proof-reading.
 
 <P>Result: the above list of errors has been applied to the uncorrected text, and is available <a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th-corrected'>here</a>.
-<b>For most people, this is the most useful item in this project.</b>
+<span class='err'><b>For most people, this is the most useful item in this project.</b></span>
 The changes made can be viewed <a href='https://github.com/johanley/anne-of-green-gables-editions/compare/1908-LCP-4th...1908-LCP-4th-corrected'>here</a>.
 
 <P>Result: I have detected issues in other transcriptions (which have been communicated to those other projects):
@@ -113,6 +113,7 @@ The <a href='https://github.com/johanley/anne-of-green-gables-editions/tree/mast
  <li><b>raw</b>: <a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>1908-LCP-4th</a> - with no corrections applied to any errors (warts and all). 
  The copy text is the L. C. Page, 1st edition, 4th impression.
  <li><b>corrected</b>: <a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th-corrected'>1908-LCP-4th-corrected</a> - these <a href='#known-issues-certain-or-likely'>errors</a> in the text have been corrected. 
+ <span class='err'><b>This is the branch that most people should use.</b></span>
 </ul>
  
 Transcriptions by other parties, used for <em>diffing</em> with respect to this project's transcription:
@@ -1082,13 +1083,19 @@ I haven't included Project Gutenberg here, because the number of issues for them
 <P id='issues-wikisource'><b><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>Wikisource</a> (109)</b> - found using diffs
 
 <P>Fixes have been applied to most of these items (2020-12-28).
-The items marked as <b>exp</b> appear to be artifacts of a bug in Wikisource's export system.
-The error is not seen in Wikisource's core data, but only in their text-file export of their data.
-That means no fix can be made by Wikisource editors in the usual way.
-Instead, Wikisource must apply a bug fix to their export code.
 
-<P>All of these <em>exp</em> items involve whitespace of some kind.
-Some cases of the bug are related to pictures appearing between pages.
+<P>The items marked as <b>exp</b> involve whitespace of some kind.
+Common causes:
+<ul>
+ <li>unneeded wikisource comments or directives can introduce whitespace.
+ <li>blank pages that aren't skipped. 
+ That's implemented at the chapter level, by editing the &lt;pages&gt; tag to exclude the blank pages.
+ <li>when a hyphenated word spans two pages, then the apostrophe must be inside {{hwe}}.
+</ul>
+
+<P>Some cases of extra whitespace may represent an actual bug in Wikisource export code.
+
+<P>The <em>exp</em> items that have been verified as fixed are marked as y<sup>1</sup>.
 
 
 <P><table class='report' style='border:1px;'>
@@ -1123,7 +1130,7 @@ Some cases of the bug are related to pictures appearing between pages.
  <tr>  <td>13 <td>“Anne, you have talked  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/130/mode/2up'>Now, just for</a>  <td>“Now, just for   <td>  missing opening quote <td> y
  <tr>  <td>14 <td>“I took the amethyst  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/138/mode/2up'>before you came home,</a>  <td>before you came home.   <td>  comma should be period <td> y
  <tr>  <td>14 <td>That was a dismal  <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/140/mode/2up'>raked the yard.</a>  <td>raked the yard. (with new paragraph)   <td>  'raked the yard.' ends the paragraph  <td> y
- <tr>  <td>14 <td>“Anne Shirley,” said   <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/142/mode/2up'>I’ve just  found</a>  <td>I’ve just found   <td>  there's an extra space betwixt 'just' and 'found'  <td> exp
+ <tr>  <td>14 <td>“Anne Shirley,” said   <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/142/mode/2up'>I’ve just  found</a>  <td>I’ve just found   <td>  there's an extra space betwixt 'just' and 'found'  <td>  exp [ZWSP]
  <tr>  <td>14 <td>“Anne, you do beat <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/144/mode/2up'>start square again..</a>  <td>start square again.   <td>  there's an extra period that should be removed. Possible OCR error. <td> y
  <tr>  <td>15 <td>Lover’s Lane opened out <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/148/mode/2up'>hauled home in winter,</a>  <td>hauled home in winter.   <td>  comma should be a period <td> y
  <tr>  <td>15 <td>When Mr. Phillips was <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/154/mode/2up'>whispered to Anne.</a>  <td>whispered to Anne,   <td>  period should be a comma <td> y
@@ -1161,25 +1168,25 @@ Some cases of the bug are related to pictures appearing between pages.
  <tr>  <td>26 <td>“If I had Alice <td>If I had Alice   <td>“If I had Alice  <td> missing quotation mark  <td> y
  <tr>  <td>27 <td>“She’s not here when <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/298/mode/2up?q=%22I+reckon%22'>“ I reckon she’ll</a>   <td>“I reckon she’ll  <td> remove extra space after quote  <td>  y
  <tr>  <td>27 <td>“Well, I hope you’ll repent <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/302/mode/2up?q=%22Goodness+knows%22'>led you, Anne, Goodness knows</a>   <td>led you, Anne. Goodness knows  <td> comma should be a period  <td> y
- <tr>  <td>27 <td>“I didn’t say anything <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/304/mode/2up?q=%22say+anything%22'>“ because I thought it</a>   <td>“because I thought it  <td> remove extra space after quote  <td>exp
+ <tr>  <td>27 <td>“I didn’t say anything <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/304/mode/2up?q=%22say+anything%22'>“ because I thought it</a>   <td>“because I thought it  <td> remove extra space after quote  <td>y<sup>1</sup>
  <tr>  <td>28 <td>“Oh, do you really think so <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/308/mode/2up?q=%22sometimes+thought%22'>“ I’ve sometimes thought</a>   <td>“I’ve sometimes thought  <td> remove extra space  <td> y
  <tr>  <td>28 <td>“Ruby, you shouldn’t talk <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/310/mode/2up?q=%22spoils+the+effect%22'>“ It spoils the effect</a>   <td>“It spoils the effect  <td> remove extra space  <td> y 
  <tr>  <td>28 <td>Jane rose to the occasion <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/310/mode/2up?q=%22crepe%22'>crepe</a>   <td>crêpe  <td> missing accent  <td> y
  <tr>  <td>28 <td>“Now, she’s all ready <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/310/mode/2up?q=%22sweet+sister%22'>* Farewell, sweet sister</a>   <td>“Farewell, sweet sister  <td> bad quote character, and extra space  <td> y
- <tr>  <td>28 <td>The flat drifted <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/312/mode/2up?q=%22disappear%22'>disappear   before their very eyes</a>   <td>disappear before their very eyes  <td> remove two extra spaces between 'disappear' and 'before'  <td> exp
+ <tr>  <td>28 <td>The flat drifted <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/312/mode/2up?q=%22disappear%22'>disappear   before their very eyes</a>   <td>disappear before their very eyes  <td> remove two extra spaces between 'disappear' and 'before'  <td> exp [ZWSP]
  <tr>  <td>28 <td>The minutes passed by <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n333/mode/2up?q=%22minutes+passed+by%22'>The minutes passed by</a>   <td>The minutes passed by  <td> needs a new paragraph  <td> exp
- <tr>  <td>28 <td>For a moment Anne <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/314/mode/2up?q=%22called+her%22'>called her “ carrots ” and</a>    <td>called her “carrots” and   <td> remove extra spaces around 'carrots'  <td>exp
+ <tr>  <td>28 <td>For a moment Anne <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/314/mode/2up?q=%22called+her%22'>called her “ carrots ” and</a>    <td>called her “carrots” and   <td> remove extra spaces around 'carrots'  <td>y<sup>1</sup>
  <tr>  <td>28 <td>Half-way up the path <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/314/mode/2up?q=%22being+away%22'>Mrs. Barry being away,</a>   <td>Mrs. Barry being away.  <td> comma should be a period  <td> y
- <tr>  <td>28 <td>“Oh, Anne,” gasped Diana <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=drowned'>drowned — and we</a>   <td>drowned—and we  <td> remove extra space surrounding the em dash  <td> exp
- <tr>  <td>28 <td>“Oh, yes, I think I will <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=%22think+my+prospects%22'>“ I think my prospects</a>   <td>“I think my prospects  <td> remove extra space  <td> exp
- <tr>  <td>28 <td>“Well,” explained Anne <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=%22valuable+lesson%22'>“ I’ve learned a new and valuable</a>   <td>“I’ve learned a new and valuable  <td> remove extra space  <td> exp
+ <tr>  <td>28 <td>“Oh, Anne,” gasped Diana <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=drowned'>drowned — and we</a>   <td>drowned—and we  <td> remove extra space surrounding the em dash  <td> y<sup>1</sup>
+ <tr>  <td>28 <td>“Oh, yes, I think I will <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=%22think+my+prospects%22'>“ I think my prospects</a>   <td>“I think my prospects  <td> remove extra space  <td> y<sup>1</sup>
+ <tr>  <td>28 <td>“Well,” explained Anne <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=%22valuable+lesson%22'>“ I’ve learned a new and valuable</a>   <td>“I’ve learned a new and valuable  <td> remove extra space  <td> y<sup>1</sup>
  <tr>  <td>28 <td>But Matthew, who had been <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/318/mode/2up?q=%22But+Matthew%22'>But Matthew, who had been sitting</a>   <td>But Matthew, who had been sitting  <td> needs a new paragraph  <td> y
  <tr>  <td>28 <td>“Oh, Anne,” gasped Diana <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/316/mode/2up?q=%22we+thought+you%22'>Oh, Anne—we thought—you were</a>   <td>“Oh, Anne—we thought—you were  <td> missing quote  <td> y
  <tr>  <td>28 <td>“We were playing Elaine <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/314/mode/2up?q=%22to+drift%22'>and I had to drift</a>   <td>“and I had to drift  <td> missing quote <td> y
  <tr>  <td>29 <td>Anne was bringing the cows <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/318/mode/2up?q=%22at+evening%22'>in the firtrees at evening</a>   <td>in the fir-trees at evening  <td> missing hyphen  <td> y
  <tr>  <td>29 <td>“Indeed, I didn’t <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/324/mode/2up?q=%22you+think+there%22'>you think there is. Miss Barry</a>   <td>you think there is, Miss Barry  <td> period should be a comma  <td> y
  <tr>  <td>29 <td>Miss Barry’s house <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/324/mode/2up?q=%22as+Anne+told%22'>as Anne told Marilia afterwards</a>   <td>as Anne told Marilla afterwards  <td> misspelled name  <td> y
- <tr>  <td>29 <td>“Velvet carpet <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/324/mode/2up?q=%22and+silk+curtains%22'>“ _and_ silk curtains!</a>   <td>“_and_ silk curtains!  <td> remove extra space  <td> exp
+ <tr>  <td>29 <td>“Velvet carpet <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/324/mode/2up?q=%22and+silk+curtains%22'>“ _and_ silk curtains!</a>   <td>“_and_ silk curtains!  <td> remove extra space  <td> y<sup>1</sup>
  <tr>  <td>29 <td>“Well, I hope <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/328/mode/2up?q=%22I+hope%22'>I hope you’e enjoyed</a>   <td>I hope you’ve enjoyed  <td> misspelled  <td> y
  <tr>  <td>29 <td>“It’s a very fine <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/320/mode/2up?q=%22a+very+fine%22'>It’s a very fine evening</a>  <td>“It’s a very fine evening  <td> missing opening quote  <td> y
  <tr>  <td>29 <td>“So you’ve come to <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/324/mode/2up?q=%22Mercy%22'>Mercy, child, how you</a>  <td>“Mercy, child, how you  <td> missing opening quote  <td>y
@@ -1199,7 +1206,7 @@ Some cases of the bug are related to pictures appearing between pages.
  <tr>  <td>35 <td>“That Anne-girl <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/396/mode/2up?q=%22improves+all%22'>improves all the time," she said</a>   <td>improves all the time," she said.    <td> add period after 'said'  <td> y
  <tr>  <td>35 <td>“That Anne-girl <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/396/mode/2up?q=%22love+them%22'>trouble making myself love them.</a>   <td>trouble in making myself love them.    <td> add 'in' <td> y
  <tr>  <td>35 <td>“That may make me <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/398/mode/2up?q=%22heads+up%22'>heads up, in Lovers’ Lane</a>   <td>heads up in Lovers’ Lane    <td> remove the comma <td> y
- <tr>  <td>36 <td>Anne laughed and pelted <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/402/mode/2up?q=%22faded+June%22'>the faded “June lilies_”</a>   <td>the faded “June lilies”    <td> remove the extra space <td> exp
+ <tr>  <td>36 <td>Anne laughed and pelted <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/402/mode/2up?q=%22faded+June%22'>the faded “June lilies_”</a>   <td>the faded “June lilies”    <td> remove the extra space <td> y<sup>1</sup>
  <tr>  <td>36 <td>“I think he has only been  <td> <a href='https://archive.org/details/anneofgreengable00mont_11/page/406/mode/2up?q=%22institution%22'>at the head of the institution”</a>   <td> at the head of the institution.”    <td> add missing period <td>y
  <tr>  <td>36 <td>“Well now, I can’t seem to <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/406/mode/2up?q=%22getting+old%22'>“It’s only that I’m getting old</a>   <td>“It’s only that I’m getting old    <td> doesn't start a new paragraph  <td> y
  <tr>  <td>37 <td>“I was down to the graveyard <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/414/mode/2up?q=graveyardhttps://archive.org/details/anneofgreengable00mont_11/page/414/mode/2up?q=graveyard'>graveyard to plant a rosebush</a>   <td>graveyard to plant a rose-bush    <td> spell with a hyphen, as spelled a few lines down  <td> y
@@ -1207,7 +1214,7 @@ Some cases of the bug are related to pictures appearing between pages.
  <tr>  <td>38 <td>“I don’t call it much hope <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/418/mode/2up?q=%22what+am+I%22'>“What am I to live for</a>   <td>“What am I to live for   <td> remove new line beforehand; does not start a new paragraph  <td> y
  <tr>  <td>38 <td>“But I’m going to study Latin <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/424/mode/2up?q=%22holy+horror%22'>lifted her hands in holy horror,</a>   <td>lifted her hands in holy horror.   <td> comma should be a period  <td> y
  <tr>  <td>38 <td>“Diana is signalling for <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/426/mode/2up?q=%22go+over%22'>for me to go over”</a>   <td>for me to go over,”   <td> comma needed after 'over'  <td> y
- <tr>  <td>38 <td>Anne sat long at her window <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/428/mode/2up?q=%22firs+in%22'>firs in the__hollow</a>   <td>firs in the_hollow   <td> remove extra space after 'the'  <td> exp
+ <tr>  <td>38 <td>Anne sat long at her window <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/428/mode/2up?q=%22firs+in%22'>firs in the__hollow</a>   <td>firs in the_hollow   <td> remove extra space after 'the'  <td> exp [ZWSP]
  <tr>  <td>38 <td>Anne’s horizons had closed <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n451/mode/2up?q=%22horizons+had%22'>Anne’s horizons had closed</a>   <td>Anne’s horizons had closed   <td> needs to start a new paragraph  <td>  exp
 </table>
 
