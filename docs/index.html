@@ -57,6 +57,7 @@ That is the main point of this project.
      <li><a href='#issues-wikisource'>Wikisource</a><br>
    </ul>
  <li><a href='#propagating-errors'>Example of Long Term Error Propagation</a><br>
+ <li><a href='#errors-by-edition'>Errors By Edition (under construction!)</a><br>
  <li><a href='#utf8-encoding-everywhere'>UTF-8 Encoding Everywhere</a><br>
  <li><a href='#character-issues'>Character Issues</a><br>
  <li><a href='#standardized-line-breaks'>Standardized Line Breaks</a><br>
@@ -228,6 +229,12 @@ which has an excellent summary of the main editions.
 of Montgomery's works, published in 1986 by the University of Waterloo Library (Russell, Russell, and Wilmshurst).
 Archive.org requires login for this book, but the cost is free.
 
+<P>The main early editions, from which others are derived, are marked in bold below: 
+<ul>
+ <li>1908-LCP
+ <li>1925-LCP
+ <li>1925-GGH
+</ul>
 <P><table class='report' style='border:1px;'>
  <colgroup>
    <col style="width: 15%;">
@@ -235,15 +242,15 @@ Archive.org requires login for this book, but the cost is free.
    <col style="width: 70%;">
  </colgroup> 
  <tr><th>Label<th>Publisher<th>Description
- <tr><td>1908-LCP<td>L. C. Page<td><b>First edition</b>, April. Boston, USA. Many subsequent impressions, with error corrections.
+ <tr><td><b>1908-LCP</b><td>L. C. Page<td><b>First edition</b>, April. Boston, USA. Many subsequent impressions, with error corrections.
  <tr><td>1908-PIT<td>Sir Isaac Pitnam<td>London, UK. Plates from Page. First British edition.
  <tr><td>1914-G&amp;D<td>Grosset and Dunlap<td>New York, USA. Lower quality paper and printing, cheaper book. Plates from Page. 
  <tr><td>1916-LCP<td>L. C. Page<td>40th impression, gifted from author to her son. Montgomery made no manual corrections to it. <b>Best version of LMM-approved text?</b>
  <tr><td>1920-LCP<td>L. C. Page<td>Movie edition, re-issued to coincide with a film release. Uses 1908 plates.
  <tr><td>1924-Cornstalk<td>Cornstalk<td>Sydney, Australia.
- <tr><td>1925-LCP<td>L. C. Page<td><b>New plates</b>. Boston, USA. Fairly close to the 1908 edition.
- <tr><td>1925-GGH<td>George G. Harrap<td><b>New plates</b>, distinct from Page's new plates. London, UK. Not as close to the 1908 edition.  Changes to a British style. Corrects some errors of Page. Many diffs with Page.
- <tr><td>1942-RP<td>Ryerson<td><b>First Canadian edition.</b> Toronto, Canada. Uses the 1925-LCP plates.
+ <tr><td><b>1925-LCP</b><td>L. C. Page<td><b>New plates</b>. Boston, USA. Fairly close to the 1908 edition.
+ <tr><td><b>1925-GGH</b><td>George G. Harrap<td><b>New plates</b>, distinct from Page's new plates. London, UK. Not as close to the 1908 edition.  Changes to a British style. Corrects some errors of Page. Many diffs with Page.
+ <tr><td>1942-RP<td>Ryerson<td>First Canadian edition. Toronto, Canada. Uses the 1925-LCP plates.
  <tr><td>1965-RP<td>Ryerson<td>Toronto, Canada. Illustrated.
  <tr><td><a href='https://global.oup.com/academic/product/the-annotated-anne-of-green-gables-9780195104288?cc=ca&lang=en&'>1997-OUP</a><td>Oxford University<td>New York, USA. Annotated edition. Not close to 1908. Draws from holograph (manuscript) and 1925 GGH. Bit unusual.
  <tr><td><a href='https://broadviewpress.com/product/anne-of-green-gables/#tab-description'>2004-BP</a><td>Broadview Press<td>Peterborough, Canada. Close to 1908.
@@ -450,61 +457,61 @@ In the 1st impression, but not the 4th:
     ??? not here: https://kindredspaces.ca/islandora/object/lmmi%3A1373?solr_nav%5Bid%5D=bea8968543c1027b364e&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=2#page/412/mode/1up/search/in+town+last+week
 -->
 
-<P id='err01'>
+<P id='iss-1908-01'>
   <span class='text'><a href='https://archive.org/details/cu31924013243963/page/n11/mode/2up'><span class='err'>Rachael</span></a> Lynde</span><br>
   <em>[Table of Contents, Ch. 1 and Ch. 9].</em>
   Change to match how the name is spelled throughout the body of the text: 'Rachel'.
-<P id='err02'>
+<P id='iss-1908-02'>
   <span class='text'>people called “Rachel Lynde’s <a href='https://archive.org/details/cu31924013243963/page/n17/mode/2up'>husban<span class='err'>d—</span></a>was sowing</span><br>
   <em>[Ch. 01, p2-3].</em>
   The right-quote is missing. The text is split across two pages in this case. 
   (2007-NCE says this was corrected in the 5th impression.)
-<P  id='err03'>
+<P  id='iss-1908-03'>
   <span class='text'> suggested getting a <a href='https://archive.org/details/cu31924013243963/page/n23/mode/2up'><span class='err'>Barnado</span></a> boy. </span><br>
   <em>[Ch. 01, p8].</em>
   Misspelled. Should be '<a href='https://en.wikipedia.org/wiki/Thomas_John_Barnardo'>Barnardo</a>', as in MS. 
   According to 2007-NCE: only 1924-Cornstalk has 'Barnardo'; both 1925-LCP and 1927-GGH use 'Home boy' instead.
-<P id='err04'>
+<P id='iss-1908-04'>
   <span class='text'>A merchant in <a href='https://archive.org/details/cu31924013243963/page/n33/mode/2up'><span class='err'>Hopeton</span></a> last winter</span><br>
   <em>[Ch. 02 , p19].</em>
   Misspelled. Should be 'Hopetown'. Occurs in 3 places in the novel: Hopetown, Hopeton, Hopeton. MS always has Hopetown.
   The <a href='https://archive.org/details/cu31924013243963/page/n73/mode/2up'>second misspelling</a> is in Ch. 05, p57.
-<P  id='err05'>
+<P  id='iss-1908-05'>
   <span class='text'>a soul that had been <a href='https://archive.org/details/cu31924013243963/page/n41/mode/2up'><span class='err'>wondering</span></a> afar </span><br>
   <em>[Ch. 02, p26].</em>
   Change to 'wandering'. Match the MS.
-<P  id='err06'>
+<P  id='iss-1908-06'>
   <span class='text'>  <a href='https://archive.org/details/cu31924013243963/page/n53/mode/2up'> <span class='err'>Anne sighed.</span> </a> </span><br>
   <em>[Ch. 03, p37].</em>
   'Anne sighed' should have a new paragraph. The image of the page is cut off on the left, but there's just enough to see that there's no new paragraph. 
   The paragraph is present in the <a href='https://archive.org/details/anneofgreengable00mont_11/page/36/mode/2up'>the 11th</a> impression (and possibly earlier).
   It's also in the MS.
-<P  id='err07'>
+<P  id='iss-1908-07'>
   <span class='text'> ‘The Seasons’ by James <a href='https://archive.org/details/cu31924013243963/page/n75/mode/2up'><span class='err'>Thompson</span></a>. </span><br>
   <em>[Ch. 05, p58]</em>
    Change to 'Thomson'. This is a real author, whose name has been misspelled.
-<P  id='err08'>
+<P  id='iss-1908-08'>
   <span class='text'>* infinite, eternal and <a href='https://archive.org/details/cu31924013243963/page/n87/mode/2up'><span class='err'>unchangeable,</span></a> in His being, </span><br>
   <em>[Ch. 07, p71]</em>
   Remove the comma after 'unchangeable'.
   <em>The Annotated Anne of Green Gables</em>  points to this <a href='https://archive.org/details/expositioninform00harp/page/32/mode/2up'>misquoted catechism</a> as the source of the quote (page 32).
-<P  id='err09'>
+<P  id='iss-1908-09'>
   <span class='text'><span class='err'>anl</span> then studied diligently</span><br>
   <em>[Ch. 8, p82]</em>
   Change to 'and'.
   This error is <b><a href='https://kindredspaces.ca/islandora/object/lmmi%3A1373?solr_nav%5Bid%5D=bea8968543c1027b364e&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=2#page/101/mode/1up/search/anl'>present</a> in the 1st impression, and <a href='https://archive.org/details/cu31924013243963/page/n99/mode/2up/'>absent</a> in the 4th impression</b>.
   This is the only difference that I'm currently aware of between the 1st and 4th impressions.
-<P  id='err10'>
+<P  id='iss-1908-10'>
   <span class='text'> echo lived <a href='https://archive.org/details/cu31924013243963/page/n101/mode/2up'> <span class='err'>there</span> </a> </span><br>
   <em>[Ch. 08, p84]</em>
    The period is missing after 'there'. Seems to be a defect in the printing, not in the image.
    The period is <a href='https://archive.org/details/anneofgreengable00mont_11/page/84/mode/2up'>present but weak</a> in the 11th impression, and 
    definitely <a href='https://archive.org/details/annegreengables00montgoog/page/n99/mode/2up'>present</a> in 39th impression.
-<P id='err11'>
+<P id='iss-1908-11'>
   <span class='text'>cooky to eat <a href='https://archive.org/details/cu31924013243963/page/n193/mode/2up'><span class='err'>with it along</span></a> in the afternoon</span><br>
   <em>[Ch. 16, p170]</em>
   Change to 'along with it'. Match the MS. Seems to be a clear grammatical error. <em>Annotated</em> makes this correction.
-<P  id='err12'>
+<P  id='iss-1908-12'>
   <span class='text'>* about <a href='https://archive.org/details/cu31924013243963/page/n203/mode/2up'><span class='err'>its</span> being all right</a></span><br>
   <em>[Ch. 16, p180]</em>
   Change 'its' to 'it'. 
@@ -512,70 +519,70 @@ In the 1st impression, but not the 4th:
   Seems like an error in grammar. 
   There's nothing possessive here. 
   The text is in the narrator's voice, and doesn't seem to be colloquial.
-<P id='err13'>
+<P id='iss-1908-13'>
   <span class='text'>to <a href='https://archive.org/details/cu31924013243963/page/n191/mode/2up'><span class='err'>forget,</span></a> said Anne</span><br>
   <em>[Ch. 16, p169]</em>
   Missing end quote. 
-<P  id='err15'>
+<P  id='iss-1908-15'>
   <span class='text'>* but after <a href='https://archive.org/details/cu31924013243963/page/n245/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 19, p223]</em>
   Change to 'a while'.
   The noun phrase 'a while' has two words. The adverb form 'awhile' is a single word. This issue occurs multiple times.
   Chapter 16 uses 'awhile' correctly.
-<P  id='err16'>
+<P  id='iss-1908-16'>
   <span class='text'>Bitterly did she <a href='https://archive.org/details/cu31924013243963/page/n253/mode/2up'><span class='err'>resent</span></a> the license</span><br>
   <em>[Ch. 20, p231]</em>
   Misspelled, should be 'repent'. 2007-NCE says this error was corrected in the 5th impression.
-<P  id='err17'>
+<P  id='iss-1908-17'>
   <span class='text'>it <a href='https://archive.org/details/cu31924013243963/page/n297/mode/2up'><span class='err'>is much</span></a> as he did</span><br>
   <em>[Ch. 25, p272]</em>
   Missing the word 'as'. Make it read 'it is as much as he did'. This will match the MS, and later editions.
-<P id='err18'>
+<P id='iss-1908-18'>
   <span class='text'>* sat for <a href='https://archive.org/details/cu31924013243963/page/n309/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 25, p284]</em>
   Change to 'a while'.
   The noun phrase 'a while' has two words. The adverb form 'awhile' is a single word. This issue occurs multiple times.
-<P  id='err19'>
+<P  id='iss-1908-19'>
   <span class='text'>* Perhaps after <a href='https://archive.org/details/cu31924013243963/page/n311/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 26, p286]</em>
   Change to 'a while'.
   The noun phrase 'a while' has two words. The adverb form 'awhile' is a single word. This issue occurs multiple times.
-<P  id='err20'>
+<P  id='iss-1908-20'>
   <span class='text'>* <a href='https://archive.org/details/cu31924013243963/page/n317/mode/2up'><span class='err'>Let</span></a> you and I have</span><br>
   <em>[Ch. 26, p293]</em>
   Change to 'Let’s'. 
-<P id='err21'>
+<P id='iss-1908-21'>
   <span class='text'><span class='err'><a href='https://archive.org/details/cu31924013243963/page/n315/mode/2up'>in</a></span> Death Not Divided</a></span><br>
   <em>[Ch. 26, p290].</em>
   Capitalize to 'In'. Match the MS. <em>Annotated</em> makes this change.
-<P id='err23'>
+<P id='iss-1908-23'>
   <span class='text'>* at night once in <a href='https://archive.org/details/cu31924013243963/page/n355/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 29, p328]</em>
   Change to 'a while'.
   The noun phrase 'a while' has two words. The adverb form 'awhile' is a single word. This issue occurs multiple times.
-<P id='err24'>
+<P id='iss-1908-24'>
   <span class='text'>Hills peeped o’er <a href='https://archive.org/details/cu31924013243963/page/n379/mode/2up'><span class='err'>hill,</span></a> and Alps</span><br>
   <em>[Ch. 31, p353]</em>
   Change to 'hills'. Match the MS, and the original text of the <a href='https://en.wikipedia.org/wiki/Pierian_Spring'>quote</a> of Alexander Pope.
-<P  id='err25'>
+<P  id='iss-1908-25'>
   <span class='text'>Spurgeon stayed resolutely <a href='https://archive.org/details/cu31924013243963/page/n391/mode/2up'><span class='err'>away</span></a></span><br>
   <em>[Ch. 32, p365]</em>
   Missing period after 'away'.
-<P id='err26'>
+<P id='iss-1908-26'>
   <span class='text'>yellowish <a href='https://archive.org/details/cu31924013243963/page/n411/mode/2up'><span class='err'>brown</span></a> wincey</span><br>
   <em>[Ch. 34 , p384]</em>
   Change to agree with chapter 2, which describes the same dress as 'yellowish gray wincey'.
-<P  id='err27'>
+<P  id='iss-1908-27'>
   <span class='text'>* I meant to, after <a href='https://archive.org/details/cu31924013243963/page/n443/mode/2up'><span class='err'>awhile</span></a></span><br>
   <em>[Ch. 37, p416]</em>
   Change to 'a while'.
   The noun phrase 'a while' has two words. The adverb form 'awhile' is a single word. This issue occurs multiple times.
-<P  id='err28'>
+<P  id='iss-1908-28'>
   <span class='text'>Josiah Allen’s <a href='https://archive.org/details/cu31924013243963/page/n451/mode/2up'><span class='err'>wife</span></a></span><br>
   <em>[Ch. 38, p424]</em>
   Capitalize to 'Wife'. 
   This will correctly match the name of the referenced <a href='https://en.wikipedia.org/wiki/Marietta_Holley'>fictional character</a>.
-<P id='err29'>
+<P id='iss-1908-29'>
   <span class='text'>told her Thomas that <a href='https://archive.org/details/cu31924013243963/page/n453/mode/2up'><span class='err'>night.</span></a></span><br>
   <em>[Ch. 38, p426]</em>
   Period should be a comma or a colon, 'night,' or 'night:'. 
@@ -588,7 +595,7 @@ In the 1st impression, but not the 4th:
 
 
 <h3 id='known-issues-non-issues'>Issues: not actually errors?</h3>
-<P  id='err14'>
+<P  id='iss-1908-14'>
   <span class='text'>Our spirits can <a href='https://archive.org/details/cu31924013243963/page/n213/mode/2up'><span class='err'>comune.</span></a></span><br>
   <em>[Ch. 17, p190]</em>
   The correct spelling is <em>commune</em>, but this <b>probably shouldn't be corrected</b>, since Anne misspells several words in her letter: <em>comune, busum, improoving</em>.
@@ -600,7 +607,7 @@ In the 1st impression, but not the 4th:
   I think the intent of the author was to intentionally misspell three words in the letter, not two, and that the spelling of the 
   first edition should be preserved.
   
-<P id='err22'>
+<P id='iss-1908-22'>
   <span class='text'><a href='https://archive.org/details/cu31924013243963/page/n335/mode/2up'><span class='err'>pail</span></a> the barge</span><br>
   <em>[Ch. 28, p310]</em>
   Change to 'pall'. Match the MS. 
@@ -1253,6 +1260,112 @@ As an example, take the error in the last chapter (listed above):
  <tr><td>2007     <td>Norton Critical Edition (likely uncorrected intentionally)        <td> period <td> err
  <tr><td>2017     <td>Penguin Classics (critical edition)     <td> colon <td> ok
  <tr><td>2017     <td>Pan Macmillan               <td> period <td> err
+</table>
+
+<h3 id='errors-by-edition'>Errors By Edition (under construction!)</h3>
+
+<P>What the IDs mean:
+<P><table class='report' style='border:1px;'>
+<!--
+ <colgroup>
+   <col style="width: 10%;">
+   <col style="width: 50%;">
+   <col style="width: 15%;">
+   <col style="width: 5%;">
+ </colgroup> 
+--> 
+ <tr>
+  <th>Id <th>Type <th>Description <th> Source <th> Link
+  <tr>
+   <td>1st
+   <td>Book
+   <td>1908-LCP 1st impression
+   <td>kindredspaces.ca
+   <td><a href='https://kindredspaces.ca/islandora/object/lmmi%3A1373?solr_nav%5Bid%5D=bea8968543c1027b364e&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=2#page/10/mode/1up'>link</a>
+  <tr>
+   <td>4th
+   <td>Book
+   <td>1908-LCP 4th impression
+   <td>archive.org
+   <td><a href='https://archive.org/details/cu31924013243963/page/n9/mode/1up'>link</a>
+   
+  <tr>
+   <td>4thT
+   <td>Transcription
+   <td>1908-LCP 4th impression
+   <td>Branch: 1908-LCP 4th
+   <td><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th'>link</a>
+  <tr>
+   <td>4thTc
+   <td>Transcription
+   <td>1908-LCP 4th impression, corrected
+   <td>Branch: 1908-LCP-4th-corrected
+   <td><a href='https://github.com/johanley/anne-of-green-gables-editions/tree/1908-LCP-4th-corrected'>link</a>
+   
+  <tr>
+   <td>11th
+   <td>Book
+   <td>1908-LCP 11th impression
+   <td>archive.org
+   <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n7/mode/1up'>link</a>
+  <tr>
+   <td>11thT
+   <td>Transcription
+   <td>1908-LCP 11th impression 
+   <td>wikisource.org (as of 2021-01)
+   <td><a href='https://en.wikisource.org/wiki/Anne_of_Green_Gables_(1908)'>link</a>
+   
+  <tr>
+   <td>46
+   <td>Book
+   <td>1946-RP Ryerson Press
+   <td>archive.org
+   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/n5/mode/1up'>link</a>
+  <tr>
+   <td>46T
+   <td>Transcription
+   <td>1946-RP Ryerson Press, 2008-05-09 version.
+   <td>fadedpage.com
+   <td><a href='https://www.fadedpage.com/showbook.php?pid=20080509'>link</a>
+   
+  <tr>
+   <td>GUT
+   <td>Transcription
+   <td>Copy text(s) unknown, 2016-10-06 version.
+   <td>projectgutenberg.com
+   <td><a href='https://www.gutenberg.org/ebooks/45'>link</a>
+   
+   
+</table>
+
+<ul>
+ <li>x - the issue is present (usually an error)
+ <li>k - the issue is absent (OK)
+ <li>[blank] - not yet verified
+</ul>
+
+<P><table class='report' style='border:1px;'>
+<!--
+ <colgroup>
+   <col style="width: 10%;">
+   <col style="width: 50%;">
+   <col style="width: 15%;">
+   <col style="width: 5%;">
+ </colgroup> 
+--> 
+ <tr>
+  <th>Issue <th>1st <th>4th <th>4thT <th>4thTc <th>11th <th title='Wikisource'>11thT <th>46 <th title='DPC'>46T <th>GUT
+  <tr  title='Rachael, table of contents'>
+   <td><a href='#iss-1908-01'>iss-1908-01</a>
+   <td><a href='https://kindredspaces.ca/islandora/object/lmmi%3A1373?solr_nav%5Bid%5D=bea8968543c1027b364e&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=2#page/14/mode/1up/search/rachael'>x</a>
+   <td><a href='https://archive.org/details/cu31924013243963/page/n11/mode/2up?q=rachael'>x</a>
+   <td>x
+   <td>k
+   <td><a href='https://archive.org/details/anneofgreengable00mont_11/page/n10/mode/1up'>x</a>
+   <td><a href='https://en.wikisource.org/wiki/Page:Anneofgreengables-rbsc.djvu/11'>x</a>
+   <td><a href='https://archive.org/details/anneofgreengable00montiala/page/vii/mode/1up'>k</a>
+   <td>k
+   <td>k
 </table>
 
 
