@@ -20,6 +20,9 @@ ul {
 pre {
   font: 1.0em Verdana, Arial, Helvetica, sans-serif;
 }
+pre.diff {
+  font: 1.0em courier;
+}
 
 td {
  vertical-align: top;

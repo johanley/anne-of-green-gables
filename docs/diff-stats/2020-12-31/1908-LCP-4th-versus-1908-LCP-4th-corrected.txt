@@ -1,0 +1,15 @@
+ chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8                | 4 ++--
+ chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8                | 4 ++--
+ "chapters/05-V.-Anne\342\200\231s-History.utf8"                   | 2 +-
+ chapters/07-VII.-Anne-Says-Her-Prayers.utf8                       | 2 +-
+ "chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"   | 2 +-
+ chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8 | 6 +++---
+ chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8  | 2 +-
+ chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8                   | 6 +++---
+ "chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"       | 2 +-
+ chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8             | 2 +-
+ chapters/32-XXXII.-The-Pass-List-Is-Out.utf8                      | 2 +-
+ "chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"               | 2 +-
+ chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8           | 2 +-
+ chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8                    | 4 ++--
+ 14 files changed, 21 insertions(+), 21 deletions(-)

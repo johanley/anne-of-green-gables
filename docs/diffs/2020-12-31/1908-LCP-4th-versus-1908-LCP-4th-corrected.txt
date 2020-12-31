@@ -1,0 +1,245 @@
+diff --git a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8 b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+index 144b1a1..1705048 100644
+--- a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
++++ b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+@@ -9,7 +9,7 @@ Since Avonlea occupied a little triangular peninsula jutting out into the Gulf o
+ 
+ She was sitting there one afternoon in early June.
+ The sun was coming in at the window warm and bright; the orchard on the slope below the house was in a bridal flush of pinky-white bloom, hummed over by a myriad of bees.
+-Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
++Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband”—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
+ Mrs. Rachel knew that he ought because she had heard him tell Peter Morrison the evening before in William J. Blair’s store over at Carmody that he meant to sow his turnip seed the next afternoon.
+ Peter had asked him, of course, for Matthew Cuthbert had never been known to volunteer information about anything in his whole life.
+ 
+@@ -106,7 +106,7 @@ Matthew is getting up in years, you know—he’s sixty—and he isn’t so spry
+ His heart troubles him a good deal.
+ And you know how desperate hard it’s got to be to get hired help.
+ There’s never anybody to be had but those stupid, half-grown little French boys; and as soon as you do get one broke into your ways and taught something he’s up and off to the lobster canneries or the States.
+-At first Matthew suggested getting a Barnado boy.
++At first Matthew suggested getting a Barnardo boy.
+ But I said ‘no’ flat to that.
+ ‘They may be all right—I’m not saying they’re not—but no London street Arabs for me,’ I said.
+ ‘Give me a native born at least.
+diff --git a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8 b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+index 0440203..63120e8 100644
+--- a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
++++ b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+@@ -124,7 +124,7 @@ And I’ve never had a pretty dress in my life that I can remember—but of cour
+ And then I can imagine that I’m dressed gorgeously.
+ This morning when I left the asylum I felt so ashamed because I had to wear this horrid old wincey dress.
+ All the orphans had to wear them, you know.
+-A merchant in Hopeton last winter donated three hundred yards of wincey to the asylum.
++A merchant in Hopetown last winter donated three hundred yards of wincey to the asylum.
+ Some people said it was because he couldn’t sell it, but I’d rather believe that it was out of the kindness of his heart, wouldn’t you?
+ When we got on the train I felt as if everybody must be looking at me and pitying me.
+ But I just went to work and imagined that I had on the most beautiful pale blue silk dress—because when you _are_ imagining you might as well imagine something worth while—and a big hat all flowers and nodding plumes, and a gold watch, and kid gloves and boots.
+@@ -272,7 +272,7 @@ She could keep silence, it was evident, as energetically as she could talk.
+ “I guess you’re feeling pretty tired and hungry,” Matthew ventured at last, accounting for her long visitation of dumbness with the only reason he could think of.
+ “But we haven’t very far to go now—only another mile.”
+ 
+-She came out of her reverie with a deep sigh and looked at him with the dreamy gaze of a soul that had been wondering afar, star-led.
++She came out of her reverie with a deep sigh and looked at him with the dreamy gaze of a soul that had been wandering afar, star-led.
+ 
+ “Oh, Mr. Cuthbert,” she whispered, “that place we came through—that white place—what was it?”
+ 
+diff --git "a/chapters/05-V.-Anne\342\200\231s-History.utf8" "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
+index aa22063..c9350f7 100644
+--- "a/chapters/05-V.-Anne\342\200\231s-History.utf8"
++++ "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
+@@ -119,7 +119,7 @@ Evidently she did not like talking about her experiences in a world that had not
+ I went a little the last year I stayed with Mrs. Thomas.
+ When I went up river we were so far from a school that I couldn’t walk it in winter and there was vacation in summer, so I could only go in the spring and fall.
+ But of course I went while I was at the asylum.
+-I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen on the Rhine,’ and lots of the ‘Lady of the Lake’ and most of ‘The Seasons,’ by James Thompson.
++I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen on the Rhine,’ and lots of the ‘Lady of the Lake’ and most of ‘The Seasons,’ by James Thomson.
+ Don’t you just love poetry that gives you a crinkly feeling up and down your back?
+ There is a piece in the Fifth Reader—‘The Downfall of Poland’—that is just full of thrills.
+ Of course, I wasn’t in the Fifth Reader—I was only in the Fourth—but the big girls used to lend me theirs to read.”
+diff --git a/chapters/07-VII.-Anne-Says-Her-Prayers.utf8 b/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
+index 9366522..6c18b3d 100644
+--- a/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
++++ b/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
+@@ -25,7 +25,7 @@ Were you never taught to say your prayers?
+ God always wants little girls to say their prayers.
+ Don’t you know who God is, Anne?”
+ 
+-“‘God is a spirit, infinite, eternal and unchangeable, in His being, wisdom, power, holiness, justice, goodness, and truth,’” responded Anne promptly and glibly.
++“‘God is a spirit, infinite, eternal, and unchangeable in His being, wisdom, power, holiness, justice, goodness, and truth,’” responded Anne promptly and glibly.
+ 
+ Marilla looked rather relieved.
+ 
+diff --git "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+index d5a1acb..5e3db8c 100644
+--- "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
++++ "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+@@ -192,7 +192,7 @@ And then Katie Maurice would have taken me by the hand and led me out into a won
+ When I went to live with Mrs. Hammond it just broke my heart to leave Katie Maurice.
+ She felt it dreadfully, too, I know she did, for she was crying when she kissed me good-bye through the bookcase door.
+ There was no bookcase at Mrs. Hammond’s.
+-But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there
++But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there.
+ It echoed back every word you said, even if you didn’t talk a bit loud.
+ So I imagined that it was a little girl called Violetta and we were great friends and I loved her almost as well as I loved Katie Maurice—not quite, but almost, you know.
+ The night before I went to the asylum I said good-bye to Violetta, and oh, her good-bye came back to me in such sad, sad tones.
+diff --git a/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8 b/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
+index 887981d..1e5d2c4 100644
+--- a/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
++++ b/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
+@@ -22,7 +22,7 @@ I’m going to put these boughs in the old blue jug and set them on my table.”
+ I’m going to a meeting of the Aid Society at Carmody this afternoon, Anne, and I won’t likely be home before dark.
+ You’ll have to get Matthew and Jerry their supper, so mind you don’t forget to put the tea to draw until you sit down at the table as you did last time.”
+ 
+-“It was dreadful of me to forget, said Anne apologetically, “but that was the afternoon I was trying to think of a name for Violet Vale and it crowded other things out.
++“It was dreadful of me to forget,” said Anne apologetically, “but that was the afternoon I was trying to think of a name for Violet Vale and it crowded other things out.
+ Matthew was so good.
+ He never scolded a bit.
+ He put the tea down himself and said we could wait awhile as well as not.
+@@ -62,7 +62,7 @@ And then into the parlour to sit?”
+ “No.
+ The sitting-room will do for you and your company.
+ But there’s a bottle half full of raspberry cordial that was left over from the church social the other night.
+-It’s on the second shelf of the sitting-room closet and you and Diana can have it if you like, and a cooky to eat with it along in the afternoon, for I daresay Matthew’ll be late coming in to tea since he’s hauling potatoes to the vessel.”
++It’s on the second shelf of the sitting-room closet and you and Diana can have it if you like, and a cooky to eat along with it in the afternoon, for I daresay Matthew’ll be late coming in to tea since he’s hauling potatoes to the vessel.”
+ 
+ Anne flew down to the hollow, past the Dryad’s Bubble and up the spruce path to Orchard Slope, to ask Diana to tea.
+ As a result, just after Marilla had driven off to Carmody, Diana came over, dressed in her second best dress and looking exactly as it is proper to look when asked out to tea.
+@@ -278,7 +278,7 @@ Likely she’d listen to you quicker than to me.”
+ “Don’t cry any more, Anne.
+ It will be all right.”
+ 
+-Marilla had changed her mind about its being all right by the time she got back from Orchard Slope.
++Marilla had changed her mind about it being all right by the time she got back from Orchard Slope.
+ Anne was watching for her coming and flew to the porch door to meet her.
+ 
+ “Oh, Marilla, I know by your face that it’s been no use,” she said sorrowfully.
+diff --git a/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8 b/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
+index 27e70da..74288e2 100644
+--- a/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
++++ b/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
+@@ -380,6 +380,6 @@ When Miss Barry went away she said:
+ 
+ “Miss Barry was a kindred spirit, after all,” Anne confided to Marilla.
+ “You wouldn’t think so to look at her, but she is.
+-You don’t find it right out at first, as in Matthew’s case, but after awhile you come to see it.
++You don’t find it right out at first, as in Matthew’s case, but after a while you come to see it.
+ Kindred spirits are not so scarce as I used to think.
+ It’s splendid to find out there are so many of them in the world.”
+\ No newline at end of file
+diff --git a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8 b/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
+index c3ff31b..4bc93b9 100644
+--- a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
++++ b/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
+@@ -6,7 +6,7 @@ Could she go back to the former quiet pleasures of those far-away days before th
+ At first, as she told Diana, she did not really think she could.
+ 
+ “I’m positively certain, Diana, that life can never be quite the same again as it was in those olden days,” she said mournfully, as if referring to a period of at least fifty years back.
+-“Perhaps after awhile I’ll get used to it, but I’m afraid concerts spoil people for every-day life.
++“Perhaps after a while I’ll get used to it, but I’m afraid concerts spoil people for every-day life.
+ I suppose that is why Marilla disapproves of them.
+ Marilla is such a sensible woman.
+ It must be a great deal better to be sensible; but still, I don’t believe I’d really want to be a sensible person, because they are so unromantic.
+@@ -80,7 +80,7 @@ I suppose you have your composition all done?”
+ Anne nodded, trying hard not to look virtuously complacent and failing miserably.
+ 
+ “I wrote it last Monday evening.
+-It’s called ‘The Jealous Rival; or, in Death Not Divided.’
++It’s called ‘The Jealous Rival; or, In Death Not Divided.’
+ I read it to Marilla and she said it was stuff and nonsense.
+ Then I read it to Matthew and he said it was fine.
+ That is the kind of critic I like.
+@@ -135,7 +135,7 @@ I wish my imagination was as good as yours.”
+ 
+ “It would be if you’d only cultivate it,” said Anne cheeringly.
+ “I’ve just thought of a plan, Diana.
+-Let you and I have a story club all our own and write stories for practice.
++Let’s you and I have a story club all our own and write stories for practice.
+ I’ll help you along until you can do them by yourself.
+ You ought to cultivate your imagination, you know.
+ Miss Stacy says so.
+diff --git "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8" "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+index d68b5d4..12c7e2a 100644
+--- "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
++++ "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+@@ -186,7 +186,7 @@ Miss Barry asked me what my opinion was, but I said I would have to think it ove
+ So I thought it over after I went to bed.
+ That is the best time to think things out.
+ And I came to the conclusion, Marilla, that I wasn’t born for city life and that I was glad of it.
+-It’s nice to be eating ice-cream at brilliant restaurants at eleven o’clock at night once in awhile; but as a regular thing I’d rather be in the east gable at eleven, sound asleep, but kind of knowing even in my sleep that the stars were shining outside and that the wind was blowing in the firs across the brook.
++It’s nice to be eating ice-cream at brilliant restaurants at eleven o’clock at night once in a while; but as a regular thing I’d rather be in the east gable at eleven, sound asleep, but kind of knowing even in my sleep that the stars were shining outside and that the wind was blowing in the firs across the brook.
+ I told Miss Barry so at breakfast the next morning and she laughed.
+ Miss Barry generally laughed at anything I said, even when I said the most solemn things.
+ I don’t think I liked it, Marilla, because I wasn’t trying to be funny.
+diff --git a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8 b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+index 4366282..4989754 100644
+--- a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
++++ b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+@@ -84,7 +84,7 @@ But it was a jolly, busy, happy swift-flying winter.
+ School work was as interesting, class rivalry as absorbing, as of yore.
+ New worlds of thought, feeling, and ambition, fresh, fascinating fields of unexplored knowledge seemed to be opening out before Anne’s eager eyes.
+ 
+-Hills peeped o’er hill and Alps on Alps arose.
++Hills peeped o’er hills and Alps on Alps arose.
+ 
+ Much of all this was due to Miss Stacy’s tactful, careful, broad-minded guidance.
+ She led her class to think and explore and discover for themselves and encouraged straying from the old beaten paths to a degree that quite shocked Mrs. Lynde and the school trustees, who viewed all innovations on established methods rather dubiously.
+diff --git a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8 b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+index eacbf22..9252963 100644
+--- a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
++++ b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+@@ -138,7 +138,7 @@ But she did hope fervently that she would be among the first ten at least, so th
+ That, she felt, would be a sweet reward indeed for all her hard work and patient grubbing among unimaginative equations and conjugations.
+ 
+ At the end of the fortnight Anne took to “haunting” the post-office also, in the distracted company of Jane, Ruby and Josie, opening the Charlottetown dailies with shaking hands and cold, sinkaway feelings as bad as any experienced during the Entrance week.
+-Charlie and Gilbert were not above doing this too, but Moody Spurgeon stayed resolutely away
++Charlie and Gilbert were not above doing this too, but Moody Spurgeon stayed resolutely away.
+ 
+ “I haven’t got the grit to go there and look at a paper in cold blood,” he told Anne.
+ “I’m just going to wait until somebody comes and tells me suddenly whether I’ve passed or not.”
+diff --git "a/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8" "b/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
+index ed12dd6..aa1fcf5 100644
+--- "a/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
++++ "b/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
+@@ -16,7 +16,7 @@ I don’t believe you ought to be so kind to me—it’s making it harder every
+ 
+ The green dress was made up with as many tucks and frills and shirrings as Emily’s taste permitted.
+ Anne put it on one evening for Matthew’s and Marilla’s benefit, and recited “The Maiden’s Vow” for them in the kitchen.
+-As Marilla watched the bright, animated face and graceful motions her thoughts went back to the evening Anne had arrived at Green Gables, and memory recalled a vivid picture of the odd, frightened child in her preposterous yellowish-brown wincey dress, the heartbreak looking out of her tearful eyes.
++As Marilla watched the bright, animated face and graceful motions her thoughts went back to the evening Anne had arrived at Green Gables, and memory recalled a vivid picture of the odd, frightened child in her preposterous yellowish-gray wincey dress, the heartbreak looking out of her tearful eyes.
+ Something in the memory brought tears to Marilla’s own eyes.
+ 
+ “I declare, my recitation has made you cry, Marilla,” said Anne gaily, stooping over Marilla’s chair to drop a butterfly kiss on that lady’s cheek.
+diff --git a/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8 b/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
+index 7abd551..d4048cc 100644
+--- a/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
++++ b/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
+@@ -176,7 +176,7 @@ Anne looked up with swift interest.
+ 
+ “We had a quarrel.
+ I wouldn’t forgive him when he asked me to.
+-I meant to, after awhile—but I was sulky and angry and I wanted to punish him first.
++I meant to, after a while—but I was sulky and angry and I wanted to punish him first.
+ He never came back—the Blythes were all mighty independent.
+ But I always felt—rather sorry.
+ I’ve always kind of wished I’d forgiven him when I had the chance.”
+diff --git a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8 b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+index 9b82860..1d208ce 100644
+--- a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
++++ b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+@@ -187,7 +187,7 @@ Mrs. Lynde lifted her hands in holy horror.
+ “Not a bit of it.
+ I shall thrive on it.
+ Oh, I’m not going to overdo things.
+-As ‘Josiah Allen’s wife’ says, I shall be ‘mejum.’
++As ‘Josiah Allen’s Wife’ says, I shall be ‘mejum.’
+ But I’ll have lots of spare time in the long winter evenings, and I’ve no vocation for fancy work.
+ I’m going to teach over at Carmody, you know.”
+ 
+@@ -231,7 +231,7 @@ Mrs. Lynde looked after her indulgently.
+ “There’s a good deal more of the woman about her in others,” retorted Marilla, with a momentary return of her old crispness.
+ 
+ But crispness was no longer Marilla’s distinguishing characteristic.
+-As Mrs. Lynde told her Thomas that night.
++As Mrs. Lynde told her Thomas that night,
+ 
+ “Marilla Cuthbert has got _mellow_.
+ That’s what.”
