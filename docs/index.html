@@ -62,6 +62,7 @@ That is the main point of this project.
  <li><a href='#utf8-encoding-everywhere'>UTF-8 Encoding Everywhere</a><br>
  <li><a href='#character-issues'>Character Issues</a><br>
  <li><a href='#standardized-line-breaks'>Standardized Line Breaks</a><br>
+ <li><a href='#standardized-format'>Standardized Format</a><br>
  <li><a href='#text-editor-recommendations'>Text Editor Recommendations</a><br>
  <li><a href='#screen-shots'>Screen Shots</a><br>
 </ul>
@@ -641,6 +642,10 @@ In the 1st impression, but not the 4th:
   2007-NCE says that this error in the first impression was actually corrected in the 4th impression, so it's not visible in the above link.
   But wait! This <a href='https://kindredspaces.ca/islandora/object/lmmi%3A1373?solr_nav%5Bid%5D=bea8968543c1027b364e&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=2#page/337/mode/1up/search/pall'>1st impression</a>
   <b>does not have the error.</b> What's going on?
+  
+  <P>Coincidentally, I found a similar error when reading the novel <em>Germinie Lacerteux</em>.
+  It has <a href='images/elle.png'>this mistake</a>, where the French word <em>elle</em> is poorly printed, and appears as <em>eile</em> instead.
+  Such a misprint would change <em>pall</em> to <em>pail</em>.
 
 
 <h3 id='issues-personal-taste'>Issues: personal taste</h3>
@@ -1683,6 +1688,24 @@ to that.</em>
 <P>With two independent sources of a text, it's extremely likely that the line-breaks will differ.
 The work-around is to enforce a simple policy: <b>each line is a complete sentence</b>. 
  
+<h3 id='standardized-format'>Standardized Format</h3>
+The transcriptions in this project have the following format:
+<ul>
+ <li>one sentence per line (as described above)
+ <li>a new paragraph is represented by a single empty line
+ <li>italics are represented by underscores: _like this_ stands for <em>like this</em>
+ <li>there's no representation of <b>bold</b> text
+ <li>quotations use left-quote and right-quote “”, not vertical quote ": <em>“Hello there,” said...</em>
+ <li>apostrophes use ’, not ': <em>I’ll</em>
+ <li>indentation is never used
+ <li><a href='https://en.wikipedia.org/wiki/Dash'>em dash</a> is used (not hyphen)
+ <li><a href='https://en.wikipedia.org/wiki/Small_caps'>small caps</a> are not represented
+ <li>the files are encoded in UTF-8, so that any glyph can be represented
+</ul>
+
+ 
+ 
+ 
 <h3 id='text-editor-recommendations'>Text Editor Recommendations</h3>
 If you're making changes directly to the files, it's recommended that your text editor software:
 <ul>
@@ -1694,6 +1717,7 @@ If you're making changes directly to the files, it's recommended that your text 
  <li>should be able to indicate invisible characters (spaces and line breaks)
  <li>should be able to show the <em>diff</em> between versions of a file
 </ul>
+
 
 <h3 id='screen-shots'>Screen Shots</h3>
 
