@@ -2,7 +2,7 @@
  chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8 | 18 +++++++-----
  .../03-III.-Marilla-Cuthbert-Is-Surprised.utf8     |  6 ++--
  chapters/04-IV.-Morning-at-Green-Gables.utf8       |  4 +--
- "chapters/05-V.-Anne\342\200\231s-History.utf8"    |  4 +--
+ "chapters/05-V.-Anne\342\200\231s-History.utf8"    |  6 ++--
  chapters/06-VI.-Marilla-Makes-Up-Her-Mind.utf8     | 10 +++----
  chapters/07-VII.-Anne-Says-Her-Prayers.utf8        |  9 +++---
  ...I.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" | 10 +++----
@@ -17,12 +17,12 @@
  chapters/17-XVII.-A-New-Interest-in-Life.utf8      | 25 ++++++++--------
  chapters/18-XVIII.-Anne-to-the-Rescue.utf8         |  9 +++---
  ...A-Concert,-a-Catastrophe,-and-a-Confession.utf8 | 13 ++++-----
- chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 |  8 +++---
+ chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 |  6 ++--
  .../21-XXI.-A-New-Departure-in-Flavourings.utf8    | 19 ++++++-------
  chapters/22-XXII.-Anne-Is-Invited-Out-to-Tea.utf8  |  2 +-
  ...Anne-Comes-to-Grief-in-an-Affair-of-Honour.utf8 |  3 +-
  ...Miss-Stacy-and-Her-Pupils-Get-Up-a-Concert.utf8 |  2 +-
- .../25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8 |  7 ++---
+ .../25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8 | 11 ++++----
  chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8    | 15 +++++-----
  .../27-XXVII.-Vanity-and-Vexation-of-Spirit.utf8   |  9 +++---
  chapters/28-XXVIII.-An-Unfortunate-Lily-Maid.utf8  | 33 ++++++++++------------
@@ -36,4 +36,4 @@
  chapters/36-XXXVI.-The-Glory-and-the-Dream.utf8    |  7 +++--
  .../37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8 |  8 +++---
  chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8     | 16 +++++------
- 38 files changed, 192 insertions(+), 201 deletions(-)
+ 38 files changed, 194 insertions(+), 203 deletions(-)

@@ -43,9 +43,18 @@ index 0440203..63120e8 100644
  “Oh, Mr. Cuthbert,” she whispered, “that place we came through—that white place—what was it?”
  
 diff --git "a/chapters/05-V.-Anne\342\200\231s-History.utf8" "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
-index aa22063..c9350f7 100644
+index aa22063..4757f01 100644
 --- "a/chapters/05-V.-Anne\342\200\231s-History.utf8"
 +++ "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
+@@ -106,7 +106,7 @@ I used to get so dreadfully tired carrying them about.
+ 
+ “I lived up river with Mrs. Hammond over two years, and then Mr. Hammond died and Mrs. Hammond broke up housekeeping.
+ She divided her children among her relatives and went to the States.
+-I had to go to the asylum at Hopeton, because nobody would take me.
++I had to go to the asylum at Hopetown, because nobody would take me.
+ They didn’t want me at the asylum, either; they said they were overcrowded as it was.
+ But they had to take me and I was there four months until Mrs. Spencer came.”
+ 
 @@ -119,7 +119,7 @@ Evidently she did not like talking about her experiences in a world that had not
  I went a little the last year I stayed with Mrs. Thomas.
  When I went up river we were so far from a school that I couldn’t walk it in winter and there was vacation in summer, so I could only go in the spring and fall.
@@ -125,6 +134,41 @@ index 27e70da..74288e2 100644
  Kindred spirits are not so scarce as I used to think.
  It’s splendid to find out there are so many of them in the world.”
 \ No newline at end of file
+diff --git a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+index 8dac857..6da4f79 100644
+--- a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
++++ b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+@@ -180,7 +180,7 @@ March, now.”
+ Anne marched.
+ That is, she stumbled over the bridge and went shuddering up the horrible dim path beyond.
+ Anne never forgot that walk.
+-Bitterly did she resent the license she had given to her imagination.
++Bitterly did she repent the license she had given to her imagination.
+ The goblins of her fancy lurked in every shadow about her, reaching out their cold, fleshless hands to grasp the terrified small girl who had called them into being.
+ A white strip of birch bark blowing up from the hollow over the brown floor of the grove made her heart stand still.
+ The long-drawn wail of two old boughs rubbing against each other brought out the perspiration in beads on her forehead.
+diff --git a/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8 b/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
+index a5317c6..d41058c 100644
+--- a/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
++++ b/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
+@@ -19,7 +19,7 @@ Anne was not dressed like the other girls!
+ 
+ The more Matthew thought about the matter the more he was convinced that Anne never had been dressed like the other girls—never since she had come to Green Gables.
+ Marilla kept her clothed in plain, dark dresses, all made after the same unvarying pattern.
+-If Matthew knew there was such a thing as fashion in dress it is much as he did; but he was quite sure that Anne’s sleeves did not look at all like the sleeves the other girls wore.
++If Matthew knew there was such a thing as fashion in dress it is as much as he did; but he was quite sure that Anne’s sleeves did not look at all like the sleeves the other girls wore.
+ He recalled the cluster of little girls he had seen around her that evening—all gay in waists of red and blue and pink and white—and he wondered why Marilla always kept her so plainly and soberly gowned.
+ 
+ Of course, it must be all right.
+@@ -276,7 +276,7 @@ You’re so romantic that I’m sure you ought to be pleased at that.”
+ “It’s nothing to me what that person does,” said Anne loftily.
+ “I simply never waste a thought on him, Diana.”
+ 
+-That night Marilla and Matthew, who had been out to a concert for the first time in twenty years, sat for awhile by the kitchen fire after Anne had gone to bed.
++That night Marilla and Matthew, who had been out to a concert for the first time in twenty years, sat for a while by the kitchen fire after Anne had gone to bed.
+ 
+ “Well now, I guess our Anne did as well as any of them,” said Matthew proudly.
+ 
 diff --git a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8 b/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
 index c3ff31b..4bc93b9 100644
 --- a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8

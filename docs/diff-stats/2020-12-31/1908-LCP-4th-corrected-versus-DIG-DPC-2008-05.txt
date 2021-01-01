@@ -2,7 +2,7 @@
  chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8 | 10 +++---
  .../03-III.-Marilla-Cuthbert-Is-Surprised.utf8     |  7 ++---
  chapters/04-IV.-Morning-at-Green-Gables.utf8       |  4 +--
- "chapters/05-V.-Anne\342\200\231s-History.utf8"    |  6 ++--
+ "chapters/05-V.-Anne\342\200\231s-History.utf8"    |  8 ++---
  chapters/06-VI.-Marilla-Makes-Up-Her-Mind.utf8     |  4 +--
  chapters/07-VII.-Anne-Says-Her-Prayers.utf8        |  8 ++---
  ...I.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" | 12 ++++----
@@ -17,7 +17,7 @@
  chapters/17-XVII.-A-New-Interest-in-Life.utf8      | 36 ++++++++++------------
  chapters/18-XVIII.-Anne-to-the-Rescue.utf8         | 15 ++++-----
  ...A-Concert,-a-Catastrophe,-and-a-Confession.utf8 | 21 +++++++------
- chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 | 12 ++++----
+ chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 | 10 +++---
  .../21-XXI.-A-New-Departure-in-Flavourings.utf8    |  8 ++---
  chapters/22-XXII.-Anne-Is-Invited-Out-to-Tea.utf8  |  4 +--
  ...Anne-Comes-to-Grief-in-an-Affair-of-Honour.utf8 | 10 +++---
