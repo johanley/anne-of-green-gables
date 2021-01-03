@@ -262,12 +262,17 @@ index 392db9c..3b1c86d 100644
 @@ -85 +85 @@ Thereupon Anne held her tongue so obediently and thoroughly that her continued s
 -Matthew also held his tongue,—but this at least was natural,—so that the meal was a very silent one.
 +Matthew also held his tongue,—but this was natural,—so that the meal was a very silent one.
+
+************* ITALICS NOT THE SAME
 @@ -105 +105 @@ It’s such a pity you haven’t any here for me to look after.”
 -_You_’re problem enough in all conscience.
 +_You’re_ problem enough in all conscience.
+
+************* EXTRA SPACE
 @@ -114 +114 @@ I felt that he was a kindred spirit as soon as ever I saw him.”
 -“You’re both queer enough, if that’s what you mean by kindred spirits,” said Marilla with a sniff.
 +“You’re both queer enough, if that’s what you mean by kindred spirits,”  said Marilla with a sniff.
+
 @@ -121 +121 @@ After you’ve finished the dishes go up-stairs and make your bed.”
 -Anne washed the dishes deftly enough, as Marilla, who kept a sharp eye on the process, discerned.
 +Anne washed the dishes deftly enough, as Marilla who kept a sharp eye on the process, discerned.
@@ -333,9 +338,14 @@ index aa22063..55069ea 100644
 @@ -122 +122 @@ But of course I went while I was at the asylum.
 -I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen on the Rhine,’ and lots of the ‘Lady of the Lake’ and most of ‘The Seasons,’ by James Thompson.
 +I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen of the Rhine,’ and most of the ‘Lady of the Lake’ and most of ‘The Seasons’ by James Thompson.
+
+
+************* BAD ERROR 
 @@ -134 +134 @@ They had a good deal to worry them, you know.
 -It’s very trying to have a drunken husband, you see; and it must be very trying to have twins three times in succession, don’t you think?
 +It’s  a very trying to have a drunken husband, you see; and it must be very trying to have twins three times in succession, don’t you think?
+
+
 @@ -157 +157 @@ Down at the base of the cliffs were heaps of surf-worn rocks or little sandy cov
 -“Once, when I lived in Marysville, Mr. Thomas hired an express-wagon and took us all to spend the day at the shore ten miles away.
 +“Once, when I lived in Marysville, Mr. Thomas hired an express wagon and took us all to spend the day at the shore ten miles away.
@@ -349,30 +359,45 @@ index f6d44e9..70dd985 100644
 @@ -15 +15 @@ The fact is, Mrs. Spencer, there’s been a queer mistake somewhere, and I’ve
 -We sent word, Matthew and I, for you to bring us a boy from the asylum.
 +We send word, Matthew and I, for you to bring us a boy from the asylum.
+
+************* CHANGING WORDS
 @@ -19 +19 @@ We told your brother Robert to tell you we wanted a boy ten or eleven years old.
 -“Why, Robert sent the word down by his daughter Nancy and she said you wanted a girl—didn’t she, Flora Jane?” appealing to her daughter who had come out to the steps.
 +“Why, Robert sent word down by his daughter Nancy and she said you wanted a girl—didn’t she Flora Jane?” appealing to her daughter who had come out to the steps.
+
+************* CHANGING WORDS
 @@ -24 +24 @@ We told your brother Robert to tell you we wanted a boy ten or eleven years old.
 -“It is too bad; but it certainly wasn’t my fault, you see, Miss Cuthbert.
 +“It’s too bad; but it certainly wasn’t my fault, you see, Miss Cuthbert.
+
+************* CHANGING WORDS
 @@ -31 +31 @@ I’ve often had to scold her well for her heedlessness.”
 -Anyhow, the mistake has been made and the only thing to do now is to set it right.
 +Anyhow, the mistake has been made and the only thing to do is to set it right.
+
+************* CHANGING WORDS
 @@ -38 +38 @@ Mrs. Peter has a large family, you know, and she finds it hard to get help.
 -Anne will be the very girl for her.
 +Anne will be the very girl for you.
+
 @@ -51 +51 @@ Marilla felt a qualm of conscience at the thought of handing Anne over to her te
 -“And if there isn’t Mrs. Peter coming up the lane this blessed minute!” exclaimed Mrs. Spencer, bustling her guests through the hall into the parlour, where a deadly chill struck on them as if the air had been strained so long through dark green, closely drawn blinds that it had lost every particle of warmth it had ever possessed.
 +“And if there isn’t Mrs. Peter coming up the lane this blessed minute!” exclaimed Mrs. Spencer, bustling her guests through the hall into the parlor, where a deadly chill struck on them as if the air had been strained so long through dark green, closely drawn blinds that it had lost every particle of warmth it had ever possessed.
+
+************* CHANGING WORDS
 @@ -54 +54 @@ Take the armchair, Miss Cuthbert.
 -Anne, you sit here on the ottoman and don’t wriggle.
 +Anne, you sit here on the ottoman and don’t wiggle.
 @@ -65 +65 @@ Mrs. Spencer whisked away, after pulling up the blinds.
 -Anne, sitting mutely on the ottoman, with her hands clasped tightly in her lap, stared at Mrs. Blewett as one fascinated.
 +Anne sitting mutely on the ottoman, with her hands clasped tightly in her lap, stared at Mrs Blewett as one fascinated.
+
+************* EXTRA SPACE
 @@ -70 +70 @@ She was beginning to be afraid she couldn’t keep the tears back when Mrs. Spen
 -“It seems there’s been a mistake about this little girl, Mrs. Blewett,” she said.
 +“It seems there’s been a mistake about this little girl, Mrs. Blewett,”  she said.
+
+
 @@ -94,2 +94,2 @@ Marilla felt an uncomfortable conviction that, if she denied the appeal of that
 -Moreover, she did not fancy Mrs. Blewett.
 -To hand a sensitive, “high-strung” child over to such a woman!
@@ -395,9 +420,12 @@ index f6d44e9..70dd985 100644
 @@ -142 +142 @@ Then she briefly told him Anne’s history and the result of the interview with
 -And, since you seem to want her, I suppose I’m willing—or have to be.
 +And since you seem to want her, I suppose I’m willing—or have to be.
+
+************* CHANGING WORDS
 @@ -161 +161 @@ When I fail it’ll be time enough to put your oar in.”
 -“Only be as good and kind to her as you can be without spoiling her.
 +“Only be as good and kind to her as you can without spoiling her.
+
 @@ -166 +166 @@ Marilla sniffed, to express her contempt for Matthew’s opinions concerning any
 -“I won’t tell her to-night that she can stay,” she reflected, as she strained the milk into the creamers.
 +“I won’t tell her tonight that she can stay,” she reflected, as she strained the milk into the creamers.
@@ -414,26 +442,42 @@ index 9366522..940764b 100644
 @@ -80 +80 @@ She had intended to teach Anne the childish classic, “Now I lay me down to sle
 -But she had, as I have told you, the glimmerings of a sense of humour—which is simply another name for a sense of the fitness of things; and it suddenly occurred to her that that simple little prayer, sacred to white-robed childhood lisping at motherly knees, was entirely unsuited to this freckled witch of a girl who knew and cared nothing about God’s love, since she had never had it translated to her through the medium of human love.
 +But she had, as I have told you, the glimmerings of a sense of humor—which is simply another name for a sense of fitness of things; and it suddenly occurred to her that that simple little prayer, sacred to white-robed childhood lisping at motherly knees, was entirely unsuited to this freckled witch of a girl who knew and cared nothing about God’s love, since she had never had it translated to her through the medium of human love.
+
+************* CHANGING WORDS
 @@ -86 +86 @@ But she had, as I have told you, the glimmerings of a sense of humour—which is
 -“Gracious heavenly Father—that’s the way the ministers say it in church, so I suppose it’s all right in a private prayer, isn’t it?” she interjected, lifting her head for a moment.
 +“Gracious heavenly Father—that’s the way the ministers say it in church, so I suppose it’s all right in private prayer, isn’t it?” she interjected, lifting her head for a moment.
+
+
 @@ -90 +90 @@ And that’s all the blessings I can think of just now to thank Thee for.
 -As for the things I want, they’re so numerous that it would take a great deal of time to name them all, so I will only mention the two most important.
 +As for the things I want, they’re so numerous that it would take a great deal of time to name them all so I will only mention the two most important.
+
+************* CHANGING WORDS
 @@ -95 +95 @@ I remain, Yours respectfully, Anne Shirley.”
 -“There, did I do it all right?” she asked eagerly, getting up.
 +“There, did I do all right?” she asked eagerly, getting up.
+
+
 @@ -102 +102 @@ She tucked the child up in bed, mentally vowing that she should be taught a pray
 -I should have said ‘Amen’ in place of ‘yours respectfully,’ shouldn’t I?—the way the ministers do.
 +I should have said, ‘Amen’ in place of ‘yours respectfully,’ shouldn’t I?—the way the ministers do.
+
+************* CHANGING WORDS
 @@ -110 +110 @@ Good night.”
 -“I can say good night to-night with a clear conscience,” said Anne, cuddling luxuriously down among her pillows.
 +“I can only say good night tonight with a clear conscience,” said Anne, cuddling luxuriously down among her pillows.
+
+************* CHANGING WORDS
 @@ -116,2 +116,2 @@ She’s next door to a perfect heathen.
 -Will you believe that she never said a prayer in her life till to-night?
 -I’ll send to the manse to-morrow and borrow the Peep of Day series, that’s what I’ll do.
 +Will you believe that she never said a prayer in her life till tonight?
 +I’ll send her to the manse tomorrow and borrow the Peep of the Day series, that’s what I’ll do.
+
+
+
+
 diff --git "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
 index d5a1acb..ce2bd30 100644
 --- "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
@@ -444,26 +488,35 @@ index d5a1acb..ce2bd30 100644
 @@ -15 +15 @@ Please tell me.”
 -“You haven’t scalded the dish-cloth in clean hot water as I told you to do,” said Marilla immovably.
 +“You haven’t scalded the dishcloth in clean hot water as I told you to do,” said Marilla immovably.
+
+************* CHANGING WORDS AND THE MEANING
 @@ -18,3 +18,2 @@ Please tell me.”
 -Anne went and attended to the dish-cloth.
 -Then she returned to Marilla and fastened imploring eyes on the latter’s face.
 -
 +Anne went and attended to the dishcloth.
 +Then she returned to Marilla and fastened imploring eyes of the latter’s face.
+
 @@ -33 +32 @@ I’ll try to be so good.
 -It will be up-hill work, I expect, for Mrs. Thomas often told me I was desperately wicked.
 +It will be uphill work, I expect, for Mrs. Thomas often told me I was desperately wicked.
+
+************* CHANGING WORDS
 @@ -50 +49 @@ I’m not used to being called Miss Cuthbert and it would make me nervous.”
 -“It sounds awfully disrespectful to say just Marilla,” protested Anne.
 +“It sounds awfully disrespectful to just say Marilla,” protested Anne.
+
 @@ -79 +78 @@ And that reminds me.
 -Go into the sitting-room, Anne—be sure your feet are clean and don’t let any flies in—and bring me out the illustrated card that’s on the mantelpiece.
 +Go into the sitting room, Anne—be sure your feet are clean and don’t let any flies in—and bring me out the illustrated card that’s on the mantelpiece.
+
+************* CHANGING WORDS (AGGRESSIVELY)
 @@ -98,2 +97,2 @@ Anne promptly departed for the sitting-room across the hall; she failed to retur
 -She found Anne standing motionless before a picture hanging on the wall between the two windows, with her hands clasped behind her, her face uplifted, and her eyes astar with dreams.
 -The white and green light strained through apple-trees and clustering vines outside fell over the rapt little figure with a half-unearthly radiance.
 +She found Anne standing motionless before a picture hanging on the wall between the two windows, with her eyes a-star with dreams.
 +The white and green light strained through apple trees and clustering vines outside fell over the rapt little figure with a half-unearthly radiance.
+
 @@ -101 +100,2 @@ The white and green light strained through apple-trees and clustering vines outs
 -“Anne, whatever are you thinking of?” demanded Marilla sharply.
 +“Anne, whatever are you thinking of?”
@@ -486,9 +539,12 @@ index d5a1acb..ce2bd30 100644
 @@ -141 +141 @@ This isn’t poetry, but it makes me feel just the same way poetry does.
 -‘Our Father who art in heaven, hallowed be Thy name.’
 +‘Our Father who art in heaven hallowed be Thy name.’
+
+************* CHANGING WORDS
 @@ -151 +151 @@ Anne tipped the vase of apple blossoms near enough to bestow a soft kiss on a pi
 -“A—a what kind of a friend?”
 +“A—a what kind of friend?”
+
 @@ -182 +182 @@ Next to being beautiful oneself—and that’s impossible in my case—it would
 -When I lived with Mrs. Thomas she had a bookcase in her sitting-room with glass doors.
 +When I lived with Mrs. Thomas she had a bookcase in her sitting room with glass doors.
@@ -514,16 +570,24 @@ index d5a1acb..ce2bd30 100644
 \ No newline at end of file
 +Anne blew a couple of airy kisses from her fingertips past the cherry blossoms and then, with her chin in her hands, drifted luxuriously out on a sea of daydreams.
 \ No newline at end of file
+
+
+
 diff --git a/chapters/09-IX.-Mrs.-Rachel-Lynde-Is-Properly-Horrified.utf8 b/chapters/09-IX.-Mrs.-Rachel-Lynde-Is-Properly-Horrified.utf8
 index e2f0267..5a700e0 100644
 --- a/chapters/09-IX.-Mrs.-Rachel-Lynde-Is-Properly-Horrified.utf8
 +++ b/chapters/09-IX.-Mrs.-Rachel-Lynde-Is-Properly-Horrified.utf8
+
+************* CHANGING WORDS
 @@ -7 +7 @@ Mrs. Rachel was not often sick and had a well-defined contempt for people who we
 -As soon as her doctor allowed her to put her foot out-of-doors she hurried up to Green Gables, bursting with curiosity to see Matthew’s and Marilla’s orphan, concerning whom all sorts of stories and suppositions had gone abroad in Avonlea.
 +As soon as her doctor allowed her to put her foot out-of-doors she hurried up to Green Gables, bursting with curiosity to see Matthew and Marilla’s orphan, concerning whom all sorts of stories and suppositions had gone abroad in Avonlea.
+
+************* EXTRA SPACE
 @@ -15 +15 @@ She had made friends with the spring down in the hollow—that wonderful deep, c
 -That bridge led Anne’s dancing feet up over a wooded hill beyond, where perpetual twilight reigned under the straight, thick-growing firs and spruces; the only flowers there were myriads of delicate “June bells,” those shyest and sweetest of woodland blooms, and a few pale, aerial starflowers, like the spirits of last year’s blossoms.
 +That bridge led Anne’s dancing feet up over a wooded hill beyond, where perpetual twilight reigned under the straight, thick-growing firs and spruces; the only flowers there were myriads of delicate “June bells,”  those shyest and sweetest of woodland blooms, and a few pale, aerial starflowers, like the spirits of last year’s blossoms.
+
 @@ -18 +18 @@ Gossamers glimmered like threads of silver among the trees and the fir boughs an
 -All these raptured voyages of exploration were made in the odd half-hours which she was allowed for play, and Anne talked Matthew and Marilla half-deaf over her discoveries.
 +All these raptured voyages of exploration were made in the odd half hours which she was allowed for play, and Anne talked Matthew and Marilla half-deaf over her discoveries.
