@@ -1,0 +1,159 @@
+diff --git a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8 b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+index 50ce5fb..af4084f 100644
+--- a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
++++ b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+@@ -12 +12 @@ The sun was coming in at the window warm and bright; the orchard on the slope be
+-Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
++Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband”—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
+diff --git a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8 b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+index f1b5db1..21e71f7 100644
+--- a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
++++ b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+@@ -136 +136 @@ She said she never saw the beat of me for prowling about.
+-But if it kept her from being seasick it’s a mercy I did prowl, isn’t it?
++But if it kept her from being sea-sick it’s a mercy I did prowl, isn’t it?
+@@ -316 +316 @@ Above the bridge the pond ran up into fringing groves of fir and maple and lay a
+-Here and there a wild plum leaned out from the bank like a white-clad girl tiptoeing to her own reflection.
++Here and there a wild plum leaned out from the bank like a white-clad girl tip-toeing to her own reflection.
+diff --git "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+index f9f69a9..a974f43 100644
+--- "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
++++ "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+@@ -132 +132 @@ Now, sit down in the corner and learn that prayer off by heart.”
+-Anne set the card up against the jugful of apple blossoms she had brought in to decorate the dinner table—Marilla had eyed that decoration askance, but had said nothing—propped her chin on her hands, and fell to studying it intently for several silent minutes.
++Anne set the card up against the jugful of apple blossoms she had brought in to decorate the dinner-table—Marilla had eyed that decoration askance, but had said nothing—propped her chin on her hands, and fell to studying it intently for several silent minutes.
+@@ -195 +195 @@ There was no bookcase at Mrs. Hammond’s.
+-But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there
++But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there.
+@@ -232 +232 @@ You should have left them on the tree in the first place.”
+-“I kind of felt I shouldn’t shorten their lovely lives by picking them— I wouldn’t want to be picked if I were an apple blossom.
++“I kind of felt I shouldn’t shorten their lovely lives by picking them—I wouldn’t want to be picked if I were an apple blossom.
+@@ -271 +271 @@ I must be careful to remember them and send them a kiss every day.”
+-Anne blew a couple of airy kisses from her finger-tips past the cherry blossoms and then, with her chin in her hands, drifted luxuriously out on a sea of day-dreams.
+\ No newline at end of file
++Anne blew a couple of airy kisses from her fingertips past the cherry blossoms and then, with her chin in her hands, drifted luxuriously out on a sea of daydreams.
+\ No newline at end of file
+diff --git a/chapters/12-XII.-A-Solemn-Vow-and-Promise.utf8 b/chapters/12-XII.-A-Solemn-Vow-and-Promise.utf8
+index a7e158f..e4ead82 100644
+--- a/chapters/12-XII.-A-Solemn-Vow-and-Promise.utf8
++++ b/chapters/12-XII.-A-Solemn-Vow-and-Promise.utf8
+@@ -10 +10,2 @@ A pretty-looking object you must have been!”
+-“Oh, I know pink and yellow aren’t becoming to me,” began Anne.
++“Oh.
++I know pink and yellow aren’t becoming to me,” began Anne.
+diff --git a/chapters/13-XIII.-The-Delights-of-Anticipation.utf8 b/chapters/13-XIII.-The-Delights-of-Anticipation.utf8
+index babf6c8..827ebc4 100644
+--- a/chapters/13-XIII.-The-Delights-of-Anticipation.utf8
++++ b/chapters/13-XIII.-The-Delights-of-Anticipation.utf8
+@@ -72 +72 @@ It belongs to Mr. William Bell, and right in the corner there is a little ring o
+-Diana and I have our playhouse there.
++Diana and I have our play-house there.
+diff --git "a/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8" "b/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
+index b6e64ac..46ca3ff 100644
+--- "a/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
++++ "b/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
+@@ -311 +311 @@ That evening Marilla told the whole story to Matthew over her stocking basket.
+-I have to laugh when I think of Anne’s ‘confession,’ although I suppose I shouldn’t for it really was a falsehood.
++I have to laugh when I think of Anne’s ’confession,’ although I suppose I shouldn’t for it really was a falsehood.
+diff --git a/chapters/17-XVII.-A-New-Interest-in-Life.utf8 b/chapters/17-XVII.-A-New-Interest-in-Life.utf8
+index 987c0c1..8145a30 100644
+--- a/chapters/17-XVII.-A-New-Interest-in-Life.utf8
++++ b/chapters/17-XVII.-A-New-Interest-in-Life.utf8
+@@ -94 +94 @@ Katie Boulter gave her a perfume bottle to keep slate-water in and Julia Bell co
+-To Anne
++TO ANNE
+@@ -128 +128 @@ When you look at it remember
+-Your true friend,
++Your true friend,⁠
+@@ -142 +142 @@ Please excuse mistakes because my spelling isn’t very good yet, although much
+-Yours until death us do part,
++Yours until death us do part,⁠
+@@ -144,2 +144,2 @@ Anne or Cordelia Shirley.
+-P. S. I shall sleep with your letter under my pillow to-night.
+-A. or C. S.”
++P.S. I shall sleep with your letter under my pillow to-night.
++a. or c.s.”
+@@ -172 +172 @@ Mr. Phillips says I’m the worst dunce he ever saw at it.
+-And Gil—I mean some of the others are so smart at it.
++And Gil— I mean some of the others are so smart at it.
+diff --git a/chapters/18-XVIII.-Anne-to-the-Rescue.utf8 b/chapters/18-XVIII.-Anne-to-the-Rescue.utf8
+index ef76b98..7615070 100644
+--- a/chapters/18-XVIII.-Anne-to-the-Rescue.utf8
++++ b/chapters/18-XVIII.-Anne-to-the-Rescue.utf8
+@@ -220 +220 @@ Anne came dancing home in the purple winter twilight across the snowy places.
+-Afar in the southwest was the great shimmering, pearl-like sparkle of an evening star in a sky that was pale golden and ethereal rose over gleaming white spaces and dark glens of spruce.
++Afar in the south-west was the great shimmering, pearl-like sparkle of an evening star in a sky that was pale golden and ethereal rose over gleaming white spaces and dark glens of spruce.
+diff --git a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+index 217644d..1340560 100644
+--- a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
++++ b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+@@ -183 +183 @@ Anne never forgot that walk.
+-Bitterly did she resent the license she had given to her imagination.
++Bitterly did she repent the license she had given to her imagination.
+diff --git a/chapters/21-XXI.-A-New-Departure-in-Flavourings.utf8 b/chapters/21-XXI.-A-New-Departure-in-Flavourings.utf8
+index 7d1c829..7c617ff 100644
+--- a/chapters/21-XXI.-A-New-Departure-in-Flavourings.utf8
++++ b/chapters/21-XXI.-A-New-Departure-in-Flavourings.utf8
+@@ -15 +15 @@ I tried to hold out, Marilla.
+-I tried to remember the time Mr. Phillips made me sit with Gil—with a boy; and the time he spelled my name without an _e_ on the blackboard; and how he said I was the worst dunce he ever saw at geometry and laughed at my spelling; and all the times he had been so horrid and sarcastic; but somehow I couldn’t, Marilla, and I just had to cry too.
++I tried to remember the time Mr. Phillips made me sit with Gil— with a boy; and the time he spelled my name without an e on the black-board; and how he said I was the worst dunce he ever saw at geometry and laughed at my spelling; and all the times he had been so horrid and sarcastic; but somehow I couldn’t, Marilla, and I just had to cry too.
+@@ -234 +234 @@ I shall always be pointed at as the girl who flavoured a cake with anodyne linim
+-Gil— the boys in school will never get over laughing at it.
++Gil—the boys in school will never get over laughing at it.
+diff --git a/chapters/28-XXVIII.-An-Unfortunate-Lily-Maid.utf8 b/chapters/28-XXVIII.-An-Unfortunate-Lily-Maid.utf8
+index 8944828..5f7ce82 100644
+--- a/chapters/28-XXVIII.-An-Unfortunate-Lily-Maid.utf8
++++ b/chapters/28-XXVIII.-An-Unfortunate-Lily-Maid.utf8
+@@ -130 +130 @@ Without waiting for an answer he pulled close to the pile and extended his hand.
+-There was no help for it; Anne, clinging to Gilbert Blythe’s hand, scrambled down into the dory, where she sat, drabbled and furious, in the stern with her arms full of dripping shawl and wet crêpe.
++There was no help for it; Anne, clinging to Gilbert Blythe’s hand, scrambled down into the dory, where she sat, drabbled and furious, in the stern with her arms full of dripping shawl and wet crepe.
+diff --git "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8" "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+index cc40c35..c45f587 100644
+--- "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
++++ "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+@@ -40 +40 @@ Did he?”
+-“I should think not,” exclaimed Diana indignantly.
++“I should think not,” exclaimed Diana indignantly
+diff --git a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8 b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+index 7cd8a3a..5b84ee6 100644
+--- a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
++++ b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+@@ -168 +168 @@ Sometimes I wake up in the night and wonder what I’ll do if I don’t pass.”
+-It would be such a disgrace to fail, especially if Gil—if the others passed.
++It would be such a disgrace to fail, especially if Gil— if the others passed.
+diff --git a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8 b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+index b6d2394..5aab6b9 100644
+--- a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
++++ b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+@@ -6 +6 @@ Red eyes and damp handkerchiefs bore convincing testimony to the fact that Miss
+-Diana looked back at the schoolhouse from the foot of the spruce hill and sighed deeply.
++Diana looked back at the school-house from the foot of the spruce hill and sighed deeply.
+@@ -96 +96 @@ I think I’d rather it _didn’t_ go on if I failed!
+-Yours devotedly,
++Yours devotedly,⁠
+diff --git a/chapters/33-XXXIII.-The-Hotel-Concert.utf8 b/chapters/33-XXXIII.-The-Hotel-Concert.utf8
+index ef5a2d2..7e1784f 100644
+--- a/chapters/33-XXXIII.-The-Hotel-Concert.utf8
++++ b/chapters/33-XXXIII.-The-Hotel-Concert.utf8
+@@ -93 +93 @@ Look at the moonlight.”
+-“I’m so glad my window looks east into the sun-rising,” said Anne, going over to Diana.
++“I’m so glad my window looks east into the sunrising,” said Anne, going over to Diana.
+diff --git "a/chapters/35-XXXV-The-Winter-at-Queen\342\200\231s.utf8" "b/chapters/35-XXXV-The-Winter-at-Queen\342\200\231s.utf8"
+index bd06b62..c8e4d48 100644
+--- "a/chapters/35-XXXV-The-Winter-at-Queen\342\200\231s.utf8"
++++ "b/chapters/35-XXXV-The-Winter-at-Queen\342\200\231s.utf8"
+@@ -39 +39 @@ Ethel Marr was admitted by all competent judges to have the most stylish modes o
+-Even Josie Pye attained a certain pre-eminence as the sharpest-tongued young lady in attendance at Queen’s.
++Even Josie Pye attained a certain preeminence as the sharpest-tongued young lady in attendance at Queen’s.
+@@ -79 +79 @@ My father can afford to send me.
+-Anne, Frank Stockley says that professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.”
++Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.”
+diff --git a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8 b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+index 740ce3b..05fa5f2 100644
+--- a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
++++ b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+@@ -303 +303 @@ And there was always the bend in the road!
+-The End.
+\ No newline at end of file
++THE END.
+\ No newline at end of file

@@ -1,0 +1,139 @@
+diff --git a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8 b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+index 50ce5fb..310d1e8 100644
+--- a/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
++++ b/chapters/01-I.-Mrs.-Rachel-Lynde-Is-Surprised.utf8
+@@ -12 +12 @@ The sun was coming in at the window warm and bright; the orchard on the slope be
+-Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
++Thomas Lynde—a meek little man whom Avonlea people called “Rachel Lynde’s husband”—was sowing his late turnip seed on the hill field beyond the barn; and Matthew Cuthbert ought to have been sowing his on the big red brook field away over by Green Gables.
+@@ -109 +109 @@ There’s never anybody to be had but those stupid, half-grown little French boy
+-At first Matthew suggested getting a Barnado boy.
++At first Matthew suggested getting a Barnardo boy.
+diff --git a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8 b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+index f1b5db1..b83a1d4 100644
+--- a/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
++++ b/chapters/02-II.-Matthew-Cuthbert-Is-Surprised.utf8
+@@ -127 +127 @@ All the orphans had to wear them, you know.
+-A merchant in Hopeton last winter donated three hundred yards of wincey to the asylum.
++A merchant in Hopetown last winter donated three hundred yards of wincey to the asylum.
+@@ -275 +275 @@ She could keep silence, it was evident, as energetically as she could talk.
+-She came out of her reverie with a deep sigh and looked at him with the dreamy gaze of a soul that had been wondering afar, star-led.
++She came out of her reverie with a deep sigh and looked at him with the dreamy gaze of a soul that had been wandering afar, star-led.
+diff --git "a/chapters/05-V.-Anne\342\200\231s-History.utf8" "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
+index 3bd1d64..308cfb0 100644
+--- "a/chapters/05-V.-Anne\342\200\231s-History.utf8"
++++ "b/chapters/05-V.-Anne\342\200\231s-History.utf8"
+@@ -109 +109 @@ She divided her children among her relatives and went to the States.
+-I had to go to the asylum at Hopeton, because nobody would take me.
++I had to go to the asylum at Hopetown, because nobody would take me.
+@@ -122 +122 @@ But of course I went while I was at the asylum.
+-I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen on the Rhine,’ and lots of the ‘Lady of the Lake’ and most of ‘The Seasons,’ by James Thompson.
++I can read pretty well and I know ever so many pieces of poetry off by heart—‘The Battle of Hohenlinden’ and ‘Edinburgh after Flodden,’ and ‘Bingen on the Rhine,’ and lots of the ‘Lady of the Lake’ and most of ‘The Seasons,’ by James Thomson.
+diff --git a/chapters/07-VII.-Anne-Says-Her-Prayers.utf8 b/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
+index 16eac04..47b6e8b 100644
+--- a/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
++++ b/chapters/07-VII.-Anne-Says-Her-Prayers.utf8
+@@ -28 +28 @@ Don’t you know who God is, Anne?”
+-“‘God is a spirit, infinite, eternal and unchangeable, in His being, wisdom, power, holiness, justice, goodness, and truth,’” responded Anne promptly and glibly.
++“‘God is a spirit, infinite, eternal, and unchangeable in His being, wisdom, power, holiness, justice, goodness, and truth,’” responded Anne promptly and glibly.
+diff --git "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8" "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+index f9f69a9..ffaaed3 100644
+--- "a/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
++++ "b/chapters/08-VIII.-Anne\342\200\231s-Bringing-up-Is-Begun.utf8"
+@@ -195 +195 @@ There was no bookcase at Mrs. Hammond’s.
+-But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there
++But just up the river a little way from the house there was a long green little valley, and the loveliest echo lived there.
+diff --git a/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8 b/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
+index b5a0a25..34a5eb8 100644
+--- a/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
++++ b/chapters/16-XVI.-Diana-Is-Invited-to-Tea-with-Tragic-Results.utf8
+@@ -25 +25 @@ You’ll have to get Matthew and Jerry their supper, so mind you don’t forget
+-“It was dreadful of me to forget, said Anne apologetically, “but that was the afternoon I was trying to think of a name for Violet Vale and it crowded other things out.
++“It was dreadful of me to forget,” said Anne apologetically, “but that was the afternoon I was trying to think of a name for Violet Vale and it crowded other things out.
+@@ -65 +65 @@ But there’s a bottle half full of raspberry cordial that was left over from th
+-It’s on the second shelf of the sitting-room closet and you and Diana can have it if you like, and a cooky to eat with it along in the afternoon, for I daresay Matthew’ll be late coming in to tea since he’s hauling potatoes to the vessel.”
++It’s on the second shelf of the sitting-room closet and you and Diana can have it if you like, and a cooky to eat along with it in the afternoon, for I daresay Matthew’ll be late coming in to tea since he’s hauling potatoes to the vessel.”
+@@ -281 +281 @@ It will be all right.”
+-Marilla had changed her mind about its being all right by the time she got back from Orchard Slope.
++Marilla had changed her mind about it being all right by the time she got back from Orchard Slope.
+diff --git a/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8 b/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
+index ec8b745..1627d7d 100644
+--- a/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
++++ b/chapters/19-XIX.-A-Concert,-a-Catastrophe,-and-a-Confession.utf8
+@@ -383 +383 @@ When Miss Barry went away she said:
+-You don’t find it right out at first, as in Matthew’s case, but after awhile you come to see it.
++You don’t find it right out at first, as in Matthew’s case, but after a while you come to see it.
+diff --git a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8 b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+index 217644d..1340560 100644
+--- a/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
++++ b/chapters/20-XX.-A-Good-Imagination-Gone-Wrong.utf8
+@@ -183 +183 @@ Anne never forgot that walk.
+-Bitterly did she resent the license she had given to her imagination.
++Bitterly did she repent the license she had given to her imagination.
+diff --git a/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8 b/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
+index 24eb80d..52c64ab 100644
+--- a/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
++++ b/chapters/25-XXV.-Matthew-Insists-on-Puffed-Sleeves.utf8
+@@ -22 +22 @@ Marilla kept her clothed in plain, dark dresses, all made after the same unvaryi
+-If Matthew knew there was such a thing as fashion in dress it is much as he did; but he was quite sure that Anne’s sleeves did not look at all like the sleeves the other girls wore.
++If Matthew knew there was such a thing as fashion in dress it is as much as he did; but he was quite sure that Anne’s sleeves did not look at all like the sleeves the other girls wore.
+@@ -279 +279 @@ You’re so romantic that I’m sure you ought to be pleased at that.”
+-That night Marilla and Matthew, who had been out to a concert for the first time in twenty years, sat for awhile by the kitchen fire after Anne had gone to bed.
++That night Marilla and Matthew, who had been out to a concert for the first time in twenty years, sat for a while by the kitchen fire after Anne had gone to bed.
+diff --git a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8 b/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
+index b0c3d28..af4b2f4 100644
+--- a/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
++++ b/chapters/26-XXVI.-The-Story-Club-Is-Formed.utf8
+@@ -9 +9 @@ At first, as she told Diana, she did not really think she could.
+-“Perhaps after awhile I’ll get used to it, but I’m afraid concerts spoil people for every-day life.
++“Perhaps after a while I’ll get used to it, but I’m afraid concerts spoil people for every-day life.
+@@ -83 +83 @@ Anne nodded, trying hard not to look virtuously complacent and failing miserably
+-It’s called ‘The Jealous Rival; or, in Death Not Divided.’
++It’s called ‘The Jealous Rival; or, In Death Not Divided.’
+@@ -138 +138 @@ I wish my imagination was as good as yours.”
+-Let you and I have a story club all our own and write stories for practice.
++Let’s you and I have a story club all our own and write stories for practice.
+diff --git "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8" "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+index cc40c35..3452994 100644
+--- "a/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
++++ "b/chapters/29-XXIX.-An-Epoch-in-Anne\342\200\231s-Life.utf8"
+@@ -189 +189 @@ And I came to the conclusion, Marilla, that I wasn’t born for city life and th
+-It’s nice to be eating ice-cream at brilliant restaurants at eleven o’clock at night once in awhile; but as a regular thing I’d rather be in the east gable at eleven, sound asleep, but kind of knowing even in my sleep that the stars were shining outside and that the wind was blowing in the firs across the brook.
++It’s nice to be eating ice-cream at brilliant restaurants at eleven o’clock at night once in a while; but as a regular thing I’d rather be in the east gable at eleven, sound asleep, but kind of knowing even in my sleep that the stars were shining outside and that the wind was blowing in the firs across the brook.
+diff --git a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8 b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+index 7cd8a3a..de453f6 100644
+--- a/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
++++ b/chapters/31-XXXI.-Where-the-Brook-and-River-Meet.utf8
+@@ -87 +87 @@ New worlds of thought, feeling, and ambition, fresh, fascinating fields of unexp
+-Hills peeped o’er hill and Alps on Alps arose.
++Hills peeped o’er hills and Alps on Alps arose.
+diff --git a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8 b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+index b6d2394..ad97030 100644
+--- a/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
++++ b/chapters/32-XXXII.-The-Pass-List-Is-Out.utf8
+@@ -141 +141 @@ At the end of the fortnight Anne took to “haunting” the post-office also, in
+-Charlie and Gilbert were not above doing this too, but Moody Spurgeon stayed resolutely away
++Charlie and Gilbert were not above doing this too, but Moody Spurgeon stayed resolutely away.
+diff --git "a/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8" "b/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
+index 351db73..704864f 100644
+--- "a/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
++++ "b/chapters/34-XXXIV.-A-Queen\342\200\231s-Girl.utf8"
+@@ -19 +19 @@ Anne put it on one evening for Matthew’s and Marilla’s benefit, and recited
+-As Marilla watched the bright, animated face and graceful motions her thoughts went back to the evening Anne had arrived at Green Gables, and memory recalled a vivid picture of the odd, frightened child in her preposterous yellowish-brown wincey dress, the heartbreak looking out of her tearful eyes.
++As Marilla watched the bright, animated face and graceful motions her thoughts went back to the evening Anne had arrived at Green Gables, and memory recalled a vivid picture of the odd, frightened child in her preposterous yellowish-gray wincey dress, the heartbreak looking out of her tearful eyes.
+diff --git a/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8 b/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
+index b2ae4b8..c4470a8 100644
+--- a/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
++++ b/chapters/37-XXXVII.-The-Reaper-Whose-Name-Is-Death.utf8
+@@ -179 +179 @@ I wouldn’t forgive him when he asked me to.
+-I meant to, after awhile—but I was sulky and angry and I wanted to punish him first.
++I meant to, after a while—but I was sulky and angry and I wanted to punish him first.
+diff --git a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8 b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+index 740ce3b..1a50c45 100644
+--- a/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
++++ b/chapters/38-XXXVIII.-The-Bend-in-the-Road.utf8
+@@ -190 +190 @@ Oh, I’m not going to overdo things.
+-As ‘Josiah Allen’s wife’ says, I shall be ‘mejum.’
++As ‘Josiah Allen’s Wife’ says, I shall be ‘mejum.’
+@@ -234 +234 @@ But crispness was no longer Marilla’s distinguishing characteristic.
+-As Mrs. Lynde told her Thomas that night.
++As Mrs. Lynde told her Thomas that night,
