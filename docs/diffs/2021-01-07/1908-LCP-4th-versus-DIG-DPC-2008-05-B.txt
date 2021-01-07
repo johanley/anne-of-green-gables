@@ -149,47 +149,43 @@ index b5a0a25..e914359 100644
 -Oh, please don’t say that you won’t let Diana play with me any more.
 +Oh, please, don’t say that you won’t let Diana play with me any more.
 diff --git a/chapters/17-XVII.-A-New-Interest-in-Life.utf8 b/chapters/17-XVII.-A-New-Interest-in-Life.utf8
-index 987c0c1..06a64e4 100644
+index 987c0c1..3eeea23 100644
 --- a/chapters/17-XVII.-A-New-Interest-in-Life.utf8
 +++ b/chapters/17-XVII.-A-New-Interest-in-Life.utf8
 @@ -7 +7 @@ But the hope faded when she saw Diana’s dejected countenance.
 -“Your mother hasn’t relented?” she gasped.
 +“Your mother has relented?” she gasped.
-@@ -27,2 +27 @@ Didn’t you know that?”
--“No.”
--Anne drew a long breath.
-+“No.” Anne drew a long breath.
-@@ -90 +89 @@ Her imagination had been sorely missed in games, her voice in the singing, and h
+@@ -90 +90 @@ Her imagination had been sorely missed in games, her voice in the singing, and h
 -Ruby Gillis smuggled three blue plums over to her during testament reading; Ella May Macpherson gave her an enormous yellow pansy cut from the covers of a floral catalogue—a species of desk decoration much prized in Avonlea school.
 +Ruby Gillis smuggled three blue plums over to her during testament reading: Ella May MacPherson gave her an enormous yellow pansy cut from the covers of a floral catalogue—a species of desk decoration much prized in Avonlea school.
-@@ -94 +93 @@ Katie Boulter gave her a perfume bottle to keep slate-water in and Julia Bell co
+@@ -94 +94 @@ Katie Boulter gave her a perfume bottle to keep slate-water in and Julia Bell co
 -To Anne
 +TO ANNE
-@@ -105,2 +104,2 @@ When Anne went to her seat after dinner hour—she had been told by Mr. Phillips
+@@ -105,2 +105,2 @@ When Anne went to her seat after dinner hour—she had been told by Mr. Phillips
 -Anne caught it up all ready to take a bite, when she remembered that the only place in Avonlea where strawberry apples grew was in the old Blythe orchard on the other side of the Lake of Shining Waters.
 -Anne dropped the apple as if it were a red-hot coal and ostentatiously wiped her fingers on her handkerchief.
 +Anne caught it up already to take a bite, when she remembered that the only place in Avonlea where strawberry apples grew was in the old Blythe orchard on the other side of the Lake of Shining Waters.
 +Anne dropped the apple as if it were a red hot coal and ostentatiously wiped her fingers on her handkerchief.
-@@ -113 +112 @@ But as,
+@@ -113 +113 @@ But as,
 -The Cæsar’s pageant shorn of Brutus’ bust
 +The Caesar’s pageant shorn of Brutus’ bust
-@@ -130 +129 @@ Your true friend,
+@@ -130 +130 @@ Your true friend,
 -Diana Barry.”
 +DIANA BARRY.”
-@@ -134 +133 @@ Anne read the note, kissed the bookmark, and despatched a prompt reply back to t
+@@ -134 +134 @@ Anne read the note, kissed the bookmark, and despatched a prompt reply back to t
 -“My own darling Diana:—
 +“MY OWN DARLING DIANA:—
-@@ -140,0 +140,3 @@ Please excuse mistakes because my spelling isn’t very good yet, although much
+@@ -140,0 +141,3 @@ Please excuse mistakes because my spelling isn’t very good yet, although much
 +Yours until death us do part, 
 +ANNE OR CORDELIA SHIRLEY.
 +P.S. I shall sleep with your letter under my pillow to-night.
-@@ -142,4 +144 @@ Please excuse mistakes because my spelling isn’t very good yet, although much
+@@ -142,4 +145 @@ Please excuse mistakes because my spelling isn’t very good yet, although much
 -Yours until death us do part,
 -Anne or Cordelia Shirley.
 -P. S. I shall sleep with your letter under my pillow to-night.
 -A. or C. S.”
 +A. OR C.S.”
-@@ -153 +152 @@ She was as intense in her hatreds as in her loves.
+@@ -153 +153 @@ She was as intense in her hatreds as in her loves.
 -She would not stoop to admit that she meant to rival Gilbert in school work, because that would have been to acknowledge his existence which Anne persistently ignored; but the rivalry was there and honours fluctuated between them.
 +She would not stoop to admit that she meant to rival Gilbert in school work, because that would have been to acknowledge his existence which Anne persistently ignored; but the rivalry was there and honors fluctuated between them.
 diff --git a/chapters/18-XVIII.-Anne-to-the-Rescue.utf8 b/chapters/18-XVIII.-Anne-to-the-Rescue.utf8

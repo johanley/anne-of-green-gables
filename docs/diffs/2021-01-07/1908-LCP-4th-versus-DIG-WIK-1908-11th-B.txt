@@ -48,13 +48,6 @@ index babf6c8..827ebc4 100644
 @@ -72 +72 @@ It belongs to Mr. William Bell, and right in the corner there is a little ring o
 -Diana and I have our playhouse there.
 +Diana and I have our play-house there.
-diff --git "a/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8" "b/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
-index b6e64ac..46ca3ff 100644
---- "a/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
-+++ "b/chapters/14-XIV.-Anne\342\200\231s-Confession.utf8"
-@@ -311 +311 @@ That evening Marilla told the whole story to Matthew over her stocking basket.
--I have to laugh when I think of Anne’s ‘confession,’ although I suppose I shouldn’t for it really was a falsehood.
-+I have to laugh when I think of Anne’s ’confession,’ although I suppose I shouldn’t for it really was a falsehood.
 diff --git a/chapters/17-XVII.-A-New-Interest-in-Life.utf8 b/chapters/17-XVII.-A-New-Interest-in-Life.utf8
 index 987c0c1..8145a30 100644
 --- a/chapters/17-XVII.-A-New-Interest-in-Life.utf8
