@@ -74,8 +74,10 @@ That is the main point of this project.
  <li><a href='#character-issues'>Character Issues</a>
  <li><a href='#standardized-line-breaks'>Standardized Line Breaks</a>
  <li><a href='#standardized-format'>Standardized Format</a>
- <li><a href='#text-editor-recommendations'>Text Editor Recommendations</a>
- <li><a href='#screen-shots'>Screen Shots</a>
+ <li><a href='#toolkit'>Toolkit</a>
+   <ul>
+     <li><a href='#text-editor-recommendations'>Text Editor Recommendations</a>
+   </ul>
 </ul>
 
 <h3 id='main-results'>Main Results So Far</h3>
@@ -404,6 +406,9 @@ recent changes to the transcriptions.
 
 <P>Links to the detailed diffs require a lot of horizontal scrolling.
 It's recommended to download the file from github.
+
+<P>You can see that my transcription is now quite close to those of Wikisource and Distributed Proofreaders Canada.
+The DPC transcription is further away than Wikisource because its underlying copy-text is further away.
 
 
 <h3 id='policy-for-typos-errors'>Policy For Typos/Errors</h3>
@@ -2158,38 +2163,42 @@ The transcriptions in this project have the following format:
  <li>the files are encoded in UTF-8, so that any glyph can be represented
 </ul>
 
- 
- 
- 
-<h3 id='text-editor-recommendations'>Text Editor Recommendations</h3>
-If you're making changes directly to the files, it's recommended that your text editor software:
+
+<h3 id='toolkit'>Toolkit</h3>
+In this project I used these tools:
 <ul>
- <li>should have menu actions for saving changes to the <em>git</em> repository (it should know about <em>git</em>)
- <li>must use UTF-8 encoding (check the settings)
- <li>must not have an auto-correction tool
- <li>can apply line-wrap without hyphenating text on the right margin
- <li>can apply line-wrap to text without saving temporary line breaks to the underlying file
- <li>should be able to indicate invisible characters (spaces and line breaks)
- <li>should be able to show the <em>diff</em> between versions of a file
+ <li>the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> editor
+ <li><a href='https://git-scm.com/'>git-bash</a> for running git commands
+ <li>two repositories on github.com (one for transcriptions, one for documentation)
+ <li><a href='https://www.babelstone.co.uk/Unicode/whatisit.html'>this tool</a> was occasionally used to show the Unicode designation of unusual characters
 </ul>
 
-
-<h3 id='screen-shots'>Screen Shots</h3>
-
-Here's a <a href='images/eclipse.jpg'>screen shot</a> of the <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> code editor being used to proof-read text versus a scanned 
+<P>Here's a <a href='images/eclipse.jpg'>screen shot</a> of <a href='https://www.eclipse.org/downloads/packages/'>Eclipse</a> being used to proof-read text versus a scanned 
 version of the book on archive.org. 
 Note how it is wrapping the long sentences in the window, and showing special symbols for spaces and line breaks.
 It helps to have a wide screen; larger text reduces eye strain.
 
-<P>
-Here's a <a href='images/diff.png'>screen shot</a> of <em>Eclipse</em> showing the <em>diff</em> for Chapter 10 of the novel.
+<P>Here's a <a href='images/diff.png'>screen shot</a> of Eclipse showing the <em>diff</em> for Chapter 10 of the novel.
 The <em>diff</em> shows the differences between <em>this</em> project's text (left) and that of Distributed Proofreaders Canada (right). 
 It shows the same file, but from two different <em>branches</em> in <em>git</em>.
 You can see that the word <em>look</em> is mistakenly transcribed by DPC as <em>took</em>.
 If you look at the <a href='https://archive.org/details/anneofgreengable00montiala/page/98/mode/1up?q=%22I+took+at%22'>image of the page</a>, it seems likely that this error occurred during the original OCR scan of the book. 
 Indeed, you can see that archive.org's scanner is making the exact same error, mistaking <em>look</em> for <em>took</em>.
-This is a good demonstration of how effective it is to compare one transcription to another: it lets us find each others errors (but not all of them!).
+This is a good demonstration of how effective it is to compare one transcription to another: it lets us find each others errors (but not all of them).
 
+<h4 id='text-editor-recommendations'>Text Editor Recommendations</h3>
+For this project, here's a list of recommendations for your text editor: 
+<ul>
+ <li>it should have menu actions for saving changes to the <em>git</em> repository (it should know about <em>git</em>)
+ <li>it must use UTF-8 encoding (check the settings)
+ <li>it must not have an auto-correction tool
+ <li>it can apply line-wrap without hyphenating text on the right margin
+ <li>it can apply line-wrap to text without saving temporary line breaks to the underlying file
+ <li>it should be able to indicate invisible characters (spaces and line breaks)
+ <li>it should be able to show the <em>diff</em> between versions of a file
+ <li>it would be nice if it could show the Unicode designation of a character, for example <em>U+0074 : LATIN SMALL LETTER T</em>; if not, you can use <a href='https://www.babelstone.co.uk/Unicode/whatisit.html'>this tool</a>
+</ul>
+ 
 <!--
 <h3>Contemporary Images </h3>
 From PEI Archives:
